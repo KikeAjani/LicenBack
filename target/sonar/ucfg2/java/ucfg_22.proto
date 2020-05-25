@@ -1,0 +1,190 @@
+
+6tfg.licensoft.licenses.LicenseSubscription#hashCode()If
+ZM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/licenses/LicenseSubscription.java› ›("16*Ω
+13f
+ZM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/licenses/LicenseSubscription.java‡ ‡(7ƒ
+¡
+f
+ZM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/licenses/LicenseSubscription.java· ·(%
+%4java.util.Date"__id*;*9,
+*tfg.licensoft.licenses.LicenseSubscription"	
+endDate*
+11
+12*˛
+14f
+ZM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/licenses/LicenseSubscription.java‡2 ‡(6â
+Ü
+f
+ZM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/licenses/LicenseSubscription.java‡2 ‡(6	
+%1int"__id*
+	
+%3int*
+13*˛
+15f
+ZM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/licenses/LicenseSubscription.java‡+ ‡(/â
+Ü
+f
+ZM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/licenses/LicenseSubscription.java‡+ ‡(/	
+%1int"__id*
+	
+%2int*
+13*£
+16f
+ZM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/licenses/LicenseSubscription.javaﬁ ﬁ(™
+ß
+f
+ZM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/licenses/LicenseSubscription.javaﬂ ﬂ(	
+%0int"*tfg.licensoft.licenses.License#hashCode()I*
+""*
+14
+15*›
+1f
+ZM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/licenses/LicenseSubscription.javaÂ Â(1"p
+f
+ZM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/licenses/LicenseSubscription.javaÊ Ê(
+""*˛
+2f
+ZM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/licenses/LicenseSubscription.javaÂ, Â(0ã
+à
+f
+ZM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/licenses/LicenseSubscription.javaÂ, Â(0
+
+%19int"__id*
+
+
+%21int*
+1*˛
+3f
+ZM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/licenses/LicenseSubscription.javaÂ% Â()ã
+à
+f
+ZM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/licenses/LicenseSubscription.javaÂ% Â()
+
+%19int"__id*
+
+
+%20int*
+1*ï
+5f
+ZM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/licenses/LicenseSubscription.java‰@ ‰(R“
+œ
+f
+ZM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/licenses/LicenseSubscription.java‰@ ‰(R
+%18java.lang.String"__id*F*D,
+*tfg.licensoft.licenses.LicenseSubscription"
+subscriptionItemIdºπ
+f
+ZM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/licenses/LicenseSubscription.java‰@ ‰(]
+
+%17int"java.lang.String#hashCode()I*
+
+%18java.lang.String2
+hashCode()ã
+à
+f
+ZM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/licenses/LicenseSubscription.java‰@ ‰(]
+
+%15int"__id*
+
+
+%17int*
+2
+3*Å
+6f
+ZM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/licenses/LicenseSubscription.java‰< ‰(=ã
+à
+f
+ZM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/licenses/LicenseSubscription.java‰< ‰(=
+
+%15int"__id*
+
+
+%16int*
+2
+3*»
+7f
+ZM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/licenses/LicenseSubscription.java„ „(V“
+œ
+f
+ZM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/licenses/LicenseSubscription.java‰ ‰(0
+%14java.lang.String"__id*F*D,
+*tfg.licensoft.licenses.LicenseSubscription"
+subscriptionItemId*
+5
+6*é
+8f
+ZM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/licenses/LicenseSubscription.java„< „(JŒ
+À
+f
+ZM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/licenses/LicenseSubscription.java„< „(J
+%13java.lang.String"__id*B*@,
+*tfg.licensoft.licenses.LicenseSubscription"
+subscriptionIdºπ
+f
+ZM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/licenses/LicenseSubscription.java„< „(U
+
+%12int"java.lang.String#hashCode()I*
+
+%13java.lang.String2
+hashCode()ã
+à
+f
+ZM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/licenses/LicenseSubscription.java„< „(U
+
+%10int"__id*
+
+
+%12int*
+7*˛
+9f
+ZM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/licenses/LicenseSubscription.java„8 „(9ã
+à
+f
+ZM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/licenses/LicenseSubscription.java„8 „(9
+
+%10int"__id*
+
+
+%11int*
+7*ƒ
+10f
+ZM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/licenses/LicenseSubscription.java· ·(HÕ
+ 
+f
+ZM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/licenses/LicenseSubscription.java„ „(,
+%9java.lang.String"__id*B*@,
+*tfg.licensoft.licenses.LicenseSubscription"
+subscriptionId*
+8
+9*˛
+11f
+ZM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/licenses/LicenseSubscription.java·5 ·(<ƒ
+¡
+f
+ZM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/licenses/LicenseSubscription.java·5 ·(<
+%8java.util.Date"__id*;*9,
+*tfg.licensoft.licenses.LicenseSubscription"	
+endDate∂≥
+f
+ZM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/licenses/LicenseSubscription.java·5 ·(G	
+%7int"java.util.Date#hashCode()I*
+
+%8java.util.Date2
+hashCode()â
+Ü
+f
+ZM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/licenses/LicenseSubscription.java·5 ·(G	
+%5int"__id*
+	
+%7int*
+10*˛
+12f
+ZM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/licenses/LicenseSubscription.java·1 ·(2â
+Ü
+f
+ZM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/licenses/LicenseSubscription.java·1 ·(2	
+%5int"__id*
+	
+%6int*
+10B.,
+*tfg.licensoft.licenses.LicenseSubscription

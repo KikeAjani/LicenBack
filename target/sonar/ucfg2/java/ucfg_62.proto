@@ -1,0 +1,48 @@
+
+dtfg.licensoft.configurations.SwaggerConfiguration#apiInfo()Lspringfox/documentation/service/ApiInfo;m
+aM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/configurations/SwaggerConfiguration.javaû û("1*≤
+1m
+aM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/configurations/SwaggerConfiguration.java†
+ †( «
+m
+aM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/configurations/SwaggerConfiguration.java§ §(-
+%0'springfox.documentation.service.Contact"'springfox.documentation.service.ContactÑ
+Å
+n
+aM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/configurations/SwaggerConfiguration.java§
+ §(Ä
+%1"gspringfox.documentation.service.Contact#<init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V*/
+-
+%0'springfox.documentation.service.Contact*
+Enrique Pina*<:
+8https://github.com/codeurjc-students/2019-LicenseManager*
+e.pina.2016@alumnos.urjc.es÷
+”
+m
+aM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/configurations/SwaggerConfiguration.java• •(-
+%2java.util.List"1java.util.Collections#emptyList()Ljava/util/List;*"
+java.util.Collections «
+m
+aM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/configurations/SwaggerConfiguration.javaü ü(-
+%3'springfox.documentation.service.ApiInfo"'springfox.documentation.service.ApiInfo†
+ù
+m
+aM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/configurations/SwaggerConfiguration.javaü •(.
+%4"‹springfox.documentation.service.ApiInfo#<init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lspringfox/documentation/service/Contact;Ljava/lang/String;Ljava/lang/String;Ljava/util/Collection;)V*/
+-
+%3'springfox.documentation.service.ApiInfo*
+Licensoft REST API*îë
+éThis is the API for the Licensoft web-application. You can use it to learn how it works, or to build a new frontend using this backend methods*
+""*
+""*/
+-
+%0'springfox.documentation.service.Contact*
+""*
+""*
+
+%2java.util.List"†
+m
+aM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/configurations/SwaggerConfiguration.javaü •(//
+-
+%3'springfox.documentation.service.ApiInfoB53
+1tfg.licensoft.configurations.SwaggerConfiguration

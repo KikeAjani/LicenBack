@@ -1,0 +1,32 @@
+
+¥tfg.licensoft.licenses.LicenseService#findBySerialAndProductAndOwnerAndActive(Ljava/lang/String;Ltfg/licensoft/products/Product;Ljava/lang/String;Z)Ltfg/licensoft/licenses/License;_
+UM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/licenses/LicenseService.java9 9(7"1*ù
+1_
+UM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/licenses/LicenseService.java:	 :(—
+Œ
+_
+UM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/licenses/LicenseService.java:	 :(.
+%0(tfg.licensoft.licenses.LicenseRepository"__id*5*3'
+%tfg.licensoft.licenses.LicenseService"
+licRep÷”
+_
+UM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/licenses/LicenseService.java:	 :([$
+%1tfg.licensoft.licenses.License"∑tfg.licensoft.licenses.LicenseRepository#findBySerialAndProductAndOwnerAndActive(Ljava/lang/String;Ltfg/licensoft/products/Product;Ljava/lang/String;Z)Ltfg/licensoft/licenses/License;*0
+.
+%0(tfg.licensoft.licenses.LicenseRepository*
+
+serialjava.lang.String*+
+)
+producttfg.licensoft.products.Product*
+
+ownerjava.lang.String*
+""2nfindBySerialAndProductAndOwnerAndActive(Ljava/lang/String;Ltfg/licensoft/products/Product;Ljava/lang/String;Z)"â
+_
+UM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/licenses/LicenseService.java: :(\&
+$
+%1tfg.licensoft.licenses.License:
+serialjava.lang.String:)
+producttfg.licensoft.products.Product:
+ownerjava.lang.String:
+""B)'
+%tfg.licensoft.licenses.LicenseService

@@ -1,0 +1,30 @@
+
+ètfg.licensoft.usedCards.UsedCardService#findByLast4AndExpMonthAndExpYearAndProductName(IIILjava/lang/String;)Ltfg/licensoft/usedCards/UsedCard;a
+WM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/usedCards/UsedCardService.java (?"1*≠
+1a
+WM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/usedCards/UsedCardService.java	 (‹
+Ÿ
+a
+WM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/usedCards/UsedCardService.java	 (0
+%0*tfg.licensoft.usedCards.UsedCardRepository"__id*<*:)
+'tfg.licensoft.usedCards.UsedCardService"
+usedCardRep’“
+a
+WM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/usedCards/UsedCardService.java	 (j&
+%1 tfg.licensoft.usedCards.UsedCard"ítfg.licensoft.usedCards.UsedCardRepository#findByLast4AndExpMonthAndExpYearAndProductName(IIILjava/lang/String;)Ltfg/licensoft/usedCards/UsedCard;*2
+0
+%0*tfg.licensoft.usedCards.UsedCardRepository*
+""*
+""*
+""*
+
+productjava.lang.String2EfindByLast4AndExpMonthAndExpYearAndProductName(IIILjava/lang/String;)"ç
+a
+WM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/usedCards/UsedCardService.java (k(
+&
+%1 tfg.licensoft.usedCards.UsedCard:
+"":
+"":
+"":
+productjava.lang.StringB+)
+'tfg.licensoft.usedCards.UsedCardService

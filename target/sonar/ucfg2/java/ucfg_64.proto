@@ -1,0 +1,24 @@
+
+ytfg.licensoft.licenses.LicenseSubscriptionService#findOne(Ljava/lang/String;)Ltfg/licensoft/licenses/LicenseSubscription;k
+aM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/licenses/LicenseSubscriptionService.java (#"1*≥
+1k
+aM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/licenses/LicenseSubscriptionService.java	 (ı
+Ú
+k
+aM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/licenses/LicenseSubscriptionService.java	 (:
+%04tfg.licensoft.licenses.LicenseSubscriptionRepository"__id*A*?3
+1tfg.licensoft.licenses.LicenseSubscriptionService"
+licRep§°
+k
+aM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/licenses/LicenseSubscriptionService.java	 ()0
+%1*tfg.licensoft.licenses.LicenseSubscription"Åtfg.licensoft.licenses.LicenseSubscriptionRepository#findBySerial(Ljava/lang/String;)Ltfg/licensoft/licenses/LicenseSubscription;*<
+:
+%04tfg.licensoft.licenses.LicenseSubscriptionRepository*
+
+serialjava.lang.String2 findBySerial(Ljava/lang/String;)"°
+k
+aM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/licenses/LicenseSubscriptionService.java (*2
+0
+%1*tfg.licensoft.licenses.LicenseSubscription:
+serialjava.lang.StringB53
+1tfg.licensoft.licenses.LicenseSubscriptionService

@@ -1,0 +1,99 @@
+
+stfg.licensoft.api.ApiUsedCardController#checkIfUsed(IIILjava/lang/String;)Lorg/springframework/http/ResponseEntity;a
+WM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/ApiUsedCardController.java  (+"startingBlock*ü
+2a
+WM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/ApiUsedCardController.java (#ü
+ú
+a
+WM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/ApiUsedCardController.java$ (1)
+%2#org.springframework.http.HttpStatus"__id*
+""æª
+a
+WM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/ApiUsedCardController.java (-
+%3'org.springframework.http.ResponseEntity"'org.springframework.http.ResponseEntityº
+π
+a
+WM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/ApiUsedCardController.java
+ (2
+%4"horg.springframework.http.ResponseEntity#<init>(Ljava/lang/Object;Lorg/springframework/http/HttpStatus;)V*/
+-
+%3'org.springframework.http.ResponseEntity*
+""*+
+)
+%2#org.springframework.http.HttpStatus"î
+a
+WM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/ApiUsedCardController.java (3/
+-
+%3'org.springframework.http.ResponseEntity*›
+3a
+WM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/ApiUsedCardController.java (⁄
+◊
+a
+WM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/ApiUsedCardController.java ( -
+%0'tfg.licensoft.usedCards.UsedCardService"__id*=*;)
+'tfg.licensoft.api.ApiUsedCardController"
+usedCardServœÃ
+a
+WM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/ApiUsedCardController.java (q&
+%1 tfg.licensoft.usedCards.UsedCard"ètfg.licensoft.usedCards.UsedCardService#findByLast4AndExpMonthAndExpYearAndProductName(IIILjava/lang/String;)Ltfg/licensoft/usedCards/UsedCard;*/
+-
+%0'tfg.licensoft.usedCards.UsedCardService*
+""*
+""*
+""*
+
+productjava.lang.String2EfindByLast4AndExpMonthAndExpYearAndProductName(IIILjava/lang/String;)Ω
+∫
+a
+WM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/ApiUsedCardController.java (r%
+c tfg.licensoft.usedCards.UsedCard"__id*(
+&
+%1 tfg.licensoft.usedCards.UsedCard*
+2
+1*Î
+startingBlockb
+WM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/ApiUsedCardController.java+ (ô“
+œ
+b
+WM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/ApiUsedCardController.java| (â
+%8"
+__annotate*86
+4org.springframework.web.bind.annotation.PathVariable*
+
+productjava.lang.Stringõ
+ò
+c
+WM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/ApiUsedCardController.javaë (ò
+productjava.lang.String"__annotation*
+
+%8*
+3*ü
+1a
+WM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/ApiUsedCardController.java   ($ü
+ú
+a
+WM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/ApiUsedCardController.java %  (2)
+%5#org.springframework.http.HttpStatus"__id*
+""æª
+a
+WM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/ApiUsedCardController.java   (-
+%6'org.springframework.http.ResponseEntity"'org.springframework.http.ResponseEntityº
+π
+a
+WM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/ApiUsedCardController.java 
+  (3
+%7"horg.springframework.http.ResponseEntity#<init>(Ljava/lang/Object;Lorg/springframework/http/HttpStatus;)V*/
+-
+%6'org.springframework.http.ResponseEntity*
+""*+
+)
+%5#org.springframework.http.HttpStatus"î
+a
+WM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/ApiUsedCardController.java   (4/
+-
+%6'org.springframework.http.ResponseEntity:
+"":
+"":
+"":
+productjava.lang.StringB+)
+'tfg.licensoft.api.ApiUsedCardController

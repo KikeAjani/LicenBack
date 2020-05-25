@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: tfg.licensoft.UserApiTests
 -------------------------------------------------------------------------------
-Tests run: 35, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.383 s - in tfg.licensoft.UserApiTests
+Tests run: 35, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.491 s - in tfg.licensoft.UserApiTests

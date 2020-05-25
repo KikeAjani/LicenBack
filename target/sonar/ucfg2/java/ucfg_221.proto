@@ -1,0 +1,18 @@
+
+Vtfg.licensoft.stripe.StripeServices#createPlan(Ljava/util/Map;)Lcom/stripe/model/Plan;]
+SM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/stripe/StripeServices.java7 7("1*à
+1]
+SM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/stripe/StripeServices.java8	 8(û
+ø
+]
+SM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/stripe/StripeServices.java8	 8(
+%0com.stripe.model.Plan"Dcom.stripe.model.Plan#create(Ljava/util/Map;)Lcom/stripe/model/Plan;*"
+com.stripe.model.Plan*
+
+paramsjava.util.Map"~
+]
+SM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/stripe/StripeServices.java8 8(
+
+%0com.stripe.model.Plan:
+paramsjava.util.MapB'%
+#tfg.licensoft.stripe.StripeServices

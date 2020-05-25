@@ -1,0 +1,18 @@
+
+‚tfg.licensoft.stripe.StripeServices#createSubscription(Lcom/stripe/param/SubscriptionCreateParams;)Lcom/stripe/model/Subscription;]
+SM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/stripe/StripeServices.javaO O('"1*Á
+1]
+SM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/stripe/StripeServices.javaP	 P(Ó
+Ð
+]
+SM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/stripe/StripeServices.javaP	 P($#
+%0com.stripe.model.Subscription"pcom.stripe.model.Subscription#create(Lcom/stripe/param/SubscriptionCreateParams;)Lcom/stripe/model/Subscription;*!"
+com.stripe.model.Subscription*5
+3
+params)com.stripe.param.SubscriptionCreateParams"†
+]
+SM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/stripe/StripeServices.javaP P(%%
+#
+%0com.stripe.model.Subscription:3
+params)com.stripe.param.SubscriptionCreateParamsB'%
+#tfg.licensoft.stripe.StripeServices

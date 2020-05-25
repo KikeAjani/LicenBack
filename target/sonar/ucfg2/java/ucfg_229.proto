@@ -1,0 +1,16 @@
+
+vtfg.licensoft.stripe.StripeServices#cancelSubscription(Lcom/stripe/model/Subscription;)Lcom/stripe/model/Subscription;]
+SM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/stripe/StripeServices.javaW W('"1*Ô
+1]
+SM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/stripe/StripeServices.javaX	 X(Å˛
+]
+SM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/stripe/StripeServices.javaX	 X(#
+%0com.stripe.model.Subscription"Ecom.stripe.model.Subscription#cancel()Lcom/stripe/model/Subscription;*'
+%
+subscom.stripe.model.Subscription2cancel()"Ü
+]
+SM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/stripe/StripeServices.javaX X(%
+#
+%0com.stripe.model.Subscription:%
+subscom.stripe.model.SubscriptionB'%
+#tfg.licensoft.stripe.StripeServices

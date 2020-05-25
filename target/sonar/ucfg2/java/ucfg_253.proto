@@ -1,0 +1,430 @@
+
+)tfg.licensoft.api.UserController$1#run()V\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaı ı("33*ı
+25\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaÅ Å()û
+õ
+\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaÅ Å()
+statusjava.lang.String"__id*
+
+%11java.lang.StringÂ‚
+\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaÇ Ç("
+%12boolean",java.lang.String#equals(Ljava/lang/Object;)Z*
+
+statusjava.lang.String*
+
+active2equals(Ljava/lang/Object;)*
+19
+23*ë
+26\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaÄ Ä(Y∂
+≥
+\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaÄ Ä(Y%
+subscom.stripe.model.Subscription"__id*&
+$
+%10com.stripe.model.SubscriptionÌÍ
+\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaÅ Å((
+%11java.lang.String";com.stripe.model.Subscription#getStatus()Ljava/lang/String;*'
+%
+subscom.stripe.model.Subscription2getStatus()*
+25*–
+27\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaÄ Ä(XÂ‚
+\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaÄ Ä(X$
+%10com.stripe.model.Subscription"ktfg.licensoft.stripe.StripeServices#retrieveSubscription(Ljava/lang/String;)Lcom/stripe/model/Subscription;*+
+)
+%8#tfg.licensoft.stripe.StripeServices*
+
+%9java.lang.String2(retrieveSubscription(Ljava/lang/String;)*
+26*—
+28\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaÄ Ä(& 
+«
+\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaÄ Ä(&)
+%8#tfg.licensoft.stripe.StripeServices"__id*6*4$
+"tfg.licensoft.api.UserController$1"
+
+stripeServôñ
+\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaÄ< Ä(W
+%9java.lang.String"Ptfg.licensoft.licenses.LicenseSubscription#getSubscriptionId()Ljava/lang/String;*7
+5
+license*tfg.licensoft.licenses.LicenseSubscription2getSubscriptionId()*
+27*è
+30\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.java˚ ˚(ä
+á
+\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.java˚ ˚(
+%3java.io.PrintStream"__id*
+""˙˜
+\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.java˚ ˚(8
+
+%4void"0java.io.PrintStream#println(Ljava/lang/String;)V*
+
+%3java.io.PrintStream*
+Setting license inactive...2println(Ljava/lang/String;)ÍÁ
+\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.java¸ ¸(
+
+%5void",tfg.licensoft.licenses.License#setActive(Z)V*7
+5
+license*tfg.licensoft.licenses.LicenseSubscription*
+""2setActive(Z)›
+⁄
+\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.java˝ ˝(7
+%61tfg.licensoft.licenses.LicenseSubscriptionService"__id*;*9$
+"tfg.licensoft.api.UserController$1"
+licenseSubsServŒÀ
+\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.java˝ ˝($0
+%7*tfg.licensoft.licenses.LicenseSubscription"êtfg.licensoft.licenses.LicenseSubscriptionService#save(Ltfg/licensoft/licenses/LicenseSubscription;)Ltfg/licensoft/licenses/LicenseSubscription;*9
+7
+%61tfg.licensoft.licenses.LicenseSubscriptionService*7
+5
+license*tfg.licensoft.licenses.LicenseSubscription22save(Ltfg/licensoft/licenses/LicenseSubscription;)*
+0*Ë
+31\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.java˙	 ˙(˘ˆ
+\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.java˙	 ˙(!
+%2boolean"<tfg.licensoft.licenses.LicenseSubscription#getCancelAtEnd()Z*7
+5
+license*tfg.licensoft.licenses.LicenseSubscription2getCancelAtEnd()*
+28
+30* 
+32\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.java¯ ¯("f
+\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.java¯ ¯(
+""*Õ
+10\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaä
+ ä(ñ
+ì
+\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaä
+ ä(
+dtjava.util.Date"__id*
+
+%26java.util.Date 
+«
+\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaã ã(-
+%28java.util.Calendar"4java.util.Calendar#getInstance()Ljava/util/Calendar;*"
+java.util.Calendar*
+9*˘
+33\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaˆ# ˆ(2›
+⁄
+\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaˆ# ˆ(27
+%01tfg.licensoft.licenses.LicenseSubscriptionService"__id*;*9$
+"tfg.licensoft.api.UserController$1"
+licenseSubsServ’“
+\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaˆ# ˆ(a0
+%1*tfg.licensoft.licenses.LicenseSubscription"®tfg.licensoft.licenses.LicenseSubscriptionService#findBySerialAndProduct(Ljava/lang/String;Ltfg/licensoft/products/Product;)Ltfg/licensoft/licenses/LicenseSubscription;*9
+7
+%01tfg.licensoft.licenses.LicenseSubscriptionService*
+""*
+""2JfindBySerialAndProduct(Ljava/lang/String;Ltfg/licensoft/products/Product;)“
+œ
+\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaˆ ˆ(b5
+license*tfg.licensoft.licenses.LicenseSubscription"__id*2
+0
+%1*tfg.licensoft.licenses.LicenseSubscription*
+31
+32*ë
+11\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaä ä(àÖ
+\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaä ä(
+%26java.util.Date"java.util.Dateõ
+ò
+\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaä ä(
+%27"java.util.Date#<init>()V*
+
+%26java.util.Date*
+10*Ÿ
+14\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaâ$ â(5ÎË
+\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaâ â(6
+%25boolean",java.lang.String#equals(Ljava/lang/Object;)Z*
+
+%24java.lang.String*
+requires_action2equals(Ljava/lang/Object;)*
+0
+11*˚
+15\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaà	 à(L´
+®
+\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaà	 à(L
+invcom.stripe.model.Invoice"__id*!
+
+%23com.stripe.model.Invoice‚ﬂ
+\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaâ â(
+%24java.lang.String"6com.stripe.model.Invoice#getStatus()Ljava/lang/String;*!
+
+invcom.stripe.model.Invoice2getStatus()*
+14*¿
+16\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaà à(K’“
+\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaà à(K
+%23com.stripe.model.Invoice"btfg.licensoft.stripe.StripeServices#getLatestInvoice(Ljava/lang/String;)Lcom/stripe/model/Invoice;*,
+*
+%21#tfg.licensoft.stripe.StripeServices*
+
+%22java.lang.String2$getLatestInvoice(Ljava/lang/String;)*
+15*¥
+17\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaà à(!À
+»
+\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaà à(!*
+%21#tfg.licensoft.stripe.StripeServices"__id*6*4$
+"tfg.licensoft.api.UserController$1"
+
+stripeServ˚¯
+\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaà3 à(J
+%22java.lang.String"Bcom.stripe.model.Subscription#getLatestInvoice()Ljava/lang/String;*'
+%
+subscom.stripe.model.Subscription2getLatestInvoice()*
+16*’
+19\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaá á(Á‰
+\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaá á(+
+%20boolean",java.lang.String#equals(Ljava/lang/Object;)Z*
+
+statusjava.lang.String*
+
+past_due2equals(Ljava/lang/Object;)*
+2
+17*z
+0 "s
+\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaú ú(
+implicit return*¬
+2\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaî	 î(À
+»
+\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaî	 î(*
+%42#tfg.licensoft.stripe.StripeServices"__id*6*4$
+"tfg.licensoft.api.UserController$1"
+
+stripeServãà
+\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaî	 î(,$
+%43com.stripe.model.Subscription"vtfg.licensoft.stripe.StripeServices#cancelSubscription(Lcom/stripe/model/Subscription;)Lcom/stripe/model/Subscription;*,
+*
+%42#tfg.licensoft.stripe.StripeServices*'
+%
+subscom.stripe.model.Subscription23cancelSubscription(Lcom/stripe/model/Subscription;)*
+0*«
+3\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaë ë(;≤
+Ø
+\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaë ë(;
+%37java.lang.String"__concat*
+Subscription *
+
+%36java.lang.StringÃ
+…
+\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaë ë(g
+%38java.lang.String"__concat*
+
+%37java.lang.String*+)
+' needs SCA autenthication. This is the ß
+§
+\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaë ë(p
+%39java.lang.String"__concat*
+
+%38java.lang.String*
+""∂
+≥
+]
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaë ë(Ö
+%40java.lang.String"__concat*
+
+%39java.lang.String*
+ retry of 3 max.˜Ù
+]
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaë
+ ë(Ü
+%41void"0java.io.PrintStream#println(Ljava/lang/String;)V*
+
+%35java.io.PrintStream*
+
+%40java.lang.String2println(Ljava/lang/String;)*
+0*‹
+4\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaë
+ ë(ã
+à
+\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaë
+ ë(
+%35java.io.PrintStream"__id*
+""Â‚
+\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaë/ ë(;
+%36java.lang.String"7com.stripe.model.Subscription#getId()Ljava/lang/String;*'
+%
+subscom.stripe.model.Subscription2getId()*
+3*á
+5\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaê
+ ê(û
+õ
+\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaê
+ ê(>
+%34void"jtfg.licensoft.api.UserController#setTimerAndEndDate(Ljava/lang/String;Ltfg/licensoft/products/Product;JI)V*&$
+"tfg.licensoft.api.UserController$1*
+""*
+""*2 *
+""*
+4*©
+6\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaé
+ é(ñ
+ì
+\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaé
+ é(
+dtjava.util.Date"__id*
+
+%32java.util.Dateß§
+\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaè
+ è( 
+%33void"Htfg.licensoft.licenses.LicenseSubscription#setEndDate(Ljava/util/Date;)V*7
+5
+license*tfg.licensoft.licenses.LicenseSubscription*
+
+dtjava.util.Date2setEndDate(Ljava/util/Date;)*
+5*µ
+7\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaé é(Ã…
+\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaé é(
+%32java.util.Date",java.util.Calendar#getTime()Ljava/util/Date;*
+
+cjava.util.Calendar2	getTime()*
+6*®
+8\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaç
+ ç(z
+x
+\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaç ç(
+
+%30int"__id*
+""√¿
+\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaç
+ ç(!
+%31void"java.util.Calendar#add(II)V*
+
+cjava.util.Calendar*
+
+
+%30int*22add(II)*
+7*Ù
+9\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaã
+ ã(.ù
+ö
+\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaã
+ ã(.
+cjava.util.Calendar"__id*
+
+%28java.util.CalendarÎË
+\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaå
+ å(
+%29void"-java.util.Calendar#setTime(Ljava/util/Date;)V*
+
+cjava.util.Calendar*
+
+dtjava.util.Date2setTime(Ljava/util/Date;)*
+8*Ñ
+20\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaÜ	 Ü(ö
+ó
+\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaÜ	 Ü(6
+%19void"jtfg.licensoft.api.UserController#setTimerAndEndDate(Ljava/lang/String;Ltfg/licensoft/products/Product;JI)V*&$
+"tfg.licensoft.api.UserController$1*
+""*
+""*2 *2 *
+0*ú
+21\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaÖ	 Ö(ﬁ
+€
+\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaÖ	 Ö(8
+%171tfg.licensoft.licenses.LicenseSubscriptionService"__id*;*9$
+"tfg.licensoft.api.UserController$1"
+licenseSubsServ–Õ
+\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaÖ	 Ö(&1
+%18*tfg.licensoft.licenses.LicenseSubscription"êtfg.licensoft.licenses.LicenseSubscriptionService#save(Ltfg/licensoft/licenses/LicenseSubscription;)Ltfg/licensoft/licenses/LicenseSubscription;*:
+8
+%171tfg.licensoft.licenses.LicenseSubscriptionService*7
+5
+license*tfg.licensoft.licenses.LicenseSubscription22save(Ltfg/licensoft/licenses/LicenseSubscription;)*
+20*⁄
+22\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaÑ	 Ñ(ÔÏ
+\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaÑ	 Ñ(!
+%16void"4tfg.licensoft.licenses.LicenseSubscription#renew(J)V*7
+5
+license*tfg.licensoft.licenses.LicenseSubscription*
+""2renew(J)*
+21*∆
+23\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaÉ	 É(ã
+à
+\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaÉ	 É(
+%13java.io.PrintStream"__id*
+""‘
+—
+\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaÉ É(9
+%14java.lang.String"__concat*
+Renewal doing on *7
+5
+license*tfg.licensoft.licenses.LicenseSubscriptionˆÛ
+\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaÉ	 É(:
+%15void"0java.io.PrintStream#println(Ljava/lang/String;)V*
+
+%13java.io.PrintStream*
+
+%14java.lang.String2println(Ljava/lang/String;)*
+22B&$
+"tfg.licensoft.api.UserController$1

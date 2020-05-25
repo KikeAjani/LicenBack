@@ -1,0 +1,24 @@
+
+Xtfg.licensoft.users.UserService#findByName(Ljava/lang/String;)Ltfg/licensoft/users/User;Y
+OM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/users/UserService.java% %("1*æ
+1Y
+OM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/users/UserService.java&	 &(À
+½
+Y
+OM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/users/UserService.java&	 &((
+%0"tfg.licensoft.users.UserRepository"__id*0*.!
+tfg.licensoft.users.UserService"	
+userRepÃÀ
+Y
+OM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/users/UserService.java&	 &(!
+%1tfg.licensoft.users.User"[tfg.licensoft.users.UserRepository#findByName(Ljava/lang/String;)Ltfg/licensoft/users/User;**
+(
+%0"tfg.licensoft.users.UserRepository*
+
+namejava.lang.String2findByName(Ljava/lang/String;)"}
+Y
+OM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/users/UserService.java& &(" 
+
+%1tfg.licensoft.users.User:
+namejava.lang.StringB#!
+tfg.licensoft.users.UserService

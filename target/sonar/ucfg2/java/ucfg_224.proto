@@ -1,0 +1,20 @@
+
+dtfg.licensoft.stripe.StripeServices#createSetupIntent(Ljava/util/Map;)Lcom/stripe/model/SetupIntent;]
+SM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/stripe/StripeServices.javaC C(%"1*„
+1]
+SM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/stripe/StripeServices.javaD
+ D(—
+”
+]
+SM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/stripe/StripeServices.javaD
+ D($"
+%0com.stripe.model.SetupIntent"Rcom.stripe.model.SetupIntent#create(Ljava/util/Map;)Lcom/stripe/model/SetupIntent;* "
+com.stripe.model.SetupIntent*
+
+paramsjava.util.Map"…
+]
+SM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/stripe/StripeServices.javaD D(%$
+"
+%0com.stripe.model.SetupIntent:
+paramsjava.util.MapB'%
+#tfg.licensoft.stripe.StripeServices

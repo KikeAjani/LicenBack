@@ -1,0 +1,18 @@
+
+ktfg.licensoft.stripe.StripeServices#retrieveSubscription(Ljava/lang/String;)Lcom/stripe/model/Subscription;]
+SM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/stripe/StripeServices.java[ [()"1*™
+1]
+SM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/stripe/StripeServices.java\	 \(«
+¨
+]
+SM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/stripe/StripeServices.java\	 \(.#
+%0com.stripe.model.Subscription"Ycom.stripe.model.Subscription#retrieve(Ljava/lang/String;)Lcom/stripe/model/Subscription;*!"
+com.stripe.model.Subscription*$
+"
+subscriptionIdjava.lang.String"†
+]
+SM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/stripe/StripeServices.java\ \(/%
+#
+%0com.stripe.model.Subscription:"
+subscriptionIdjava.lang.StringB'%
+#tfg.licensoft.stripe.StripeServices

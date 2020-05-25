@@ -1,0 +1,125 @@
+
+˜tfg.licensoft.api.ApiProductController#getProducts(Ljavax/servlet/http/HttpServletRequest;Ljava/util/Optional;)Lorg/springframework/http/ResponseEntity;`
+VM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/ApiProductController.java:& :(1"startingBlock*‰
+2`
+VM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/ApiProductController.java< <(*Õ
+Ò
+`
+VM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/ApiProductController.java< <(*+
+%1%tfg.licensoft.products.ProductService"__id*;*9(
+&tfg.licensoft.api.ApiProductController"
+productServ„
+`
+VM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/ApiProductController.java< <(;
+%2java.util.List"Ftfg.licensoft.products.ProductService#findAllActives()Ljava/util/List;*-
++
+%1%tfg.licensoft.products.ProductService2findAllActives()ž
+›
+`
+VM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/ApiProductController.java<= <(J)
+%3#org.springframework.http.HttpStatus"__id*
+""½º
+`
+VM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/ApiProductController.java< <(-
+%4'org.springframework.http.ResponseEntity"'org.springframework.http.ResponseEntityË
+È
+`
+VM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/ApiProductController.java<
+ <(K
+%5"horg.springframework.http.ResponseEntity#<init>(Ljava/lang/Object;Lorg/springframework/http/HttpStatus;)V*/
+-
+%4'org.springframework.http.ResponseEntity*
+
+%2java.util.List*+
+)
+%3#org.springframework.http.HttpStatus"“
+`
+VM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/ApiProductController.java< <(L/
+-
+%4'org.springframework.http.ResponseEntity*²
+3`
+VM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/ApiProductController.java; ;(Â¿
+`
+VM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/ApiProductController.java; ;(
+%0boolean"java.util.Optional#isPresent()Z*
+
+searchjava.util.Optional2isPresent()*
+2
+1*ø
+startingBlock`
+VM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/ApiProductController.java:1 :(oà
+Ý
+`
+VM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/ApiProductController.java9 9(
+%12"
+__annotate*64
+2org.springframework.web.bind.annotation.GetMapping*.
+,
+req%javax.servlet.http.HttpServletRequestª
+§
+`
+VM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/ApiProductController.java:E :(H,
+req%javax.servlet.http.HttpServletRequest"__annotation*
+
+%12Ò
+Ï
+`
+VM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/ApiProductController.java:I :(V
+%13"
+__annotate*86
+4org.springframework.web.bind.annotation.RequestParam*
+
+searchjava.util.Optionalš
+—
+`
+VM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/ApiProductController.java:h :(n
+searchjava.util.Optional"__annotation*
+
+%13*
+3*–
+1`
+VM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/ApiProductController.java> >(#Õ
+Ò
+`
+VM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/ApiProductController.java> >(/+
+%6%tfg.licensoft.products.ProductService"__id*;*9(
+&tfg.licensoft.api.ApiProductController"
+productServÐÍ
+`
+VM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/ApiProductController.java>; >(G
+%7java.lang.String"*java.util.Optional#get()Ljava/lang/Object;*
+
+searchjava.util.Optional2get()º·
+`
+VM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/ApiProductController.java> >(H
+%8java.util.List"Ttfg.licensoft.products.ProductService#findSearch(Ljava/lang/String;)Ljava/util/List;*-
++
+%6%tfg.licensoft.products.ProductService*
+
+%7java.lang.String2findSearch(Ljava/lang/String;)ž
+›
+`
+VM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/ApiProductController.java>I >(V)
+%9#org.springframework.http.HttpStatus"__id*
+""¾»
+`
+VM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/ApiProductController.java> >(.
+%10'org.springframework.http.ResponseEntity"'org.springframework.http.ResponseEntityÍ
+Ê
+`
+VM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/ApiProductController.java>
+ >(W
+%11"horg.springframework.http.ResponseEntity#<init>(Ljava/lang/Object;Lorg/springframework/http/HttpStatus;)V*0
+.
+%10'org.springframework.http.ResponseEntity*
+
+%8java.util.List*+
+)
+%9#org.springframework.http.HttpStatus"”
+`
+VM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/ApiProductController.java> >(X0
+.
+%10'org.springframework.http.ResponseEntity:,
+req%javax.servlet.http.HttpServletRequest:
+searchjava.util.OptionalB*(
+&tfg.licensoft.api.ApiProductController

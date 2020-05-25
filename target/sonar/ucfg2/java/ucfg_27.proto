@@ -1,0 +1,24 @@
+
+mtfg.licensoft.licenses.LicenseService#findLicensesOfProduct(Ltfg/licensoft/products/Product;)Ljava/util/List;_
+UM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/licenses/LicenseService.java   (+"1*ª
+1_
+UM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/licenses/LicenseService.java!	 !(Ñ
+Î
+_
+UM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/licenses/LicenseService.java!	 !(.
+%0(tfg.licensoft.licenses.LicenseRepository"__id*5*3'
+%tfg.licensoft.licenses.LicenseService"
+licRepôñ
+_
+UM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/licenses/LicenseService.java!	 !(+
+%1java.util.List"htfg.licensoft.licenses.LicenseRepository#findByProduct(Ltfg/licensoft/products/Product;)Ljava/util/List;*0
+.
+%0(tfg.licensoft.licenses.LicenseRepository*+
+)
+producttfg.licensoft.products.Product2/findByProduct(Ltfg/licensoft/products/Product;)"y
+_
+UM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/licenses/LicenseService.java! !(,
+
+%1java.util.List:)
+producttfg.licensoft.products.ProductB)'
+%tfg.licensoft.licenses.LicenseService

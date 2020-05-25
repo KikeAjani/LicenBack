@@ -1,0 +1,29 @@
+
+štfg.licensoft.licenses.LicenseService#findBySerialAndProductAndActive(Ljava/lang/String;Ltfg/licensoft/products/Product;Z)Ltfg/licensoft/licenses/License;_
+UM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/licenses/LicenseService.java= =(/"1*Ì
+1_
+UM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/licenses/LicenseService.java>	 >(Ñ
+Î
+_
+UM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/licenses/LicenseService.java>	 >(.
+%0(tfg.licensoft.licenses.LicenseRepository"__id*5*3'
+%tfg.licensoft.licenses.LicenseService"
+licRep…‚
+_
+UM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/licenses/LicenseService.java>	 >(L$
+%1tfg.licensoft.licenses.License"tfg.licensoft.licenses.LicenseRepository#findBySerialAndProductAndActive(Ljava/lang/String;Ltfg/licensoft/products/Product;Z)Ltfg/licensoft/licenses/License;*0
+.
+%0(tfg.licensoft.licenses.LicenseRepository*
+
+serialjava.lang.String*+
+)
+producttfg.licensoft.products.Product*
+""2TfindBySerialAndProductAndActive(Ljava/lang/String;Ltfg/licensoft/products/Product;Z)"‰
+_
+UM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/licenses/LicenseService.java> >(M&
+$
+%1tfg.licensoft.licenses.License:
+serialjava.lang.String:)
+producttfg.licensoft.products.Product:
+""B)'
+%tfg.licensoft.licenses.LicenseService

@@ -1,0 +1,91 @@
+
+[tfg.licensoft.api.GeneralController#getAppDomain()Lorg/springframework/http/ResponseEntity;]
+SM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/GeneralController.javaB' B(3"3*æ
+2]
+SM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/GeneralController.javaF F( õ
+ò
+]
+SM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/GeneralController.javaF" F(/)
+%5#org.springframework.http.HttpStatus"__id*
+""∫∑
+]
+SM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/GeneralController.javaF F(-
+%6'org.springframework.http.ResponseEntity"'org.springframework.http.ResponseEntityÎ
+Ë
+]
+SM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/GeneralController.javaF
+ F(0
+%7"horg.springframework.http.ResponseEntity#<init>(Ljava/lang/Object;Lorg/springframework/http/HttpStatus;)V*/
+-
+%6'org.springframework.http.ResponseEntity*9
+7
+r2tfg.licensoft.api.GeneralController$SimpleResponse*+
+)
+%5#org.springframework.http.HttpStatus"ê
+]
+SM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/GeneralController.javaF F(1/
+-
+%6'org.springframework.http.ResponseEntity*Ÿ
+3]
+SM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/GeneralController.javaC C((–Õ
+]
+SM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/GeneralController.javaC C(&8
+%02tfg.licensoft.api.GeneralController$SimpleResponse"2tfg.licensoft.api.GeneralController$SimpleResponseá
+Ñ
+]
+SM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/GeneralController.javaC C((
+%1"atfg.licensoft.api.GeneralController$SimpleResponse#<init>(Ltfg/licensoft/api/GeneralController;)V*:
+8
+%02tfg.licensoft.api.GeneralController$SimpleResponse›
+⁄
+]
+SM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/GeneralController.javaC C()7
+r2tfg.licensoft.api.GeneralController$SimpleResponse"__id*:
+8
+%02tfg.licensoft.api.GeneralController$SimpleResponse∏
+µ
+]
+SM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/GeneralController.javaD D(
+%2java.lang.String"__id*6*4%
+#tfg.licensoft.api.GeneralController"
+	appDomainπ∂
+]
+SM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/GeneralController.javaD D(
+
+%3void"Stfg.licensoft.api.GeneralController$SimpleResponse#setResponse(Ljava/lang/String;)V*9
+7
+r2tfg.licensoft.api.GeneralController$SimpleResponse*
+
+%2java.lang.String2setResponse(Ljava/lang/String;)∏
+µ
+]
+SM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/GeneralController.javaE E(
+%4java.lang.String"__id*6*4%
+#tfg.licensoft.api.GeneralController"
+	appDomain*
+2
+1*Ú
+1]
+SM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/GeneralController.javaH H()õ
+ò
+]
+SM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/GeneralController.javaH H(3)
+%8#org.springframework.http.HttpStatus"__id*
+""∫∑
+]
+SM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/GeneralController.javaH H(-
+%9'org.springframework.http.ResponseEntity"'org.springframework.http.ResponseEntityü
+ú
+]
+SM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/GeneralController.javaH
+ H(4
+%10"Vorg.springframework.http.ResponseEntity#<init>(Lorg/springframework/http/HttpStatus;)V*/
+-
+%9'org.springframework.http.ResponseEntity*+
+)
+%8#org.springframework.http.HttpStatus"ê
+]
+SM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/GeneralController.javaH H(5/
+-
+%9'org.springframework.http.ResponseEntityB'%
+#tfg.licensoft.api.GeneralController

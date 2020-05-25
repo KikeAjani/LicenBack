@@ -1,0 +1,30 @@
+
+Átfg.licensoft.statistics.LicenseStatisticsService#findByLicenseAndIpAndUserName(Ltfg/licensoft/licenses/License;Ljava/lang/String;Ljava/lang/String;)Ltfg/licensoft/statistics/LicenseStatistics;k
+aM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/statistics/LicenseStatisticsService.java (7"1*ƒ	
+1k
+aM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/statistics/LicenseStatisticsService.java	 (ú
+÷
+k
+aM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/statistics/LicenseStatisticsService.java	 (:
+%04tfg.licensoft.statistics.LicenseStatisticsRepository"__id*F*D3
+1tfg.licensoft.statistics.LicenseStatisticsService"
+licStatRepoïì
+k
+aM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/statistics/LicenseStatisticsService.java	 (J0
+%1*tfg.licensoft.statistics.LicenseStatistics"Ätfg.licensoft.statistics.LicenseStatisticsRepository#findByLicenseAndIpAndUserName(Ltfg/licensoft/licenses/License;Ljava/lang/String;Ljava/lang/String;)Ltfg/licensoft/statistics/LicenseStatistics;*<
+:
+%04tfg.licensoft.statistics.LicenseStatisticsRepository*'
+%
+lictfg.licensoft.licenses.License*
+
+ipjava.lang.String*
+
+userNamejava.lang.String2cfindByLicenseAndIpAndUserName(Ltfg/licensoft/licenses/License;Ljava/lang/String;Ljava/lang/String;)"¡
+k
+aM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/statistics/LicenseStatisticsService.java (K2
+0
+%1*tfg.licensoft.statistics.LicenseStatistics:%
+lictfg.licensoft.licenses.License:
+ipjava.lang.String:
+userNamejava.lang.StringB53
+1tfg.licensoft.statistics.LicenseStatisticsService

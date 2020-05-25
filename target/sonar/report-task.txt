@@ -1,0 +1,7 @@
+organization=kikeajani-github
+projectKey=KikeAjani_LicenBack
+serverUrl=https://sonarcloud.io
+serverVersion=8.0.0.8217
+dashboardUrl=https://sonarcloud.io/dashboard?id=KikeAjani_LicenBack
+ceTaskId=AXJMuE-Brfv76787hfCM
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AXJMuE-Brfv76787hfCM

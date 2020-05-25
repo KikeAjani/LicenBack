@@ -1,0 +1,18 @@
+
+^tfg.licensoft.stripe.StripeServices#createCustomer(Ljava/util/Map;)Lcom/stripe/model/Customer;]
+SM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/stripe/StripeServices.java ("1*€
+1]
+SM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/stripe/StripeServices.java 	  (–
+“
+]
+SM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/stripe/StripeServices.java 	  (+
+%0com.stripe.model.Customer"Lcom.stripe.model.Customer#create(Ljava/util/Map;)Lcom/stripe/model/Customer;*"
+com.stripe.model.Customer*$
+"
+customerParameterjava.util.Map"‚
+]
+SM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/stripe/StripeServices.java   (,!
+
+%0com.stripe.model.Customer:"
+customerParameterjava.util.MapB'%
+#tfg.licensoft.stripe.StripeServices

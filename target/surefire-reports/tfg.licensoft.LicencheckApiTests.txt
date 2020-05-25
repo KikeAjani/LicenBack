@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: tfg.licensoft.LicencheckApiTests
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.344 s - in tfg.licensoft.LicencheckApiTests
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.345 s - in tfg.licensoft.LicencheckApiTests

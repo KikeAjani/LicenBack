@@ -1,0 +1,113 @@
+
+utfg.licensoft.api.ApiLicenseController#getLicensesOfUser(Ljava/lang/String;)Lorg/springframework/http/ResponseEntity;`
+VM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/ApiLicenseController.java@& @(7"startingBlock*€
+2`
+VM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/ApiLicenseController.javaD, D(6ž
+›
+`
+VM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/ApiLicenseController.javaD, D(@)
+%2#org.springframework.http.HttpStatus"__id*
+""½º
+`
+VM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/ApiLicenseController.javaD D(+-
+%3'org.springframework.http.ResponseEntity"'org.springframework.http.ResponseEntity¡
+ž
+`
+VM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/ApiLicenseController.javaD
+ D(A
+%4"Vorg.springframework.http.ResponseEntity#<init>(Lorg/springframework/http/HttpStatus;)V*/
+-
+%3'org.springframework.http.ResponseEntity*+
+)
+%2#org.springframework.http.HttpStatus"“
+`
+VM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/ApiLicenseController.javaD D(B/
+-
+%3'org.springframework.http.ResponseEntity*¹
+3`
+VM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/ApiLicenseController.javaA A(Ì
+É
+`
+VM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/ApiLicenseController.javaA A(%
+%0tfg.licensoft.users.UserService"__id*8*6(
+&tfg.licensoft.api.ApiLicenseController"
+
+userServÈÅ
+`
+VM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/ApiLicenseController.javaA A(0
+%1tfg.licensoft.users.User"Xtfg.licensoft.users.UserService#findByName(Ljava/lang/String;)Ltfg/licensoft/users/User;*'
+%
+%0tfg.licensoft.users.UserService*
+
+userNamejava.lang.String2findByName(Ljava/lang/String;)¯
+¬
+`
+VM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/ApiLicenseController.javaA A(1 
+usertfg.licensoft.users.User"__id* 
+
+%1tfg.licensoft.users.User*
+2
+1*è
+startingBlock`
+VM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/ApiLicenseController.java@7 @(VÒ
+Ï
+`
+VM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/ApiLicenseController.java@8 @(E
+%10"
+__annotate*86
+4org.springframework.web.bind.annotation.PathVariable*
+
+userNamejava.lang.Stringš
+—
+`
+VM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/ApiLicenseController.java@M @(U
+userNamejava.lang.String"__annotation*
+
+%10*
+3*ñ
+1`
+VM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/ApiLicenseController.javaF F( Ñ
+Î
+`
+VM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/ApiLicenseController.javaF F((+
+%5%tfg.licensoft.licenses.LicenseService"__id*7*5(
+&tfg.licensoft.api.ApiLicenseController"	
+licServÈÅ
+`
+VM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/ApiLicenseController.javaF F(A
+%6java.util.List"Xtfg.licensoft.licenses.LicenseService#findByUsername(Ljava/lang/String;)Ljava/util/List;*-
++
+%5%tfg.licensoft.licenses.LicenseService*
+
+userNamejava.lang.String2"findByUsername(Ljava/lang/String;)Ÿ
+œ
+`
+VM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/ApiLicenseController.javaF F(B
+licensesjava.util.List"__id*
+
+%6java.util.Listž
+›
+`
+VM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/ApiLicenseController.javaG5 G(B)
+%7#org.springframework.http.HttpStatus"__id*
+""½º
+`
+VM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/ApiLicenseController.javaG G(+-
+%8'org.springframework.http.ResponseEntity"'org.springframework.http.ResponseEntityÑ
+Î
+`
+VM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/ApiLicenseController.javaG
+ G(C
+%9"horg.springframework.http.ResponseEntity#<init>(Ljava/lang/Object;Lorg/springframework/http/HttpStatus;)V*/
+-
+%8'org.springframework.http.ResponseEntity*
+
+licensesjava.util.List*+
+)
+%7#org.springframework.http.HttpStatus"“
+`
+VM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/ApiLicenseController.javaG G(D/
+-
+%8'org.springframework.http.ResponseEntity:
+userNamejava.lang.StringB*(
+&tfg.licensoft.api.ApiLicenseController

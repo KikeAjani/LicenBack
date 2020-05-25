@@ -1,0 +1,18 @@
+
+atfg.licensoft.stripe.StripeServices#retrieveProduct(Ljava/lang/String;)Lcom/stripe/model/Product;]
+SM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/stripe/StripeServices.java ("1*˚
+1]
+SM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/stripe/StripeServices.java	 (í
+è
+]
+SM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/stripe/StripeServices.java	 ($
+%0com.stripe.model.Product"Ocom.stripe.model.Product#retrieve(Ljava/lang/String;)Lcom/stripe/model/Product;*"
+com.stripe.model.Product*
+
+	productIdjava.lang.String"Å
+]
+SM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/stripe/StripeServices.java (% 
+
+%0com.stripe.model.Product:
+	productIdjava.lang.StringB'%
+#tfg.licensoft.stripe.StripeServices

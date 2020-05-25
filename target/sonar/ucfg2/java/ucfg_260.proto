@@ -1,0 +1,113 @@
+
+ôtfg.licensoft.api.UserController#checkProductAndUser(Ltfg/licensoft/products/Product;Ltfg/licensoft/users/User;)Lorg/springframework/http/ResponseEntity;\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.java‰$ ‰(7"5"6*Ì
+2\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.java" (,ö
+ó
+\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.java" (6)
+%8#org.springframework.http.HttpStatus"__id*
+""π∂
+\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.java (!-
+%9'org.springframework.http.ResponseEntity"'org.springframework.http.ResponseEntityû
+õ
+\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.java (7
+%10"Vorg.springframework.http.ResponseEntity#<init>(Lorg/springframework/http/HttpStatus;)V*/
+-
+%9'org.springframework.http.ResponseEntity*+
+)
+%8#org.springframework.http.HttpStatus"è
+\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.java (8/
+-
+%9'org.springframework.http.ResponseEntity*Ï
+4\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaÏ Ï()ö
+ó
+\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaÏ Ï(3)
+%5#org.springframework.http.HttpStatus"__id*
+""π∂
+\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaÏ Ï(-
+%6'org.springframework.http.ResponseEntity"'org.springframework.http.ResponseEntityù
+ö
+\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaÏ
+ Ï(4
+%7"Vorg.springframework.http.ResponseEntity#<init>(Lorg/springframework/http/HttpStatus;)V*/
+-
+%6'org.springframework.http.ResponseEntity*+
+)
+%5#org.springframework.http.HttpStatus"è
+\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaÏ Ï(5/
+-
+%6'org.springframework.http.ResponseEntity*¯
+5\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaÎ Î(
+ÜÉ
+\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaÎ Î('
+%3tfg.licensoft.users.User"Ktfg.licensoft.api.UserController#getRequestUser()Ltfg/licensoft/users/User;*$"
+ tfg.licensoft.api.UserController2getRequestUser()Ä˝
+\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaÎ Î((
+%4boolean",java.lang.Object#equals(Ljava/lang/Object;)Z*"
+ 
+usertfg.licensoft.users.User* 
+
+%3tfg.licensoft.users.User2equals(Ljava/lang/Object;)*	
+2
+4
+1*Ï
+6\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaË Ë()ö
+ó
+\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaË Ë(6)
+%0#org.springframework.http.HttpStatus"__id*
+""π∂
+\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaË Ë(-
+%1'org.springframework.http.ResponseEntity"'org.springframework.http.ResponseEntityù
+ö
+\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaË
+ Ë(7
+%2"Vorg.springframework.http.ResponseEntity#<init>(Lorg/springframework/http/HttpStatus;)V*/
+-
+%1'org.springframework.http.ResponseEntity*+
+)
+%0#org.springframework.http.HttpStatus"è
+\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaË Ë(8/
+-
+%1'org.springframework.http.ResponseEntity*Ú
+1\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaÛ! Û(+õ
+ò
+\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaÛ! Û(.*
+%11#org.springframework.http.HttpStatus"__id*
+""∫∑
+\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaÛ Û( .
+%12'org.springframework.http.ResponseEntity"'org.springframework.http.ResponseEntity†
+ù
+\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaÛ Û(/
+%13"Vorg.springframework.http.ResponseEntity#<init>(Lorg/springframework/http/HttpStatus;)V*0
+.
+%12'org.springframework.http.ResponseEntity*,
+*
+%11#org.springframework.http.HttpStatus"ê
+\
+PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaÛ Û(00
+.
+%12'org.springframework.http.ResponseEntity:#
+ptfg.licensoft.products.Product: 
+usertfg.licensoft.users.UserB$"
+ tfg.licensoft.api.UserController

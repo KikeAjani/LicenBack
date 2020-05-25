@@ -1,0 +1,3057 @@
+
+ätfg.licensoft.api.LoginController#register(Lorg/springframework/ui/Model;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)Lorg/springframework/http/ResponseEntity;[
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.javab b(%"startingBlock*§™
+2[
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.javav v(–
+Õ
+[
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.javav v(**
+%19#tfg.licensoft.api.GeneralController"__id*<*:#
+!tfg.licensoft.api.LoginController"
+generalController∫
+∑
+[
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.javav v(2
+%20java.lang.String"__id*9*7
+*
+%19#tfg.licensoft.api.GeneralController"	
+appNameû
+õ
+[
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.javav v(3
+appNamejava.lang.String"__id*
+
+%20java.lang.Stringæ
+ª
+[
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.javaw w(2
+%21java.lang.String"__concat*
+New account created - *
+
+appNamejava.lang.Stringö
+ó
+[
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.javaw w(3
+subjava.lang.String"__id*
+
+%21java.lang.String≈
+¬
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ~(µ
+%22java.lang.String"__concat*áÑ
+Å<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\r\n*¥±
+Æ<html style=\"width:100%;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;padding:0;Margin:0;\">\r\n®
+•
+[
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} (
+%23java.lang.String"__concat*
+
+%22java.lang.String*
+\r\nØ
+¨
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} Ä(
+%24java.lang.String"__concat*
+
+%23java.lang.String*
+
+<head>\r\n≈
+¬
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} Å('
+%25java.lang.String"__concat*
+
+%24java.lang.String*$"
+     <meta charset=\"UTF-8\">\r\nı
+Ú
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} Ç(W
+%26java.lang.String"__concat*
+
+%25java.lang.String*TR
+P    <meta content=\"width=device-width, initial-scale=1\" name=\"viewport\">\r\n·
+ﬁ
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} É(C
+%27java.lang.String"__concat*
+
+%26java.lang.String*@>
+<    <meta name=\"x-apple-disable-message-reformatting\">\r\nÊ
+„
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} Ñ(H
+%28java.lang.String"__concat*
+
+%27java.lang.String*EC
+A    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\r\nÊ
+„
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} Ö(H
+%29java.lang.String"__concat*
+
+%28java.lang.String*EC
+A    <meta content=\"telephone=no\" name=\"format-detection\">\r\nÌ
+Í
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} Ü(N
+%30java.lang.String"__concat*
+
+%29java.lang.String*LJ
+H    <title>Nueva plantilla de correo electr√≥nico 2020-04-16</title>\r\né
+ã
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} á(p
+%31java.lang.String"__concat*
+
+%30java.lang.String*mk
+i    <!--[if (mso 16)]><style type=\"text/css\">    a {text-decoration: none;}    </style><![endif]-->\r\n˛
+˚
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} à(`
+%32java.lang.String"__concat*
+
+%31java.lang.String*][
+Y    <!--[if gte mso 9]><style>sup { font-size: 100% !important; }</style><![endif]-->\r\n√
+¿
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} â(%
+%33java.lang.String"__concat*
+
+%32java.lang.String*" 
+    <!--[if !mso]><!-- -->\r\nê
+ç
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ä(r
+%34java.lang.String"__concat*
+
+%33java.lang.String*om
+k    <link href=\"https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i\" rel=\"stylesheet\">\r\nô
+ñ
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ã({
+%35java.lang.String"__concat*
+
+%34java.lang.String*xv
+t    <link href=\"https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700,700i\" rel=\"stylesheet\">\r\nΩ
+∫
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} å(
+%36java.lang.String"__concat*
+
+%35java.lang.String*
+    <!--<![endif]-->\r\n∆
+√
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ç((
+%37java.lang.String"__concat*
+
+%36java.lang.String*%#
+!    <style type=\"text/css\">\r\n€
+ÿ
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} é(=
+%38java.lang.String"__concat*
+
+%37java.lang.String*:8
+6        @media only screen and (max-width:600px) {\r\nΩ
+∫
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} è(
+%39java.lang.String"__concat*
+
+%38java.lang.String*
+            .st-br {\r\n◊
+‘
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ê(9
+%40java.lang.String"__concat*
+
+%39java.lang.String*64
+2                padding-left: 10px !important;\r\n◊
+‘
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ë(9
+%41java.lang.String"__concat*
+
+%40java.lang.String*64
+2                padding-right: 10px !important\r\n∂
+≥
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} í(
+%42java.lang.String"__concat*
+
+%41java.lang.String*
+            }\r\n©
+¶
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ì(
+%43java.lang.String"__concat*
+
+%42java.lang.String*
+\r\n∑
+¥
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} î(
+%44java.lang.String"__concat*
+
+%43java.lang.String*
+            p,\r\nª
+∏
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ï(
+%45java.lang.String"__concat*
+
+%44java.lang.String*
+            ul li,\r\nª
+∏
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ñ(
+%46java.lang.String"__concat*
+
+%45java.lang.String*
+            ol li,\r\n∏
+µ
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ó(
+%47java.lang.String"__concat*
+
+%46java.lang.String*
+            a {\r\n‘
+—
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ò(6
+%48java.lang.String"__concat*
+
+%47java.lang.String*31
+/                font-size: 16px !important;\r\n’
+“
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ô(7
+%49java.lang.String"__concat*
+
+%48java.lang.String*42
+0                line-height: 150% !important\r\n∂
+≥
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ö(
+%50java.lang.String"__concat*
+
+%49java.lang.String*
+            }\r\n©
+¶
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} õ(
+%51java.lang.String"__concat*
+
+%50java.lang.String*
+\r\nπ
+∂
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ú(
+%52java.lang.String"__concat*
+
+%51java.lang.String*
+            h1 {\r\n‘
+—
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ù(6
+%53java.lang.String"__concat*
+
+%52java.lang.String*31
+/                font-size: 30px !important;\r\nÃ
+…
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} û(.
+%54java.lang.String"__concat*
+
+%53java.lang.String*+)
+'                text-align: center;\r\n’
+“
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ü(7
+%55java.lang.String"__concat*
+
+%54java.lang.String*42
+0                line-height: 120% !important\r\n∂
+≥
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} †(
+%56java.lang.String"__concat*
+
+%55java.lang.String*
+            }\r\n©
+¶
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} °(
+%57java.lang.String"__concat*
+
+%56java.lang.String*
+\r\nπ
+∂
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ¢(
+%58java.lang.String"__concat*
+
+%57java.lang.String*
+            h2 {\r\n‘
+—
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} £(6
+%59java.lang.String"__concat*
+
+%58java.lang.String*31
+/                font-size: 26px !important;\r\nÃ
+…
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} §(.
+%60java.lang.String"__concat*
+
+%59java.lang.String*+)
+'                text-align: center;\r\n’
+“
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} •(7
+%61java.lang.String"__concat*
+
+%60java.lang.String*42
+0                line-height: 120% !important\r\n∂
+≥
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ¶(
+%62java.lang.String"__concat*
+
+%61java.lang.String*
+            }\r\n©
+¶
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ß(
+%63java.lang.String"__concat*
+
+%62java.lang.String*
+\r\nπ
+∂
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ®(
+%64java.lang.String"__concat*
+
+%63java.lang.String*
+            h3 {\r\n‘
+—
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ©(6
+%65java.lang.String"__concat*
+
+%64java.lang.String*31
+/                font-size: 20px !important;\r\nÃ
+…
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ™(.
+%66java.lang.String"__concat*
+
+%65java.lang.String*+)
+'                text-align: center;\r\n’
+“
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ´(7
+%67java.lang.String"__concat*
+
+%66java.lang.String*42
+0                line-height: 120% !important\r\n∂
+≥
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ¨(
+%68java.lang.String"__concat*
+
+%67java.lang.String*
+            }\r\n©
+¶
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ≠(
+%69java.lang.String"__concat*
+
+%68java.lang.String*
+\r\nª
+∏
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} Æ(
+%70java.lang.String"__concat*
+
+%69java.lang.String*
+            h1 a {\r\n‘
+—
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} Ø(6
+%71java.lang.String"__concat*
+
+%70java.lang.String*31
+/                font-size: 30px !important;\r\nÀ
+»
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ∞(-
+%72java.lang.String"__concat*
+
+%71java.lang.String**(
+&                text-align: center\r\n∂
+≥
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ±(
+%73java.lang.String"__concat*
+
+%72java.lang.String*
+            }\r\n©
+¶
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ≤(
+%74java.lang.String"__concat*
+
+%73java.lang.String*
+\r\nª
+∏
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ≥(
+%75java.lang.String"__concat*
+
+%74java.lang.String*
+            h2 a {\r\n‘
+—
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ¥(6
+%76java.lang.String"__concat*
+
+%75java.lang.String*31
+/                font-size: 26px !important;\r\nÀ
+»
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} µ(-
+%77java.lang.String"__concat*
+
+%76java.lang.String**(
+&                text-align: center\r\n∂
+≥
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ∂(
+%78java.lang.String"__concat*
+
+%77java.lang.String*
+            }\r\n©
+¶
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ∑(
+%79java.lang.String"__concat*
+
+%78java.lang.String*
+\r\nª
+∏
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ∏(
+%80java.lang.String"__concat*
+
+%79java.lang.String*
+            h3 a {\r\n‘
+—
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} π(6
+%81java.lang.String"__concat*
+
+%80java.lang.String*31
+/                font-size: 20px !important;\r\nÀ
+»
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ∫(-
+%82java.lang.String"__concat*
+
+%81java.lang.String**(
+&                text-align: center\r\n∂
+≥
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ª(
+%83java.lang.String"__concat*
+
+%82java.lang.String*
+            }\r\n©
+¶
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} º(
+%84java.lang.String"__concat*
+
+%83java.lang.String*
+\r\nƒ
+¡
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} Ω(&
+%85java.lang.String"__concat*
+
+%84java.lang.String*#!
+            .es-menu td a {\r\n”
+–
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} æ(5
+%86java.lang.String"__concat*
+
+%85java.lang.String*20
+.                font-size: 14px !important\r\n∂
+≥
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ø(
+%87java.lang.String"__concat*
+
+%86java.lang.String*
+            }\r\n©
+¶
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ¿(
+%88java.lang.String"__concat*
+
+%87java.lang.String*
+\r\n«
+ƒ
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ¡()
+%89java.lang.String"__concat*
+
+%88java.lang.String*&$
+"            .es-header-body p,\r\nÀ
+»
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ¬(-
+%90java.lang.String"__concat*
+
+%89java.lang.String**(
+&            .es-header-body ul li,\r\nÀ
+»
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} √(-
+%91java.lang.String"__concat*
+
+%90java.lang.String**(
+&            .es-header-body ol li,\r\n»
+≈
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ƒ(*
+%92java.lang.String"__concat*
+
+%91java.lang.String*'%
+#            .es-header-body a {\r\n”
+–
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ≈(5
+%93java.lang.String"__concat*
+
+%92java.lang.String*20
+.                font-size: 16px !important\r\n∂
+≥
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ∆(
+%94java.lang.String"__concat*
+
+%93java.lang.String*
+            }\r\n©
+¶
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} «(
+%95java.lang.String"__concat*
+
+%94java.lang.String*
+\r\n«
+ƒ
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} »()
+%96java.lang.String"__concat*
+
+%95java.lang.String*&$
+"            .es-footer-body p,\r\nÀ
+»
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} …(-
+%97java.lang.String"__concat*
+
+%96java.lang.String**(
+&            .es-footer-body ul li,\r\nÀ
+»
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java}  (-
+%98java.lang.String"__concat*
+
+%97java.lang.String**(
+&            .es-footer-body ol li,\r\n»
+≈
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} À(*
+%99java.lang.String"__concat*
+
+%98java.lang.String*'%
+#            .es-footer-body a {\r\n‘
+—
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} Ã(5
+%100java.lang.String"__concat*
+
+%99java.lang.String*20
+.                font-size: 14px !important\r\n∏
+µ
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} Õ(
+%101java.lang.String"__concat*
+
+%100java.lang.String*
+            }\r\n´
+®
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} Œ(
+%102java.lang.String"__concat*
+
+%101java.lang.String*
+\r\n«
+ƒ
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} œ('
+%103java.lang.String"__concat*
+
+%102java.lang.String*$"
+             .es-infoblock p,\r\nÀ
+»
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} –(+
+%104java.lang.String"__concat*
+
+%103java.lang.String*(&
+$            .es-infoblock ul li,\r\nÀ
+»
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} —(+
+%105java.lang.String"__concat*
+
+%104java.lang.String*(&
+$            .es-infoblock ol li,\r\n»
+≈
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} “((
+%106java.lang.String"__concat*
+
+%105java.lang.String*%#
+!            .es-infoblock a {\r\n’
+“
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ”(5
+%107java.lang.String"__concat*
+
+%106java.lang.String*20
+.                font-size: 12px !important\r\n∏
+µ
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ‘(
+%108java.lang.String"__concat*
+
+%107java.lang.String*
+            }\r\n´
+®
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ’(
+%109java.lang.String"__concat*
+
+%108java.lang.String*
+\r\nœ
+Ã
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ÷(/
+%110java.lang.String"__concat*
+
+%109java.lang.String*,*
+(            *[class=\"gmail-fix\"] {\r\n”
+–
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ◊(3
+%111java.lang.String"__concat*
+
+%110java.lang.String*0.
+,                display: none !important\r\n∏
+µ
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ÿ(
+%112java.lang.String"__concat*
+
+%111java.lang.String*
+            }\r\n´
+®
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} Ÿ(
+%113java.lang.String"__concat*
+
+%112java.lang.String*
+\r\n√
+¿
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ⁄(#
+%114java.lang.String"__concat*
+
+%113java.lang.String* 
+            .es-m-txt-c,\r\n∆
+√
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} €(&
+%115java.lang.String"__concat*
+
+%114java.lang.String*#!
+            .es-m-txt-c h1,\r\n∆
+√
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ‹(&
+%116java.lang.String"__concat*
+
+%115java.lang.String*#!
+            .es-m-txt-c h2,\r\n«
+ƒ
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ›('
+%117java.lang.String"__concat*
+
+%116java.lang.String*$"
+             .es-m-txt-c h3 {\r\nÿ
+’
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ﬁ(8
+%118java.lang.String"__concat*
+
+%117java.lang.String*53
+1                text-align: center !important\r\n∏
+µ
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ﬂ(
+%119java.lang.String"__concat*
+
+%118java.lang.String*
+            }\r\n´
+®
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ‡(
+%120java.lang.String"__concat*
+
+%119java.lang.String*
+\r\n√
+¿
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ·(#
+%121java.lang.String"__concat*
+
+%120java.lang.String* 
+            .es-m-txt-r,\r\n∆
+√
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ‚(&
+%122java.lang.String"__concat*
+
+%121java.lang.String*#!
+            .es-m-txt-r h1,\r\n∆
+√
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} „(&
+%123java.lang.String"__concat*
+
+%122java.lang.String*#!
+            .es-m-txt-r h2,\r\n«
+ƒ
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ‰('
+%124java.lang.String"__concat*
+
+%123java.lang.String*$"
+             .es-m-txt-r h3 {\r\n◊
+‘
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} Â(7
+%125java.lang.String"__concat*
+
+%124java.lang.String*42
+0                text-align: right !important\r\n∏
+µ
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} Ê(
+%126java.lang.String"__concat*
+
+%125java.lang.String*
+            }\r\n´
+®
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} Á(
+%127java.lang.String"__concat*
+
+%126java.lang.String*
+\r\n√
+¿
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} Ë(#
+%128java.lang.String"__concat*
+
+%127java.lang.String* 
+            .es-m-txt-l,\r\n∆
+√
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} È(&
+%129java.lang.String"__concat*
+
+%128java.lang.String*#!
+            .es-m-txt-l h1,\r\n∆
+√
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} Í(&
+%130java.lang.String"__concat*
+
+%129java.lang.String*#!
+            .es-m-txt-l h2,\r\n«
+ƒ
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} Î('
+%131java.lang.String"__concat*
+
+%130java.lang.String*$"
+             .es-m-txt-l h3 {\r\n÷
+”
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} Ï(6
+%132java.lang.String"__concat*
+
+%131java.lang.String*31
+/                text-align: left !important\r\n∏
+µ
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} Ì(
+%133java.lang.String"__concat*
+
+%132java.lang.String*
+            }\r\n´
+®
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} Ó(
+%134java.lang.String"__concat*
+
+%133java.lang.String*
+\r\n«
+ƒ
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} Ô('
+%135java.lang.String"__concat*
+
+%134java.lang.String*$"
+             .es-m-txt-r img,\r\n«
+ƒ
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ('
+%136java.lang.String"__concat*
+
+%135java.lang.String*$"
+             .es-m-txt-c img,\r\n»
+≈
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} Ò((
+%137java.lang.String"__concat*
+
+%136java.lang.String*%#
+!            .es-m-txt-l img {\r\n’
+“
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} Ú(5
+%138java.lang.String"__concat*
+
+%137java.lang.String*20
+.                display: inline !important\r\n∏
+µ
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} Û(
+%139java.lang.String"__concat*
+
+%138java.lang.String*
+            }\r\n´
+®
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} Ù(
+%140java.lang.String"__concat*
+
+%139java.lang.String*
+\r\n 
+«
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ı(*
+%141java.lang.String"__concat*
+
+%140java.lang.String*'%
+#            .es-button-border {\r\n‘
+—
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ˆ(4
+%142java.lang.String"__concat*
+
+%141java.lang.String*1/
+-                display: block !important\r\n∏
+µ
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ˜(
+%143java.lang.String"__concat*
+
+%142java.lang.String*
+            }\r\n´
+®
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ¯(
+%144java.lang.String"__concat*
+
+%143java.lang.String*
+\r\nƒ
+¡
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ˘($
+%145java.lang.String"__concat*
+
+%144java.lang.String*!
+            a.es-button {\r\n÷
+”
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ˙(6
+%146java.lang.String"__concat*
+
+%145java.lang.String*31
+/                font-size: 16px !important;\r\n’
+“
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ˚(5
+%147java.lang.String"__concat*
+
+%146java.lang.String*20
+.                display: block !important;\r\n›
+⁄
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ¸(=
+%148java.lang.String"__concat*
+
+%147java.lang.String*:8
+6                border-left-width: 0px !important;\r\n›
+⁄
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ˝(=
+%149java.lang.String"__concat*
+
+%148java.lang.String*:8
+6                border-right-width: 0px !important\r\n∏
+µ
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ˛(
+%150java.lang.String"__concat*
+
+%149java.lang.String*
+            }\r\n´
+®
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ˇ(
+%151java.lang.String"__concat*
+
+%150java.lang.String*
+\r\n√
+¿
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} Ä(#
+%152java.lang.String"__concat*
+
+%151java.lang.String* 
+            .es-btn-fw {\r\n›
+⁄
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} Å(=
+%153java.lang.String"__concat*
+
+%152java.lang.String*:8
+6                border-width: 10px 0px !important;\r\nÿ
+’
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} Ç(8
+%154java.lang.String"__concat*
+
+%153java.lang.String*53
+1                text-align: center !important\r\n∏
+µ
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} É(
+%155java.lang.String"__concat*
+
+%154java.lang.String*
+            }\r\n´
+®
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} Ñ(
+%156java.lang.String"__concat*
+
+%155java.lang.String*
+\r\n 
+«
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} Ö(*
+%157java.lang.String"__concat*
+
+%156java.lang.String*'%
+#            .es-adaptive table,\r\n¬
+ø
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} Ü("
+%158java.lang.String"__concat*
+
+%157java.lang.String*
+            .es-btn-fw,\r\n«
+ƒ
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} á('
+%159java.lang.String"__concat*
+
+%158java.lang.String*$"
+             .es-btn-fw-brdr,\r\n¿
+Ω
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} à( 
+%160java.lang.String"__concat*
+
+%159java.lang.String*
+            .es-left,\r\n¬
+ø
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} â("
+%161java.lang.String"__concat*
+
+%160java.lang.String*
+            .es-right {\r\n—
+Œ
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ä(1
+%162java.lang.String"__concat*
+
+%161java.lang.String*.,
+*                width: 100% !important\r\n∏
+µ
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ã(
+%163java.lang.String"__concat*
+
+%162java.lang.String*
+            }\r\n´
+®
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} å(
+%164java.lang.String"__concat*
+
+%163java.lang.String*
+\r\n…
+∆
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ç()
+%165java.lang.String"__concat*
+
+%164java.lang.String*&$
+"            .es-content table,\r\n»
+≈
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} é((
+%166java.lang.String"__concat*
+
+%165java.lang.String*%#
+!            .es-header table,\r\n»
+≈
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} è((
+%167java.lang.String"__concat*
+
+%166java.lang.String*%#
+!            .es-footer table,\r\n√
+¿
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ê(#
+%168java.lang.String"__concat*
+
+%167java.lang.String* 
+            .es-content,\r\n¬
+ø
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ë("
+%169java.lang.String"__concat*
+
+%168java.lang.String*
+            .es-footer,\r\n√
+¿
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} í(#
+%170java.lang.String"__concat*
+
+%169java.lang.String* 
+            .es-header {\r\n“
+œ
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ì(2
+%171java.lang.String"__concat*
+
+%170java.lang.String*/-
++                width: 100% !important;\r\n÷
+”
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} î(6
+%172java.lang.String"__concat*
+
+%171java.lang.String*31
+/                max-width: 600px !important\r\n∏
+µ
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ï(
+%173java.lang.String"__concat*
+
+%172java.lang.String*
+            }\r\n´
+®
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ñ(
+%174java.lang.String"__concat*
+
+%173java.lang.String*
+\r\n≈
+¬
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ó(%
+%175java.lang.String"__concat*
+
+%174java.lang.String*" 
+            .es-adapt-td {\r\n’
+“
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ò(5
+%176java.lang.String"__concat*
+
+%175java.lang.String*20
+.                display: block !important;\r\n—
+Œ
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ô(1
+%177java.lang.String"__concat*
+
+%176java.lang.String*.,
+*                width: 100% !important\r\n∏
+µ
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ö(
+%178java.lang.String"__concat*
+
+%177java.lang.String*
+            }\r\n´
+®
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} õ(
+%179java.lang.String"__concat*
+
+%178java.lang.String*
+\r\n√
+¿
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ú(#
+%180java.lang.String"__concat*
+
+%179java.lang.String* 
+            .adapt-img {\r\n“
+œ
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ù(2
+%181java.lang.String"__concat*
+
+%180java.lang.String*/-
++                width: 100% !important;\r\n“
+œ
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} û(2
+%182java.lang.String"__concat*
+
+%181java.lang.String*/-
++                height: auto !important\r\n∏
+µ
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ü(
+%183java.lang.String"__concat*
+
+%182java.lang.String*
+            }\r\n´
+®
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} †(
+%184java.lang.String"__concat*
+
+%183java.lang.String*
+\r\n¡
+æ
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} °(!
+%185java.lang.String"__concat*
+
+%184java.lang.String*
+            .es-m-p0 {\r\n“
+œ
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ¢(2
+%186java.lang.String"__concat*
+
+%185java.lang.String*/-
++                padding: 0px !important\r\n∏
+µ
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} £(
+%187java.lang.String"__concat*
+
+%186java.lang.String*
+            }\r\n´
+®
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} §(
+%188java.lang.String"__concat*
+
+%187java.lang.String*
+\r\n¬
+ø
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} •("
+%189java.lang.String"__concat*
+
+%188java.lang.String*
+            .es-m-p0r {\r\nÿ
+’
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ¶(8
+%190java.lang.String"__concat*
+
+%189java.lang.String*53
+1                padding-right: 0px !important\r\n∏
+µ
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ß(
+%191java.lang.String"__concat*
+
+%190java.lang.String*
+            }\r\n´
+®
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ®(
+%192java.lang.String"__concat*
+
+%191java.lang.String*
+\r\n¬
+ø
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ©("
+%193java.lang.String"__concat*
+
+%192java.lang.String*
+            .es-m-p0l {\r\n◊
+‘
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ™(7
+%194java.lang.String"__concat*
+
+%193java.lang.String*42
+0                padding-left: 0px !important\r\n∏
+µ
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ´(
+%195java.lang.String"__concat*
+
+%194java.lang.String*
+            }\r\n´
+®
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ¨(
+%196java.lang.String"__concat*
+
+%195java.lang.String*
+\r\n¬
+ø
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ≠("
+%197java.lang.String"__concat*
+
+%196java.lang.String*
+            .es-m-p0t {\r\n÷
+”
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} Æ(6
+%198java.lang.String"__concat*
+
+%197java.lang.String*31
+/                padding-top: 0px !important\r\n∏
+µ
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} Ø(
+%199java.lang.String"__concat*
+
+%198java.lang.String*
+            }\r\n´
+®
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ∞(
+%200java.lang.String"__concat*
+
+%199java.lang.String*
+\r\n¬
+ø
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ±("
+%201java.lang.String"__concat*
+
+%200java.lang.String*
+            .es-m-p0b {\r\n◊
+‘
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ≤(7
+%202java.lang.String"__concat*
+
+%201java.lang.String*42
+0                padding-bottom: 0 !important\r\n∏
+µ
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ≥(
+%203java.lang.String"__concat*
+
+%202java.lang.String*
+            }\r\n´
+®
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ¥(
+%204java.lang.String"__concat*
+
+%203java.lang.String*
+\r\n√
+¿
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} µ(#
+%205java.lang.String"__concat*
+
+%204java.lang.String* 
+            .es-m-p20b {\r\n⁄
+◊
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ∂(:
+%206java.lang.String"__concat*
+
+%205java.lang.String*75
+3                padding-bottom: 20px !important\r\n∏
+µ
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ∑(
+%207java.lang.String"__concat*
+
+%206java.lang.String*
+            }\r\n´
+®
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ∏(
+%208java.lang.String"__concat*
+
+%207java.lang.String*
+\r\n…
+∆
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} π()
+%209java.lang.String"__concat*
+
+%208java.lang.String*&$
+"            .es-mobile-hidden,\r\n√
+¿
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ∫(#
+%210java.lang.String"__concat*
+
+%209java.lang.String* 
+            .es-hidden {\r\n”
+–
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ª(3
+%211java.lang.String"__concat*
+
+%210java.lang.String*0.
+,                display: none !important\r\n∏
+µ
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} º(
+%212java.lang.String"__concat*
+
+%211java.lang.String*
+            }\r\n´
+®
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} Ω(
+%213java.lang.String"__concat*
+
+%212java.lang.String*
+\r\n»
+≈
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} æ((
+%214java.lang.String"__concat*
+
+%213java.lang.String*%#
+!            .es-desk-hidden {\r\nŸ
+÷
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ø(9
+%215java.lang.String"__concat*
+
+%214java.lang.String*64
+2                display: table-row !important;\r\n“
+œ
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ¿(2
+%216java.lang.String"__concat*
+
+%215java.lang.String*/-
++                width: auto !important;\r\nÿ
+’
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ¡(8
+%217java.lang.String"__concat*
+
+%216java.lang.String*53
+1                overflow: visible !important;\r\n“
+œ
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ¬(2
+%218java.lang.String"__concat*
+
+%217java.lang.String*/-
++                float: none !important;\r\n⁄
+◊
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} √(:
+%219java.lang.String"__concat*
+
+%218java.lang.String*75
+3                max-height: inherit !important;\r\n⁄
+◊
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ƒ(:
+%220java.lang.String"__concat*
+
+%219java.lang.String*75
+3                line-height: inherit !important\r\n∏
+µ
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ≈(
+%221java.lang.String"__concat*
+
+%220java.lang.String*
+            }\r\n´
+®
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ∆(
+%222java.lang.String"__concat*
+
+%221java.lang.String*
+\r\nÕ
+ 
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} «(-
+%223java.lang.String"__concat*
+
+%222java.lang.String**(
+&            .es-desk-menu-hidden {\r\nŸ
+÷
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} »(9
+%224java.lang.String"__concat*
+
+%223java.lang.String*64
+2                display: table-cell !important\r\n∏
+µ
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} …(
+%225java.lang.String"__concat*
+
+%224java.lang.String*
+            }\r\n´
+®
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java}  (
+%226java.lang.String"__concat*
+
+%225java.lang.String*
+\r\n–
+Õ
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} À(0
+%227java.lang.String"__concat*
+
+%226java.lang.String*-+
+)            table.es-table-not-adapt,\r\nŒ
+À
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} Ã(.
+%228java.lang.String"__concat*
+
+%227java.lang.String*+)
+'            .esd-block-html table {\r\n—
+Œ
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} Õ(1
+%229java.lang.String"__concat*
+
+%228java.lang.String*.,
+*                width: auto !important\r\n∏
+µ
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} Œ(
+%230java.lang.String"__concat*
+
+%229java.lang.String*
+            }\r\n´
+®
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} œ(
+%231java.lang.String"__concat*
+
+%230java.lang.String*
+\r\n»
+≈
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} –((
+%232java.lang.String"__concat*
+
+%231java.lang.String*%#
+!            table.es-social {\r\n€
+ÿ
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} —(;
+%233java.lang.String"__concat*
+
+%232java.lang.String*86
+4                display: inline-block !important\r\n∏
+µ
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} “(
+%234java.lang.String"__concat*
+
+%233java.lang.String*
+            }\r\n´
+®
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ”(
+%235java.lang.String"__concat*
+
+%234java.lang.String*
+\r\nÀ
+»
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ‘(+
+%236java.lang.String"__concat*
+
+%235java.lang.String*(&
+$            table.es-social td {\r\n€
+ÿ
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ’(;
+%237java.lang.String"__concat*
+
+%236java.lang.String*86
+4                display: inline-block !important\r\n∏
+µ
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ÷(
+%238java.lang.String"__concat*
+
+%237java.lang.String*
+            }\r\n¥
+±
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ◊(
+%239java.lang.String"__concat*
+
+%238java.lang.String*
+        }\r\n´
+®
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ÿ(
+%240java.lang.String"__concat*
+
+%239java.lang.String*
+\r\n‘
+—
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} Ÿ(4
+%241java.lang.String"__concat*
+
+%240java.lang.String*1/
+-        .rollover:hover .rollover-first {\r\n“
+œ
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ⁄(2
+%242java.lang.String"__concat*
+
+%241java.lang.String*/-
++            max-height: 0px !important;\r\n–
+Õ
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} €(0
+%243java.lang.String"__concat*
+
+%242java.lang.String*-+
+)            display: none !important;\r\n¥
+±
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ‹(
+%244java.lang.String"__concat*
+
+%243java.lang.String*
+        }\r\n´
+®
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ›(
+%245java.lang.String"__concat*
+
+%244java.lang.String*
+\r\n’
+“
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ﬁ(5
+%246java.lang.String"__concat*
+
+%245java.lang.String*20
+.        .rollover:hover .rollover-second {\r\n”
+–
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ﬂ(3
+%247java.lang.String"__concat*
+
+%246java.lang.String*0.
+,            max-height: none !important;\r\n—
+Œ
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ‡(1
+%248java.lang.String"__concat*
+
+%247java.lang.String*.,
+*            display: block !important;\r\n¥
+±
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ·(
+%249java.lang.String"__concat*
+
+%248java.lang.String*
+        }\r\n´
+®
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ‚(
+%250java.lang.String"__concat*
+
+%249java.lang.String*
+\r\nø
+º
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} „(
+%251java.lang.String"__concat*
+
+%250java.lang.String*
+        #outlook a {\r\n¬
+ø
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ‰("
+%252java.lang.String"__concat*
+
+%251java.lang.String*
+            padding: 0;\r\n¥
+±
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} Â(
+%253java.lang.String"__concat*
+
+%252java.lang.String*
+        }\r\n´
+®
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} Ê(
+%254java.lang.String"__concat*
+
+%253java.lang.String*
+\r\n√
+¿
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} Á(#
+%255java.lang.String"__concat*
+
+%254java.lang.String* 
+        .ExternalClass {\r\n√
+¿
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} Ë(#
+%256java.lang.String"__concat*
+
+%255java.lang.String* 
+            width: 100%;\r\n¥
+±
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} È(
+%257java.lang.String"__concat*
+
+%256java.lang.String*
+        }\r\n´
+®
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} Í(
+%258java.lang.String"__concat*
+
+%257java.lang.String*
+\r\n¬
+ø
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} Î("
+%259java.lang.String"__concat*
+
+%258java.lang.String*
+        .ExternalClass,\r\nƒ
+¡
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} Ï($
+%260java.lang.String"__concat*
+
+%259java.lang.String*!
+        .ExternalClass p,\r\n«
+ƒ
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} Ì('
+%261java.lang.String"__concat*
+
+%260java.lang.String*$"
+         .ExternalClass span,\r\n«
+ƒ
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} Ó('
+%262java.lang.String"__concat*
+
+%261java.lang.String*$"
+         .ExternalClass font,\r\n≈
+¬
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} Ô(%
+%263java.lang.String"__concat*
+
+%262java.lang.String*" 
+        .ExternalClass td,\r\n«
+ƒ
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ('
+%264java.lang.String"__concat*
+
+%263java.lang.String*$"
+         .ExternalClass div {\r\n…
+∆
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} Ò()
+%265java.lang.String"__concat*
+
+%264java.lang.String*&$
+"            line-height: 100%;\r\n¥
+±
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} Ú(
+%266java.lang.String"__concat*
+
+%265java.lang.String*
+        }\r\n´
+®
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} Û(
+%267java.lang.String"__concat*
+
+%266java.lang.String*
+\r\nø
+º
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} Ù(
+%268java.lang.String"__concat*
+
+%267java.lang.String*
+        .es-button {\r\n⁄
+◊
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ı(:
+%269java.lang.String"__concat*
+
+%268java.lang.String*75
+3            mso-style-priority: 100 !important;\r\nÿ
+’
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ˆ(8
+%270java.lang.String"__concat*
+
+%269java.lang.String*53
+1            text-decoration: none !important;\r\n¥
+±
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ˜(
+%271java.lang.String"__concat*
+
+%270java.lang.String*
+        }\r\n´
+®
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ¯(
+%272java.lang.String"__concat*
+
+%271java.lang.String*
+\r\nŒ
+À
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ˘(.
+%273java.lang.String"__concat*
+
+%272java.lang.String*+)
+'        a[x-apple-data-detectors] {\r\n—
+Œ
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ˙(1
+%274java.lang.String"__concat*
+
+%273java.lang.String*.,
+*            color: inherit !important;\r\nÿ
+’
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ˚(8
+%275java.lang.String"__concat*
+
+%274java.lang.String*53
+1            text-decoration: none !important;\r\n’
+“
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ¸(5
+%276java.lang.String"__concat*
+
+%275java.lang.String*20
+.            font-size: inherit !important;\r\n◊
+‘
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ˝(7
+%277java.lang.String"__concat*
+
+%276java.lang.String*42
+0            font-family: inherit !important;\r\n◊
+‘
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ˛(7
+%278java.lang.String"__concat*
+
+%277java.lang.String*42
+0            font-weight: inherit !important;\r\n◊
+‘
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ˇ(7
+%279java.lang.String"__concat*
+
+%278java.lang.String*42
+0            line-height: inherit !important;\r\n¥
+±
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} Ä(
+%280java.lang.String"__concat*
+
+%279java.lang.String*
+        }\r\n´
+®
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} Å(
+%281java.lang.String"__concat*
+
+%280java.lang.String*
+\r\nƒ
+¡
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} Ç($
+%282java.lang.String"__concat*
+
+%281java.lang.String*!
+        .es-desk-hidden {\r\n≈
+¬
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} É(%
+%283java.lang.String"__concat*
+
+%282java.lang.String*" 
+            display: none;\r\n√
+¿
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} Ñ(#
+%284java.lang.String"__concat*
+
+%283java.lang.String* 
+            float: left;\r\n»
+≈
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} Ö((
+%285java.lang.String"__concat*
+
+%284java.lang.String*%#
+!            overflow: hidden;\r\n¿
+Ω
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} Ü( 
+%286java.lang.String"__concat*
+
+%285java.lang.String*
+            width: 0;\r\n≈
+¬
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} á(%
+%287java.lang.String"__concat*
+
+%286java.lang.String*" 
+            max-height: 0;\r\n∆
+√
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} à(&
+%288java.lang.String"__concat*
+
+%287java.lang.String*#!
+            line-height: 0;\r\n≈
+¬
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} â(%
+%289java.lang.String"__concat*
+
+%288java.lang.String*" 
+            mso-hide: all;\r\n¥
+±
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ä(
+%290java.lang.String"__concat*
+
+%289java.lang.String*
+        }\r\n´
+®
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ã(
+%291java.lang.String"__concat*
+
+%290java.lang.String*
+\r\nÃ
+…
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} å(,
+%292java.lang.String"__concat*
+
+%291java.lang.String*)'
+%        .es-button-border:hover {\r\nË
+Â
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ç(H
+%293java.lang.String"__concat*
+
+%292java.lang.String*EC
+A            border-style: solid solid solid solid !important;\r\n÷
+”
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} é(6
+%294java.lang.String"__concat*
+
+%293java.lang.String*31
+/            background: #d6a700 !important;\r\n
+Ì
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} è(P
+%295java.lang.String"__concat*
+
+%294java.lang.String*MK
+I            border-color: #42d159 #42d159 #42d159 #42d159 !important;\r\n¥
+±
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ê(
+%296java.lang.String"__concat*
+
+%295java.lang.String*
+        }\r\n´
+®
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ë(
+%297java.lang.String"__concat*
+
+%296java.lang.String*
+\r\nÿ
+’
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} í(8
+%298java.lang.String"__concat*
+
+%297java.lang.String*53
+1        .es-button-border:hover a.es-button {\r\n÷
+”
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ì(6
+%299java.lang.String"__concat*
+
+%298java.lang.String*31
+/            background: #d6a700 !important;\r\nÿ
+’
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} î(8
+%300java.lang.String"__concat*
+
+%299java.lang.String*53
+1            border-color: #d6a700 !important;\r\n¥
+±
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ï(
+%301java.lang.String"__concat*
+
+%300java.lang.String*
+        }\r\n´
+®
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ñ(
+%302java.lang.String"__concat*
+
+%301java.lang.String*
+\r\n∑
+¥
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ó(
+%303java.lang.String"__concat*
+
+%302java.lang.String*
+    </style>\r\n≤
+Ø
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ò(
+%304java.lang.String"__concat*
+
+%303java.lang.String*
+</head>\r\n´
+®
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ô(
+%305java.lang.String"__concat*
+
+%304java.lang.String*
+\r\nŸ
+÷
+]
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ö(µ
+%306java.lang.String"__concat*
+
+%305java.lang.String*¥±
+Æ<body style=\"width:100%;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;padding:0;Margin:0;\">\r\nÛ
+
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} õ(S
+%307java.lang.String"__concat*
+
+%306java.lang.String*PN
+L    <div class=\"es-wrapper-color\" style=\"background-color:#F6F6F6;\">\r\n€
+ÿ
+]
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ú(∑
+%308java.lang.String"__concat*
+
+%307java.lang.String*∂≥
+∞        <!--[if gte mso 9]><v:background xmlns:v=\"urn:schemas-microsoft-com:vml\" fill=\"t\"> <v:fill type=\"tile\" color=\"#f6f6f6\"></v:fill> </v:background><![endif]-->\r\n…
+∆
+]
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ù(•
+%309java.lang.String"__concat*
+
+%308java.lang.String*§°
+û        <table class=\"es-wrapper\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" style=\"mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;padding:0;Margin:0;width:100%;height:100%;background-repeat:repeat;background-position:center top;\">\r\nﬂ
+‹
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} û(?
+%310java.lang.String"__concat*
+
+%309java.lang.String*<:
+8            <tr style=\"border-collapse:collapse;\">\r\n¸
+˘
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ü(\
+%311java.lang.String"__concat*
+
+%310java.lang.String*YW
+U                <td class=\"st-br\" valign=\"top\" style=\"padding:0;Margin:0;\">\r\nÚ
+Ô
+]
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} †(Œ
+%312java.lang.String"__concat*
+
+%311java.lang.String*Õ 
+«                    <table cellpadding=\"0\" cellspacing=\"0\" class=\"es-header\" align=\"center\" style=\"mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;table-layout:fixed !important;width:100%;background-color:transparent;background-repeat:repeat;background-position:center top;\">\r\nÎ
+Ë
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} °(K
+%313java.lang.String"__concat*
+
+%312java.lang.String*HF
+D                        <tr style=\"border-collapse:collapse;\">\r\n¸
+˘
+]
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ¢(ÿ
+%314java.lang.String"__concat*
+
+%313java.lang.String*◊‘
+—                            <td align=\"center\" style=\"padding:0;Margin:0;background-image:url(https://fxgfij.stripocdn.email/content/guids/CABINET_0185ec3caf0610f4b9817aa1405149a0/images/20841560930387653.jpg);background-color:transparent;background-position:center bottom;background-repeat:no-repeat;\" bgcolor=\"transparent\" background=\"https://fxgfij.stripocdn.email/content/guids/CABINET_0185ec3caf0610f4b9817aa1405149a0/images/20841560930387653.jpg\">\r\n‚
+ﬂ
+]
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} £(æ
+%315java.lang.String"__concat*
+
+%314java.lang.String*Ω∫
+∑                                <!--[if gte mso 9]><v:rect xmlns:v=\"urn:schemas-microsoft-com:vml\" fill=\"true\" stroke=\"false\" style=\"mso-width-percent:1000;height:204px;\">\r\nÜ
+É
+]
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} §(‚
+%316java.lang.String"__concat*
+
+%315java.lang.String*·ﬁ
+€<v:fill type=\"tile\" src=\"https://pics.esputnik.com/repository/home/17278/common/images/1546958148946.jpg\" color=\"#343434\" origin=\"0.5, 0\" position=\"0.5,0\"></v:fill><v:textbox inset=\"0,0,0,0\"><![endif]-->\r\n–
+Õ
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} •(0
+%317java.lang.String"__concat*
+
+%316java.lang.String*-+
+)                                <div>\r\nÃ
+…
+]
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ¶(®
+%318java.lang.String"__concat*
+
+%317java.lang.String*ß§
+°                                    <table bgcolor=\"transparent\" class=\"es-header-body\" align=\"center\" cellpadding=\"0\" cellspacing=\"0\" width=\"600\" style=\"mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;background-color:transparent;\">\r\n˚
+¯
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ß([
+%319java.lang.String"__concat*
+
+%318java.lang.String*XV
+T                                        <tr style=\"border-collapse:collapse;\">\r\n˜
+Ù
+]
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ®(”
+%320java.lang.String"__concat*
+
+%319java.lang.String*“œ
+Ã                                            <td align=\"left\" bgcolor=\"transparent\" style=\"padding:0;Margin:0;padding-top:20px;padding-left:20px;padding-right:20px;background-color:transparent;\">\r\n˙
+˜
+]
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ©(÷
+%321java.lang.String"__concat*
+
+%320java.lang.String*’“
+œ                                                <table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" style=\"mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;\">\r\ná
+Ñ
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ™(g
+%322java.lang.String"__concat*
+
+%321java.lang.String*db
+`                                                    <tr style=\"border-collapse:collapse;\">\r\n∑
+¥
+]
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ´(ì
+%323java.lang.String"__concat*
+
+%322java.lang.String*íè
+å                                                        <td width=\"560\" align=\"center\" valign=\"top\" style=\"padding:0;Margin:0;\">\r\nú
+ô
+]
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ¨(¯
+%324java.lang.String"__concat*
+
+%323java.lang.String*˜Ù
+Ò                                                            <table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" role=\"presentation\" style=\"mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;\">\r\nì
+ê
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ≠(s
+%325java.lang.String"__concat*
+
+%324java.lang.String*pn
+l                                                                <tr style=\"border-collapse:collapse;\">\r\n°
+û
+]
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} Æ(Ä
+%326java.lang.String"__concat*
+
+%325java.lang.String*}{
+y                                                                    <td align=\"left\" style=\"padding:0;Margin:0;\">\r\nÁ
+‰
+]
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} Ø(√
+%327java.lang.String"__concat*
+
+%326java.lang.String*¬ø
+º                                                                        <p style=\"Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:104px;font-family:'Summertime', 'Summertime', helvetica, arial, sans-serif;line-height:81px;color:#FFFFFF;\">&nbsp; &nbsp; &nbsp;¡
+æ
+]
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} Ø(À
+%328java.lang.String"__concat*
+
+%327java.lang.String*
+
+appNamejava.lang.String∞
+≠
+]
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} Ø(÷
+%329java.lang.String"__concat*
+
+%328java.lang.String*
+
+</p>\r\nÙ
+Ò
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ∞(T
+%330java.lang.String"__concat*
+
+%329java.lang.String*QO
+M                                                                    </td>\r\n
+Ì
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ±(P
+%331java.lang.String"__concat*
+
+%330java.lang.String*MK
+I                                                                </tr>\r\nì
+ê
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ≤(s
+%332java.lang.String"__concat*
+
+%331java.lang.String*pn
+l                                                                <tr style=\"border-collapse:collapse;\">\r\nπ
+∂
+]
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ≥(ï
+%333java.lang.String"__concat*
+
+%332java.lang.String*îë
+é                                                                    <td align=\"center\" height=\"63\" style=\"padding:0;Margin:0;\"></td>\r\n
+Ì
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ¥(P
+%334java.lang.String"__concat*
+
+%333java.lang.String*MK
+I                                                                </tr>\r\nÔ
+Ï
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} µ(O
+%335java.lang.String"__concat*
+
+%334java.lang.String*LJ
+H                                                            </table>\r\nË
+Â
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ∂(H
+%336java.lang.String"__concat*
+
+%335java.lang.String*EC
+A                                                        </td>\r\n‰
+·
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ∑(D
+%337java.lang.String"__concat*
+
+%336java.lang.String*A?
+=                                                    </tr>\r\n„
+‡
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ∏(C
+%338java.lang.String"__concat*
+
+%337java.lang.String*@>
+<                                                </table>\r\n‹
+Ÿ
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} π(<
+%339java.lang.String"__concat*
+
+%338java.lang.String*97
+5                                            </td>\r\nÿ
+’
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ∫(8
+%340java.lang.String"__concat*
+
+%339java.lang.String*53
+1                                        </tr>\r\n◊
+‘
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ª(7
+%341java.lang.String"__concat*
+
+%340java.lang.String*42
+0                                    </table>\r\n—
+Œ
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} º(1
+%342java.lang.String"__concat*
+
+%341java.lang.String*.,
+*                                </div>\r\nˇ
+¸
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} Ω(_
+%343java.lang.String"__concat*
+
+%342java.lang.String*\Z
+X                                <!--[if gte mso 9]></v:textbox></v:rect><![endif]-->\r\nÃ
+…
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} æ(,
+%344java.lang.String"__concat*
+
+%343java.lang.String*)'
+%                            </td>\r\n»
+≈
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ø((
+%345java.lang.String"__concat*
+
+%344java.lang.String*%#
+!                        </tr>\r\n«
+ƒ
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ¿('
+%346java.lang.String"__concat*
+
+%345java.lang.String*$"
+                     </table>\r\nû
+õ
+]
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ¡(˙
+%347java.lang.String"__concat*
+
+%346java.lang.String*˘ˆ
+Û                    <table cellpadding=\"0\" cellspacing=\"0\" class=\"es-content\" align=\"center\" style=\"mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;table-layout:fixed !important;width:100%;\">\r\nÎ
+Ë
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ¬(K
+%348java.lang.String"__concat*
+
+%347java.lang.String*HF
+D                        <tr style=\"border-collapse:collapse;\">\r\n˙
+˜
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} √(Z
+%349java.lang.String"__concat*
+
+%348java.lang.String*WU
+S                            <td align=\"center\" style=\"padding:0;Margin:0;\">\r\n≈
+¬
+]
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ƒ(°
+%350java.lang.String"__concat*
+
+%349java.lang.String*†ù
+ö                                <table bgcolor=\"#ffffff\" class=\"es-content-body\" align=\"center\" cellpadding=\"0\" cellspacing=\"0\" width=\"600\" style=\"mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;background-color:transparent;\">\r\n˜
+Ù
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ≈(W
+%351java.lang.String"__concat*
+
+%350java.lang.String*TR
+P                                    <tr style=\"border-collapse:collapse;\">\r\n‡
+›
+]
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ∆(º
+%352java.lang.String"__concat*
+
+%351java.lang.String*ª∏
+µ                                        <td align=\"left\" style=\"padding:0;Margin:0;padding-top:20px;padding-left:20px;padding-right:20px;background-position:center center;\">\r\nˆ
+Û
+]
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} «(“
+%353java.lang.String"__concat*
+
+%352java.lang.String*—Œ
+À                                            <table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" style=\"mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;\">\r\nÉ
+Ä
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} »(c
+%354java.lang.String"__concat*
+
+%353java.lang.String*`^
+\                                                <tr style=\"border-collapse:collapse;\">\r\n≥
+∞
+]
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} …(è
+%355java.lang.String"__concat*
+
+%354java.lang.String*éã
+à                                                    <td width=\"560\" align=\"center\" valign=\"top\" style=\"padding:0;Margin:0;\">\r\nò
+ï
+]
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java}  (Ù
+%356java.lang.String"__concat*
+
+%355java.lang.String*Û
+Ì                                                        <table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" role=\"presentation\" style=\"mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;\">\r\nè
+å
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} À(o
+%357java.lang.String"__concat*
+
+%356java.lang.String*lj
+h                                                            <tr style=\"border-collapse:collapse;\">\r\nµ
+≤
+]
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} Ã(ë
+%358java.lang.String"__concat*
+
+%357java.lang.String*êç
+ä                                                                <td align=\"left\" class=\"es-m-txt-c\" style=\"padding:0;Margin:0;\">\r\nø
+º
+]
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} Õ(õ
+%359java.lang.String"__concat*
+
+%358java.lang.String*öó
+î                                                                    <h1 style=\"Margin:0;line-height:36px;mso-line-height-rule:exactly;font-family:tahoma, verdana, segoe, sans-serif;font-size:30px;font-style:normal;font-weight:bold;color:#212121;text-align:left;\">Welcome to ¡
+æ
+]
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} Õ(£
+%360java.lang.String"__concat*
+
+%359java.lang.String*
+
+appNamejava.lang.String≤
+Ø
+]
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} Õ(∞
+%361java.lang.String"__concat*
+
+%360java.lang.String*
+
+!</h1>\r\n
+Ì
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} Œ(P
+%362java.lang.String"__concat*
+
+%361java.lang.String*MK
+I                                                                </td>\r\nÏ
+È
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} œ(L
+%363java.lang.String"__concat*
+
+%362java.lang.String*IG
+E                                                            </tr>\r\nè
+å
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} –(o
+%364java.lang.String"__concat*
+
+%363java.lang.String*lj
+h                                                            <tr style=\"border-collapse:collapse;\">\r\n∆
+√
+]
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} —(¢
+%365java.lang.String"__concat*
+
+%364java.lang.String*°û
+õ                                                                <td align=\"left\" class=\"es-m-txt-c\" style=\"padding:0;Margin:0;padding-top:20px;\">\r\n–
+Õ
+]
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} “(¨
+%366java.lang.String"__concat*
+
+%365java.lang.String*´®
+•                                                                    <p style=\"Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:18px;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;line-height:27px;color:#999999;\">\r\nò
+ï
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ”(x
+%367java.lang.String"__concat*
+
+%366java.lang.String*us
+q                                                                        These are your Login Credentials:</p>\r\n
+Ì
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ‘(P
+%368java.lang.String"__concat*
+
+%367java.lang.String*MK
+I                                                                </td>\r\nÏ
+È
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ’(L
+%369java.lang.String"__concat*
+
+%368java.lang.String*IG
+E                                                            </tr>\r\nè
+å
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ÷(o
+%370java.lang.String"__concat*
+
+%369java.lang.String*lj
+h                                                            <tr style=\"border-collapse:collapse;\">\r\n∆
+√
+]
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ◊(¢
+%371java.lang.String"__concat*
+
+%370java.lang.String*°û
+õ                                                                <td align=\"left\" class=\"es-m-txt-c\" style=\"padding:0;Margin:0;padding-top:20px;\">\r\né
+ã
+]
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ÿ(Í
+%372java.lang.String"__concat*
+
+%371java.lang.String*ÈÊ
+„                                                                    <p style=\"Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:20px;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;line-height:30px;color:#131313;\"><span style=\"color:#D3D3D3;\">Your username:&nbsp;</span><strong>æ
+ª
+]
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ÿ(Ô
+%373java.lang.String"__concat*
+
+%372java.lang.String*
+
+userjava.lang.StringÚ
+Ô
+]
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ÿ(º
+%374java.lang.String"__concat*
+
+%373java.lang.String*NL
+J</strong><br><span style=\"color:#D3D3D3;\">Your password: </span><strong>ø
+º
+]
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ÿ(¬
+%375java.lang.String"__concat*
+
+%374java.lang.String*
+
+pass1java.lang.Stringπ
+∂
+]
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ÿ(÷
+%376java.lang.String"__concat*
+
+%375java.lang.String*
+</strong></p>\r\n
+Ì
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} Ÿ(P
+%377java.lang.String"__concat*
+
+%376java.lang.String*MK
+I                                                                </td>\r\nÏ
+È
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ⁄(L
+%378java.lang.String"__concat*
+
+%377java.lang.String*IG
+E                                                            </tr>\r\nè
+å
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} €(o
+%379java.lang.String"__concat*
+
+%378java.lang.String*lj
+h                                                            <tr style=\"border-collapse:collapse;\">\r\nÑ
+Å
+]
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ‹(‡
+%380java.lang.String"__concat*
+
+%379java.lang.String*ﬂ‹
+Ÿ                                                                <td align=\"left\" class=\"es-m-txt-c\" style=\"padding:0;Margin:0;padding-top:20px;padding-bottom:20px;\"><span class=\"es-button-border\" style=\"border-style:solid;border-color:#2CB543;background:#FFC80A;border-width:0px;display:inline-block;border-radius:3px;width:auto;\">\r\n˜
+Ù
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ›(W
+%381java.lang.String"__concat*
+
+%380java.lang.String*TR
+P                                                                        <a href=”
+–
+]
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java›Z ›(p+
+%382#tfg.licensoft.api.GeneralController"__id*<*:#
+!tfg.licensoft.api.LoginController"
+generalController¿
+Ω
+]
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java›Z ›(z
+%383java.lang.String"__id*<*:
++
+%382#tfg.licensoft.api.GeneralController"
+	appDomainΩ
+∫
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ›(z
+%384java.lang.String"__concat*
+
+%381java.lang.String*
+
+%383java.lang.String≤
+Ø
+]
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ›(Ü
+%385java.lang.String"__concat*
+
+%384java.lang.String*çä
+á class=\"es-button\" target=\"_blank\" style=\"mso-style-priority:100 !important;text-decoration:none;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;font-size:18px;color:#FFFFFF;border-style:solid;border-color:#FFC80A;border-width:15px 30px;display:inline-block;background:#FFC80A;border-radius:3px;font-weight:normal;font-style:normal;line-height:22px;width:auto;text-align:center;\">Go to web</a></span></td>\r\nÏ
+È
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ﬁ(L
+%386java.lang.String"__concat*
+
+%385java.lang.String*IG
+E                                                            </tr>\r\nÎ
+Ë
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ﬂ(K
+%387java.lang.String"__concat*
+
+%386java.lang.String*HF
+D                                                        </table>\r\n‰
+·
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ‡(D
+%388java.lang.String"__concat*
+
+%387java.lang.String*A?
+=                                                    </td>\r\n‡
+›
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ·(@
+%389java.lang.String"__concat*
+
+%388java.lang.String*=;
+9                                                </tr>\r\nﬂ
+‹
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ‚(?
+%390java.lang.String"__concat*
+
+%389java.lang.String*<:
+8                                            </table>\r\nÿ
+’
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} „(8
+%391java.lang.String"__concat*
+
+%390java.lang.String*53
+1                                        </td>\r\n‘
+—
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} ‰(4
+%392java.lang.String"__concat*
+
+%391java.lang.String*1/
+-                                    </tr>\r\n”
+–
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} Â(3
+%393java.lang.String"__concat*
+
+%392java.lang.String*0.
+,                                </table>\r\nÃ
+…
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} Ê(,
+%394java.lang.String"__concat*
+
+%393java.lang.String*)'
+%                            </td>\r\n»
+≈
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} Á((
+%395java.lang.String"__concat*
+
+%394java.lang.String*%#
+!                        </tr>\r\n«
+ƒ
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} Ë('
+%396java.lang.String"__concat*
+
+%395java.lang.String*$"
+                     </table>\r\n¿
+Ω
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} È( 
+%397java.lang.String"__concat*
+
+%396java.lang.String*
+                </td>\r\nº
+π
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} Í(
+%398java.lang.String"__concat*
+
+%397java.lang.String*
+            </tr>\r\nª
+∏
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} Î(
+%399java.lang.String"__concat*
+
+%398java.lang.String*
+        </table>\r\nµ
+≤
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} Ï(
+%400java.lang.String"__concat*
+
+%399java.lang.String*
+    </div>\r\n≤
+Ø
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} Ì(
+%401java.lang.String"__concat*
+
+%400java.lang.String*
+</body>\r\n´
+®
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} Ó(
+%402java.lang.String"__concat*
+
+%401java.lang.String*
+\r\n≤
+Ø
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} Ô(
+%403java.lang.String"__concat*
+
+%402java.lang.String*
+</html>\r\n•
+¢
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java} (
+%404java.lang.String"__concat*
+
+%403java.lang.String* ¶
+£
+\
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java| (!
+htmlCodeEmailjava.lang.String"__id*
+
+%404java.lang.StringÕ
+ 
+]
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.javaÒ Ò(+
+%405#tfg.licensoft.tools.EmailSenderTool"__id*6*4#
+!tfg.licensoft.api.LoginController"
+emailSenderØ¨
+]
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.javaÒ Ò(<
+%406void"jtfg.licensoft.tools.EmailSenderTool#sendHtmlEmail(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V*-
++
+%405#tfg.licensoft.tools.EmailSenderTool*
+
+subjava.lang.String*#
+!
+htmlCodeEmailjava.lang.String*
+
+emailjava.lang.String2EsendHtmlEmail(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)ù
+ö
+]
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.javaÚ, Ú(9+
+%407#org.springframework.http.HttpStatus"__id*
+""ºπ
+]
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.javaÚ Ú("/
+%408'org.springframework.http.ResponseEntity"'org.springframework.http.ResponseEntity›
+⁄
+]
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.javaÚ
+ Ú(:
+%409"horg.springframework.http.ResponseEntity#<init>(Ljava/lang/Object;Lorg/springframework/http/HttpStatus;)V*1
+/
+%408'org.springframework.http.ResponseEntity*%
+#
+newUsertfg.licensoft.users.User*-
++
+%407#org.springframework.http.HttpStatus"í
+]
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.javaÚ Ú(;1
+/
+%408'org.springframework.http.ResponseEntity*÷
+14[
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.javad d(¬
+ø
+[
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.javad d(%
+%0tfg.licensoft.users.UserService"__id*3*1#
+!tfg.licensoft.api.LoginController"
+
+userServøº
+[
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.javad d()
+%1tfg.licensoft.users.User"Xtfg.licensoft.users.UserService#findByName(Ljava/lang/String;)Ltfg/licensoft/users/User;*'
+%
+%0tfg.licensoft.users.UserService*
+
+userjava.lang.String2findByName(Ljava/lang/String;)≠
+™
+[
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.javad d(*#
+newUsertfg.licensoft.users.User"__id* 
+
+%1tfg.licensoft.users.User¬
+ø
+[
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.javae e(%
+%2tfg.licensoft.users.UserService"__id*3*1#
+!tfg.licensoft.api.LoginController"
+
+userServ¬ø
+[
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.javae e(0
+%3tfg.licensoft.users.User"Ytfg.licensoft.users.UserService#findByEmail(Ljava/lang/String;)Ltfg/licensoft/users/User;*'
+%
+%2tfg.licensoft.users.UserService*
+
+emailjava.lang.String2findByEmail(Ljava/lang/String;)≤
+Ø
+[
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.javae e(1(
+newUserEmailtfg.licensoft.users.User"__id* 
+
+%3tfg.licensoft.users.UserÛ
+[
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.javag g(
+%4boolean",java.lang.String#equals(Ljava/lang/Object;)Z*
+
+pass1java.lang.String*
+
+pass2java.lang.String2equals(Ljava/lang/Object;)*
+11
+1*º
+startingBlock[
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.javab% c(~ 
+«
+[
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.javab3 b(@
+%413"
+__annotate*86
+4org.springframework.web.bind.annotation.PathVariable*
+
+userjava.lang.Stringí
+è
+[
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.javabH b(L
+userjava.lang.String"__annotation*
+
+%413À
+»
+[
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.javabN b([
+%414"
+__annotate*86
+4org.springframework.web.bind.annotation.PathVariable*
+
+pass1java.lang.Stringì
+ê
+[
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.javabc b(h
+pass1java.lang.String"__annotation*
+
+%414À
+»
+[
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.javac c(
+%415"
+__annotate*86
+4org.springframework.web.bind.annotation.PathVariable*
+
+pass2java.lang.Stringì
+ê
+[
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.javac c(
+pass2java.lang.String"__annotation*
+
+%415À
+»
+[
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.javac c(,
+%416"
+__annotate*86
+4org.springframework.web.bind.annotation.PathVariable*
+
+emailjava.lang.Stringì
+ê
+[
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.javac4 c(9
+emailjava.lang.String"__annotation*
+
+%416·
+ﬁ
+[
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.javaa a(C
+%417"
+__annotate*75
+3org.springframework.web.bind.annotation.PostMapping*2
+0
+request%javax.servlet.http.HttpServletRequest™
+ß
+[
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.javacM c(T0
+request%javax.servlet.http.HttpServletRequest"__annotation*
+
+%417Ó
+Î
+[
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.javaa a(C
+%418"
+__annotate*75
+3org.springframework.web.bind.annotation.PostMapping*?
+=
+httpServletResponse&javax.servlet.http.HttpServletResponse∑
+¥
+[
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.javacj c(}=
+httpServletResponse&javax.servlet.http.HttpServletResponse"__annotation*
+
+%418*
+14*√
+4[
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.javar r(€ÿ
+[
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.javar r(
+%17void"Rjavax.servlet.http.HttpServletRequest#login(Ljava/lang/String;Ljava/lang/String;)V*2
+0
+request%javax.servlet.http.HttpServletRequest*
+
+userjava.lang.String*
+
+pass1java.lang.String2+login(Ljava/lang/String;Ljava/lang/String;)*
+2*á
+7[
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.javam m(Küú
+[
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.javam m(K
+%15void"Atfg.licensoft.users.UserService#save(Ltfg/licensoft/users/User;)V*(
+&
+%11tfg.licensoft.users.UserService*!
+
+%13tfg.licensoft.users.User2 save(Ltfg/licensoft/users/User;)*
+4*è
+8[
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.javam2 m(6õò
+[
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.javam m(
+%13tfg.licensoft.users.User"tfg.licensoft.users.Userâ
+Ü
+[
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.javam m(J
+%14"}tfg.licensoft.users.User#<init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V*!
+
+%13tfg.licensoft.users.User*
+
+emailjava.lang.String*
+
+%12java.lang.String*
+
+userjava.lang.String*
+
+pass1java.lang.String*
+	ROLE_USER*
+7*¬
+9[
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.javal l(J±
+Æ
+[
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.javal l(J%
+customercom.stripe.model.Customer"__id*"
+ 
+%10com.stripe.model.Customer√
+¿
+[
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.javam m(&
+%11tfg.licensoft.users.UserService"__id*3*1#
+!tfg.licensoft.api.LoginController"
+
+userServ‡›
+[
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.javam! m(1
+%12java.lang.String"3com.stripe.model.Customer#getId()Ljava/lang/String;*'
+%
+customercom.stripe.model.Customer2getId()*
+8*ä
+10[
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.javal l(»
+≈
+[
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.javal l(')
+%9#tfg.licensoft.stripe.StripeServices"__id*5*3#
+!tfg.licensoft.api.LoginController"
+
+stripeServ÷”
+[
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.javal l(I 
+%10com.stripe.model.Customer"^tfg.licensoft.stripe.StripeServices#createCustomer(Ljava/util/Map;)Lcom/stripe/model/Customer;*+
+)
+%9#tfg.licensoft.stripe.StripeServices*$
+"
+customerParameterjava.util.Map2createCustomer(Ljava/util/Map;)*
+9*„
+11[
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.javah* h(Fåâ
+[
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.javah. h(D
+%5java.util.HashMap"java.util.HashMapû
+õ
+[
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.javah* h(F
+%6"java.util.HashMap#<init>()V*
+
+%5java.util.HashMap•
+¢
+[
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.javah h(G"
+customerParameterjava.util.Map"__id*
+
+%5java.util.HashMapŒ
+À
+[
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.javai i(&
+%7java.lang.Object"__mapSet*$
+"
+customerParameterjava.util.Map*
+name*
+
+userjava.lang.String–
+Õ
+[
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.javaj j('
+%8java.lang.Object"__mapSet*$
+"
+customerParameterjava.util.Map*	
+email*
+
+emailjava.lang.String*
+10*∂
+1]
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.javaÙ# Ù(*ù
+ö
+]
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.javaÙ, Ù(?+
+%410#org.springframework.http.HttpStatus"__id*
+""ºπ
+]
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.javaÙ Ù("/
+%411'org.springframework.http.ResponseEntity"'org.springframework.http.ResponseEntity›
+⁄
+]
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.javaÙ
+ Ù(@
+%412"horg.springframework.http.ResponseEntity#<init>(Ljava/lang/Object;Lorg/springframework/http/HttpStatus;)V*1
+/
+%411'org.springframework.http.ResponseEntity*%
+#
+newUsertfg.licensoft.users.User*-
++
+%410#org.springframework.http.HttpStatus"í
+]
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.javaÙ Ù(A1
+/
+%411'org.springframework.http.ResponseEntity:%
+modelorg.springframework.ui.Model:
+userjava.lang.String:
+pass1java.lang.String:
+pass2java.lang.String:
+emailjava.lang.String:0
+request%javax.servlet.http.HttpServletRequest:=
+httpServletResponse&javax.servlet.http.HttpServletResponseB%#
+!tfg.licensoft.api.LoginController

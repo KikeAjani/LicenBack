@@ -1,0 +1,124 @@
+
+Åtfg.licensoft.api.LoginController#getUserLogged(Ljavax/servlet/http/HttpServletRequest;)Lorg/springframework/http/ResponseEntity;]
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.javaÖ Ö(*"startingBlock*Ö
+startingBlock]
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.javaÖ* Ö(G·
+ﬁ
+]
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.javaÑ Ñ("
+%15"
+__annotate*64
+2org.springframework.web.bind.annotation.GetMapping*2
+0
+request%javax.servlet.http.HttpServletRequest´
+®
+]
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.javaÖ? Ö(F0
+request%javax.servlet.http.HttpServletRequest"__annotation*
+
+%15*
+1*˝!
+1]
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.javaÜ[ Ü(pÚ
+Ô
+]
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.javaÜ[ Ü(}?
+%09org.springframework.security.core.context.SecurityContext"áorg.springframework.security.core.context.SecurityContextHolder#getContext()Lorg/springframework/security/core/context/SecurityContext;*C"A
+?org.springframework.security.core.context.SecurityContextHolderÙÒ
+^
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.javaÜ[ Ü(ë6
+%10org.springframework.security.core.Authentication"org.springframework.security.core.context.SecurityContext#getAuthentication()Lorg/springframework/security/core/Authentication;*A
+?
+%09org.springframework.security.core.context.SecurityContext2getAuthentication()§°
+^
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.javaÜ[ Ü(¢
+%2java.util.Collection"Worg.springframework.security.core.Authentication#getAuthorities()Ljava/util/Collection;*8
+6
+%10org.springframework.security.core.Authentication2getAuthorities()¨
+©
+^
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.javaÜ Ü(£#
+authoritiesjava.util.Collection"__id*
+
+%2java.util.Collectionã
+à
+]
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.javaá á(
+%3java.io.PrintStream"__id*
+""π
+∂
+]
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.javaá á(+
+%4java.lang.String"__concat*
+
+??? ->  *%
+#
+authoritiesjava.util.Collection¶
+£
+]
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.javaá á(2
+%5java.lang.String"__concat*
+
+%4java.lang.String*
+  Ú
+Ô
+]
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.javaá5 á(W?
+%69org.springframework.security.core.context.SecurityContext"áorg.springframework.security.core.context.SecurityContextHolder#getContext()Lorg/springframework/security/core/context/SecurityContext;*C"A
+?org.springframework.security.core.context.SecurityContextHolderÛ
+]
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.javaá5 á(k6
+%70org.springframework.security.core.Authentication"org.springframework.security.core.context.SecurityContext#getAuthentication()Lorg/springframework/security/core/Authentication;*A
+?
+%69org.springframework.security.core.context.SecurityContext2getAuthentication()ÿ
+’
+]
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.javaá á(k
+%8java.lang.String"__concat*
+
+%5java.lang.String*8
+6
+%70org.springframework.security.core.AuthenticationÙÒ
+]
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.javaá á(l
+
+%9void"0java.io.PrintStream#println(Ljava/lang/String;)V*
+
+%3java.io.PrintStream*
+
+%8java.lang.String2println(Ljava/lang/String;)Ã
+…
+]
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.javaà" à(4(
+%10!tfg.licensoft.users.UserComponent"__id*8*6#
+!tfg.licensoft.api.LoginController"
+userComponentçä
+]
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.javaà" à(D
+%11tfg.licensoft.users.User"Ktfg.licensoft.users.UserComponent#getLoggedUser()Ltfg/licensoft/users/User;**
+(
+%10!tfg.licensoft.users.UserComponent2getLoggedUser()ú
+ô
+]
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.javaàE à(R*
+%12#org.springframework.http.HttpStatus"__id*
+""ª∏
+]
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.javaà à(!.
+%13'org.springframework.http.ResponseEntity"'org.springframework.http.ResponseEntity÷
+”
+]
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.javaà	 à(S
+%14"horg.springframework.http.ResponseEntity#<init>(Ljava/lang/Object;Lorg/springframework/http/HttpStatus;)V*0
+.
+%13'org.springframework.http.ResponseEntity*!
+
+%11tfg.licensoft.users.User*,
+*
+%12#org.springframework.http.HttpStatus"ë
+]
+QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.javaà à(T0
+.
+%13'org.springframework.http.ResponseEntity:0
+request%javax.servlet.http.HttpServletRequestB%#
+!tfg.licensoft.api.LoginController

@@ -1,0 +1,36 @@
+
+dtfg.licensoft.products.ProductService#getImage(Ltfg/licensoft/products/Product;)Ljava/nio/file/Path;_
+UM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/products/ProductService.java3 3("1*¬
+1_
+UM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/products/ProductService.java4	 4(Œ
+‰
+_
+UM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/products/ProductService.java4	 4(
+%0java.nio.file.Path"__id*
+""ðí
+_
+UM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/products/ProductService.java4 4(/
+%1java.lang.String":tfg.licensoft.products.Product#getName()Ljava/lang/String;*+
+)
+producttfg.licensoft.products.Product2	getName()¬
+©
+_
+UM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/products/ProductService.java4 4(8
+%2java.lang.String"__concat*
+
+%1java.lang.String*
+
+_photo•’
+_
+UM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/products/ProductService.java4	 4(9
+%3java.nio.file.Path"Bjava.nio.file.Path#resolve(Ljava/lang/String;)Ljava/nio/file/Path;*
+
+%0java.nio.file.Path*
+
+%2java.lang.String2resolve(Ljava/lang/String;)"}
+_
+UM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/products/ProductService.java4 4(:
+
+%3java.nio.file.Path:)
+producttfg.licensoft.products.ProductB)'
+%tfg.licensoft.products.ProductService

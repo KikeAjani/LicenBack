@@ -1,0 +1,127 @@
+
+:tfg.licensoft.products.Product#equals(Ljava/lang/Object;)ZZ
+NM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/products/Product.javaå å("startingBlock*Å
+2Z
+NM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/products/Product.javañ
+ ñ("d
+Z
+NM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/products/Product.javañ ñ(
+""*¹
+3Z
+NM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/products/Product.javað ð(«
+¨
+Z
+NM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/products/Product.javað ð(
+%4java.lang.String"__id*,** 
+tfg.licensoft.products.Product"
+name²
+¯
+Z
+NM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/products/Product.javað ð($
+%5java.lang.String"__id*3*1
+'
+othertfg.licensoft.products.Product"
+nameìé
+Z
+NM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/products/Product.javað ð(%
+%6boolean",java.lang.String#equals(Ljava/lang/Object;)Z*
+
+%4java.lang.String*
+
+%5java.lang.String2equals(Ljava/lang/Object;)*
+2
+1*¯
+startingBlockZ
+NM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/products/Product.javaå å("¤
+¡
+Z
+NM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/products/Product.javaä ä(
+
+%7"
+__annotate*
+java.lang.Override*
+
+objjava.lang.ObjectŽ
+‹
+Z
+NM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/products/Product.javaå å(!
+objjava.lang.Object"__annotation*
+
+%7*
+
+8
+9
+11*Å
+4Z
+NM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/products/Product.javaï ï("d
+Z
+NM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/products/Product.javaï ï(
+""*œ
+5Z
+NM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/products/Product.javaî î(²
+¯
+Z
+NM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/products/Product.javaî î(
+%3java.lang.String"__id*3*1
+'
+othertfg.licensoft.products.Product"
+name*
+4
+1*Á
+6Z
+NM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/products/Product.javaì ì(©
+¦
+Z
+NM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/products/Product.javaì ì( '
+othertfg.licensoft.products.Product"__id*
+
+objjava.lang.Object«
+¨
+Z
+NM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/products/Product.javaí í(
+
+%2java.lang.String"__id*,** 
+tfg.licensoft.products.Product"
+name*
+3
+5*Å
+7Z
+NM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/products/Product.javaë
+ ë("d
+Z
+NM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/products/Product.javaë ë(
+""*Œ
+8Z
+NM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/products/Product.javaê ê(ÔÑ
+Z
+NM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/products/Product.javaê ê(
+%0java.lang.Class",java.lang.Object#getClass()Ljava/lang/Class;*" 
+tfg.licensoft.products.Product2
+getClass()ËÈ
+Z
+NM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/products/Product.javaê ê("
+%1java.lang.Class",java.lang.Object#getClass()Ljava/lang/Class;*
+
+objjava.lang.Object2
+getClass()*
+6
+7*Å
+9Z
+NM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/products/Product.javaé
+ é("d
+Z
+NM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/products/Product.javaé é(
+""*Æ
+11Z
+NM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/products/Product.javaç
+ ç("d
+Z
+NM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/products/Product.javaç ç(
+""*Å
+1Z
+NM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/products/Product.javaò	 ò("d
+Z
+NM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/products/Product.javaò ò(
+"":
+objjava.lang.ObjectB" 
+tfg.licensoft.products.Product
