@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: tfg.licensoft.ProductApiTests
--------------------------------------------------------------------------------
-Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.425 s - in tfg.licensoft.ProductApiTests

@@ -92,6 +92,7 @@ public class Product {
 		this.plansPrices = new HashMap<>();
 		this.active=true; 
 		this.mode = mode;
+		this.photoSrc="";
  
 	}
 	

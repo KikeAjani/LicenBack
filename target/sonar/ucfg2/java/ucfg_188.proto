@@ -1,148 +1,0 @@
-
-ëtfg.licensoft.api.ApiLicenseController#getLicensesOfUserAndProduct(Ljava/lang/String;Ljava/lang/String;)Lorg/springframework/http/ResponseEntity;`
-VM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/ApiLicenseController.javaf& f(A"startingBlock*Ä
-2`
-VM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/ApiLicenseController.javal l()û
-õ
-`
-VM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/ApiLicenseController.javal l(3)
-%4#org.springframework.http.HttpStatus"__id*
-""Ω∫
-`
-VM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/ApiLicenseController.javal l(-
-%5'org.springframework.http.ResponseEntity"'org.springframework.http.ResponseEntity°
-û
-`
-VM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/ApiLicenseController.javal
- l(4
-%6"Vorg.springframework.http.ResponseEntity#<init>(Lorg/springframework/http/HttpStatus;)V*/
--
-%5'org.springframework.http.ResponseEntity*+
-)
-%4#org.springframework.http.HttpStatus"ì
-`
-VM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/ApiLicenseController.javal l(5/
--
-%5'org.springframework.http.ResponseEntity*‚
-startingBlocka
-VM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/ApiLicenseController.javafA f(Ç’
-“
-`
-VM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/ApiLicenseController.javafB f(O
-%12"
-__annotate*86
-4org.springframework.web.bind.annotation.PathVariable*!
-
-productNamejava.lang.Stringù
-ö
-`
-VM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/ApiLicenseController.javafW f(b
-productNamejava.lang.String"__annotation*
-
-%12“
-œ
-`
-VM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/ApiLicenseController.javafd f(q
-%13"
-__annotate*86
-4org.springframework.web.bind.annotation.PathVariable*
-
-userNamejava.lang.Stringõ
-ò
-a
-VM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/ApiLicenseController.javafy f(Å
-userNamejava.lang.String"__annotation*
-
-%13*
-4*¨
-4`
-VM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/ApiLicenseController.javag g(’
-“
-`
-VM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/ApiLicenseController.javag g(+
-%0%tfg.licensoft.products.ProductService"__id*;*9(
-&tfg.licensoft.api.ApiLicenseController"
-productServ›⁄
-`
-VM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/ApiLicenseController.javag g(3$
-%1tfg.licensoft.products.Product"atfg.licensoft.products.ProductService#findOne(Ljava/lang/String;)Ltfg/licensoft/products/Product;*-
-+
-%0%tfg.licensoft.products.ProductService*!
-
-productNamejava.lang.String2findOne(Ljava/lang/String;)∏
-µ
-`
-VM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/ApiLicenseController.javag g(4#
-ptfg.licensoft.products.Product"__id*&
-$
-%1tfg.licensoft.products.ProductÃ
-…
-`
-VM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/ApiLicenseController.javah h(%
-%2tfg.licensoft.users.UserService"__id*8*6(
-&tfg.licensoft.api.ApiLicenseController"
-
-userServ»≈
-`
-VM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/ApiLicenseController.javah h(0
-%3tfg.licensoft.users.User"Xtfg.licensoft.users.UserService#findByName(Ljava/lang/String;)Ltfg/licensoft/users/User;*'
-%
-%2tfg.licensoft.users.UserService*
-
-userNamejava.lang.String2findByName(Ljava/lang/String;)Ø
-¨
-`
-VM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/ApiLicenseController.javah h(1 
-usertfg.licensoft.users.User"__id* 
-
-%3tfg.licensoft.users.User*
-2
-1*Í
-1`
-VM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/ApiLicenseController.javao o(—
-Œ
-`
-VM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/ApiLicenseController.javao o(%+
-%7%tfg.licensoft.licenses.LicenseService"__id*7*5(
-&tfg.licensoft.api.ApiLicenseController"	
-licServΩ∫
-`
-VM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/ApiLicenseController.javao o(H
-%8java.util.List"tfg.licensoft.licenses.LicenseService#findByProductAndOwner(Ltfg/licensoft/products/Product;Ljava/lang/String;)Ljava/util/List;*-
-+
-%7%tfg.licensoft.licenses.LicenseService*%
-#
-ptfg.licensoft.products.Product*
-
-userNamejava.lang.String2IfindByProductAndOwner(Ltfg/licensoft/products/Product;Ljava/lang/String;)ü
-ú
-`
-VM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/ApiLicenseController.javao o(I
-licensesjava.util.List"__id*
-
-%8java.util.Listû
-õ
-`
-VM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/ApiLicenseController.javap' p(4)
-%9#org.springframework.http.HttpStatus"__id*
-""æª
-`
-VM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/ApiLicenseController.javap p(.
-%10'org.springframework.http.ResponseEntity"'org.springframework.http.ResponseEntity”
-–
-`
-VM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/ApiLicenseController.javap	 p(5
-%11"horg.springframework.http.ResponseEntity#<init>(Ljava/lang/Object;Lorg/springframework/http/HttpStatus;)V*0
-.
-%10'org.springframework.http.ResponseEntity*
-
-licensesjava.util.List*+
-)
-%9#org.springframework.http.HttpStatus"î
-`
-VM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/ApiLicenseController.javap p(60
-.
-%10'org.springframework.http.ResponseEntity:
-productNamejava.lang.String:
-userNamejava.lang.StringB*(
-&tfg.licensoft.api.ApiLicenseController

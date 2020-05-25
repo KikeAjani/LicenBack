@@ -1,116 +1,0 @@
-
-stfg.licensoft.api.LoginController#logOut(Ljavax/servlet/http/HttpSession;)Lorg/springframework/http/ResponseEntity;[
-QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.javaU  U(&"startingBlock*”	
-2[
-QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.javaW W(Ü
-É
-[
-QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.javaW W(
-%2org.slf4j.Logger"__id*
-""‡›
-[
-QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.javaW W(
-
-%3void"*org.slf4j.Logger#info(Ljava/lang/String;)V*
-
-%2org.slf4j.Logger*
-No user logged2info(Ljava/lang/String;)ô
-ñ
-[
-QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.javaX X(6)
-%4#org.springframework.http.HttpStatus"__id*
-""∏µ
-[
-QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.javaX X(-
-%5'org.springframework.http.ResponseEntity"'org.springframework.http.ResponseEntityú
-ô
-[
-QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.javaX
- X(7
-%6"Vorg.springframework.http.ResponseEntity#<init>(Lorg/springframework/http/HttpStatus;)V*/
--
-%5'org.springframework.http.ResponseEntity*+
-)
-%4#org.springframework.http.HttpStatus"é
-[
-QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.javaX X(8/
--
-%5'org.springframework.http.ResponseEntity*î
-3[
-QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.javaV V(…
-∆
-[
-QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.javaV V('
-%0!tfg.licensoft.users.UserComponent"__id*8*6#
-!tfg.licensoft.api.LoginController"
-userComponent›⁄
-[
-QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.javaV V(#
-%1boolean"1tfg.licensoft.users.UserComponent#isLoggedUser()Z*)
-'
-%0!tfg.licensoft.users.UserComponent2isLoggedUser()*
-2
-1*Ò
-startingBlock[
-QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.javaU& U(;ÿ
-’
-[
-QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.javaT T(
-%13"
-__annotate*64
-2org.springframework.web.bind.annotation.GetMapping*+
-)
-sessionjavax.servlet.http.HttpSession¢
-ü
-[
-QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.javaU3 U(:)
-sessionjavax.servlet.http.HttpSession"__annotation*
-
-%13*
-3*«
-1[
-QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.javaZ Z(
-’“
-[
-QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.javaZ Z(
-
-%7void",javax.servlet.http.HttpSession#invalidate()V*+
-)
-sessionjavax.servlet.http.HttpSession2invalidate()Ü
-É
-[
-QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java\ \(
-%8org.slf4j.Logger"__id*
-""‹Ÿ
-[
-QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java\ \(
-
-%9void"*org.slf4j.Logger#info(Ljava/lang/String;)V*
-
-%8org.slf4j.Logger*
-
-Logged out2info(Ljava/lang/String;)ö
-ó
-[
-QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java]% ](2*
-%10#org.springframework.http.HttpStatus"__id*
-""π∂
-[
-QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java] ](.
-%11'org.springframework.http.ResponseEntity"'org.springframework.http.ResponseEntityπ
-∂
-[
-QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java]
- ](3
-%12"horg.springframework.http.ResponseEntity#<init>(Ljava/lang/Object;Lorg/springframework/http/HttpStatus;)V*0
-.
-%11'org.springframework.http.ResponseEntity*
-""*,
-*
-%10#org.springframework.http.HttpStatus"è
-[
-QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/LoginController.java] ](40
-.
-%11'org.springframework.http.ResponseEntity:)
-sessionjavax.servlet.http.HttpSessionB%#
-!tfg.licensoft.api.LoginController

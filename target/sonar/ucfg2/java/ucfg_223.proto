@@ -1,18 +1,0 @@
-
-Ttfg.licensoft.stripe.StripeServices#createSku(Ljava/util/Map;)Lcom/stripe/model/Sku;]
-SM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/stripe/StripeServices.java? ?("1*Û
-1]
-SM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/stripe/StripeServices.java@	 @(÷
-ô
-]
-SM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/stripe/StripeServices.java@	 @(
-%0com.stripe.model.Sku"Bcom.stripe.model.Sku#create(Ljava/util/Map;)Lcom/stripe/model/Sku;*"
-com.stripe.model.Sku*
-
-paramsjava.util.Map"}
-]
-SM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/stripe/StripeServices.java@ @(
-
-%0com.stripe.model.Sku:
-paramsjava.util.MapB'%
-#tfg.licensoft.stripe.StripeServices

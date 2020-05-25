@@ -1,45 +1,0 @@
-
-Ktfg.licensoft.api.UserController#getRequestUser()Ltfg/licensoft/users/User;Z
-PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaW W("1*˜
-1Z
-PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaX X(-ï
-ì
-Z
-PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaX X(:?
-%09org.springframework.security.core.context.SecurityContext"‡org.springframework.security.core.context.SecurityContextHolder#getContext()Lorg/springframework/security/core/context/SecurityContext;*C"A
-?org.springframework.security.core.context.SecurityContextHolderðí
-Z
-PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaX X(N6
-%10org.springframework.security.core.Authentication"org.springframework.security.core.context.SecurityContext#getAuthentication()Lorg/springframework/security/core/Authentication;*A
-?
-%09org.springframework.security.core.context.SecurityContext2getAuthentication()Ù
-Ö
-Z
-PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaX X(O8
-auth0org.springframework.security.core.Authentication"__id*8
-6
-%10org.springframework.security.core.AuthenticationÀ
-½
-Z
-PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaY	 Y(%
-%2tfg.licensoft.users.UserService"__id*2*0"
- tfg.licensoft.api.UserController"
-
-userServóð
-Z
-PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaY" Y(0
-%3java.lang.String"3java.security.Principal#getName()Ljava/lang/String;*:
-8
-auth0org.springframework.security.core.Authentication2	getName()¼¹
-Z
-PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaY	 Y(1
-%4tfg.licensoft.users.User"Xtfg.licensoft.users.UserService#findByName(Ljava/lang/String;)Ltfg/licensoft/users/User;*'
-%
-%2tfg.licensoft.users.UserService*
-
-%3java.lang.String2findByName(Ljava/lang/String;)"~
-Z
-PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaY Y(2 
-
-%4tfg.licensoft.users.UserB$"
- tfg.licensoft.api.UserController

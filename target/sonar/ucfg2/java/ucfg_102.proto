@@ -1,23 +1,0 @@
-
-Ftfg.licensoft.products.ProductService#findAllActives()Ljava/util/List;_
-UM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/products/ProductService.java( (($"1*…
-1_
-UM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/products/ProductService.java)	 )(’
-“
-_
-UM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/products/ProductService.java)	 )(.
-%0(tfg.licensoft.products.ProductRepository"__id*9*7'
-%tfg.licensoft.products.ProductService"
-
-productRepèå
-_
-UM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/products/ProductService.java)	 )(+
-%1java.util.List"Htfg.licensoft.products.ProductRepository#findByActive(Z)Ljava/util/List;*0
-.
-%0(tfg.licensoft.products.ProductRepository*
-""2findByActive(Z)"y
-_
-UM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/products/ProductService.java) )(,
-
-%1java.util.ListB)'
-%tfg.licensoft.products.ProductService

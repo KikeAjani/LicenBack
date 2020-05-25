@@ -1,32 +1,0 @@
-
-Ëtfg.licensoft.statistics.LicenseStatisticsService#findByLicenseAndIpAndUserNameAndPeriod(Ltfg/licensoft/licenses/License;Ljava/lang/String;Ljava/lang/String;I)Ltfg/licensoft/statistics/LicenseStatistics;k
-aM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/statistics/LicenseStatisticsService.java   (@"1*Ÿ	
-1k
-aM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/statistics/LicenseStatisticsService.java!	 !(ú
-÷
-k
-aM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/statistics/LicenseStatisticsService.java!	 !(:
-%04tfg.licensoft.statistics.LicenseStatisticsRepository"__id*F*D3
-1tfg.licensoft.statistics.LicenseStatisticsService"
-licStatRepo‹ˆ
-k
-aM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/statistics/LicenseStatisticsService.java!	 !([0
-%1*tfg.licensoft.statistics.LicenseStatistics"Îtfg.licensoft.statistics.LicenseStatisticsRepository#findByLicenseAndIpAndUserNameAndPeriod(Ltfg/licensoft/licenses/License;Ljava/lang/String;Ljava/lang/String;I)Ltfg/licensoft/statistics/LicenseStatistics;*<
-:
-%04tfg.licensoft.statistics.LicenseStatisticsRepository*'
-%
-lictfg.licensoft.licenses.License*
-
-ipjava.lang.String*
-
-userNamejava.lang.String*
-""2mfindByLicenseAndIpAndUserNameAndPeriod(Ltfg/licensoft/licenses/License;Ljava/lang/String;Ljava/lang/String;I)"¡
-k
-aM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/statistics/LicenseStatisticsService.java! !(\2
-0
-%1*tfg.licensoft.statistics.LicenseStatistics:%
-lictfg.licensoft.licenses.License:
-ipjava.lang.String:
-userNamejava.lang.String:
-""B53
-1tfg.licensoft.statistics.LicenseStatisticsService

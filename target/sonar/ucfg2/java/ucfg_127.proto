@@ -1,21 +1,0 @@
-
-Atfg.licensoft.licenses.License#generateSerial()Ljava/lang/String;Z
-NM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/licenses/License.java¤ ¤( "1*Û
-1Z
-NM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/licenses/License.java¥	 ¥(¶
-³
-Z
-NM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/licenses/License.java¥	 ¥(
-%0java.util.UUID"+java.util.UUID#randomUUID()Ljava/util/UUID;*"
-java.util.UUIDÈÅ
-Z
-NM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/licenses/License.java¥	 ¥(%
-%1java.lang.String"+java.util.UUID#toString()Ljava/lang/String;*
-
-%0java.util.UUID2
-toString()"v
-Z
-NM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/licenses/License.java¥ ¥(&
-
-%1java.lang.StringB" 
-tfg.licensoft.licenses.License

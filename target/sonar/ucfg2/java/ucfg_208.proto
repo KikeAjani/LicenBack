@@ -1,28 +1,0 @@
-
-,tfg.licensoft.users.UserComponent#isAdmin()Z[
-QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/users/UserComponent.java ("1*Ã
-1[
-QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/users/UserComponent.java (·
-´
-[
-QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/users/UserComponent.java (
-%0tfg.licensoft.users.User"__id*/*-#
-!tfg.licensoft.users.UserComponent"
-userÙÖ
-[
-QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/users/UserComponent.java (
-%1java.util.List"3tfg.licensoft.users.User#getRoles()Ljava/util/List;* 
-
-%0tfg.licensoft.users.User2
-getRoles()ãà
-[
-QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/users/UserComponent.java (2
-%2boolean",java.util.List#contains(Ljava/lang/Object;)Z*
-
-%1java.util.List*
-
-ROLE_ADMIN2contains(Ljava/lang/Object;)"e
-[
-QM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/users/UserComponent.java (3
-""B%#
-!tfg.licensoft.users.UserComponent

@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: tfg.licensoft.LoginApiTests
--------------------------------------------------------------------------------
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 23.014 s - in tfg.licensoft.LoginApiTests

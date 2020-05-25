@@ -1,20 +1,0 @@
-
-…tfg.licensoft.stripe.StripeServices#updateSubscription(Lcom/stripe/model/Subscription;Ljava/util/Map;)Lcom/stripe/model/Subscription;]
-SM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/stripe/StripeServices.java+ +('"1*¥
-1]
-SM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/stripe/StripeServices.java,	 ,(
-·´
-]
-SM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/stripe/StripeServices.java,	 ,(#
-%0com.stripe.model.Subscription"Tcom.stripe.model.Subscription#update(Ljava/util/Map;)Lcom/stripe/model/Subscription;*$
-"
-scom.stripe.model.Subscription*
-
-paramsjava.util.Map2update(Ljava/util/Map;)"†
-]
-SM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/stripe/StripeServices.java, ,(%
-#
-%0com.stripe.model.Subscription:"
-scom.stripe.model.Subscription:
-paramsjava.util.MapB'%
-#tfg.licensoft.stripe.StripeServices

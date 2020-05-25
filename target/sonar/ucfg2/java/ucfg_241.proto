@@ -1,24 +1,0 @@
-
-rtfg.licensoft.usedCards.UsedCardService#save(Ltfg/licensoft/usedCards/UsedCard;)Ltfg/licensoft/usedCards/UsedCard;a
-WM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/usedCards/UsedCardService.java ("1*Ã
-1a
-WM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/usedCards/UsedCardService.java	 (Ü
-Ù
-a
-WM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/usedCards/UsedCardService.java	 (0
-%0*tfg.licensoft.usedCards.UsedCardRepository"__id*<*:)
-'tfg.licensoft.usedCards.UsedCardService"
-usedCardRepëè
-a
-WM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/usedCards/UsedCardService.java	 ((&
-%1 tfg.licensoft.usedCards.UsedCard"]org.springframework.data.repository.CrudRepository#save(Ljava/lang/Object;)Ljava/lang/Object;*2
-0
-%0*tfg.licensoft.usedCards.UsedCardRepository*.
-,
-usedCard tfg.licensoft.usedCards.UsedCard2save(Ljava/lang/Object;)"
-a
-WM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/usedCards/UsedCardService.java ()(
-&
-%1 tfg.licensoft.usedCards.UsedCard:,
-usedCard tfg.licensoft.usedCards.UsedCardB+)
-'tfg.licensoft.usedCards.UsedCardService

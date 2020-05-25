@@ -1,22 +1,0 @@
-
-?tfg.licensoft.products.ProductService#findAll()Ljava/util/List;_
-UM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/products/ProductService.java$ $("1*µ
-1_
-UM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/products/ProductService.java%	 %(Õ
-Ò
-_
-UM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/products/ProductService.java%	 %(.
-%0(tfg.licensoft.products.ProductRepository"__id*9*7'
-%tfg.licensoft.products.ProductService"
-
-productRepûø
-_
-UM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/products/ProductService.java%	 %("
-%1java.util.List"Btfg.licensoft.products.ProductRepository#findAll()Ljava/util/List;*0
-.
-%0(tfg.licensoft.products.ProductRepository2	findAll()"y
-_
-UM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/products/ProductService.java% %(#
-
-%1java.util.ListB)'
-%tfg.licensoft.products.ProductService

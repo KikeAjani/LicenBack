@@ -1,462 +1,0 @@
-
-Ötfg.licensoft.api.UserController#addCardStripeElements(Ljava/lang/String;Ljava/lang/String;)Lorg/springframework/http/ResponseEntity;Z
-PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.java]' ](<"startingBlock*í
-24Z
-PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javar! r(%«
-ƒ
-Z
-PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javar! r(0*
-%17#tfg.licensoft.stripe.StripeServices"__id*4*2"
- tfg.licensoft.api.UserController"
-
-stripeServﬂ‹
-Z
-PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javar! r(L%
-%18com.stripe.model.PaymentMethod"htfg.licensoft.stripe.StripeServices#createPaymentMethod(Ljava/util/Map;)Lcom/stripe/model/PaymentMethod;*,
-*
-%17#tfg.licensoft.stripe.StripeServices*
-
-paramsjava.util.Map2$createPaymentMethod(Ljava/util/Map;)*
-23*©
-25Z
-PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javap p(	¿
-Ω
-Z
-PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javap p(
-%16java.lang.Object"__mapSet*
-
-paramsjava.util.Map*
-card*
-
-cardjava.util.Map*
-24*∑
-26Z
-PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javan n(0ö
-ó
-Z
-PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javan n(0
-paramsjava.util.Map"__id*
-
-%13java.util.HashMap±
-Æ
-Z
-PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javao o(
-%15java.lang.Object"__mapSet*
-
-paramsjava.util.Map*
-type*
-card*
-25*ó
-27Z
-PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javan  n(/åâ
-Z
-PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javan$ n(-
-%13java.util.HashMap"java.util.HashMapü
-ú
-Z
-PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javan  n(/
-%14"java.util.HashMap#<init>()V*
-
-%13java.util.HashMap*
-26*…
-28Z
-PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaj j(.ò
-ï
-Z
-PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaj j(.
-cardjava.util.Map"__id*
-
-%10java.util.HashMap≈
-¬
-Z
-PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javal l(
-%12java.lang.Object"__mapSet*
-
-cardjava.util.Map*	
-token*
-
-tokenIdjava.lang.String*
-27*ó
-29Z
-PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaj j(-åâ
-Z
-PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaj" j(+
-%10java.util.HashMap"java.util.HashMapü
-ú
-Z
-PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaj j(-
-%11"java.util.HashMap#<init>()V*
-
-%10java.util.HashMap*
-28*„
-31Z
-PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaf f()ò
-ï
-Z
-PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaf f(3)
-%7#org.springframework.http.HttpStatus"__id*
-""∑¥
-Z
-PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaf f(-
-%8'org.springframework.http.ResponseEntity"'org.springframework.http.ResponseEntityõ
-ò
-Z
-PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaf
- f(4
-%9"Vorg.springframework.http.ResponseEntity#<init>(Lorg/springframework/http/HttpStatus;)V*/
--
-%8'org.springframework.http.ResponseEntity*+
-)
-%7#org.springframework.http.HttpStatus"ç
-Z
-PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaf f(5/
--
-%8'org.springframework.http.ResponseEntity*Ú
-32Z
-PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javae e(
-ÑÅ
-Z
-PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javae e('
-%5tfg.licensoft.users.User"Ktfg.licensoft.api.UserController#getRequestUser()Ltfg/licensoft/users/User;*$"
- tfg.licensoft.api.UserController2getRequestUser()˛˚
-Z
-PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javae e((
-%6boolean",java.lang.Object#equals(Ljava/lang/Object;)Z*"
- 
-usertfg.licensoft.users.User* 
-
-%5tfg.licensoft.users.User2equals(Ljava/lang/Object;)*
-29
-31*ã
-10\
-PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaÅ Å(…
-∆
-\
-PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaÅ Å(*
-%34#tfg.licensoft.stripe.StripeServices"__id*4*2"
- tfg.licensoft.api.UserController"
-
-stripeServ’“
-\
-PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaÅ Å(=%
-%35com.stripe.model.PaymentMethod"àtfg.licensoft.stripe.StripeServices#attachPaymentMethod(Lcom/stripe/model/PaymentMethod;Ljava/util/Map;)Lcom/stripe/model/PaymentMethod;*,
-*
-%34#tfg.licensoft.stripe.StripeServices*1
-/
-paymentMethodcom.stripe.model.PaymentMethod*
-
-paramsjava.util.Map2DattachPaymentMethod(Lcom/stripe/model/PaymentMethod;Ljava/util/Map;)*
-9*„
-33Z
-PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javab b()ò
-ï
-Z
-PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javab b(6)
-%2#org.springframework.http.HttpStatus"__id*
-""∑¥
-Z
-PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javab b(-
-%3'org.springframework.http.ResponseEntity"'org.springframework.http.ResponseEntityõ
-ò
-Z
-PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javab
- b(7
-%4"Vorg.springframework.http.ResponseEntity#<init>(Lorg/springframework/http/HttpStatus;)V*/
--
-%3'org.springframework.http.ResponseEntity*+
-)
-%2#org.springframework.http.HttpStatus"ç
-Z
-PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javab b(8/
--
-%3'org.springframework.http.ResponseEntity*≥
-11\
-PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaÄ Ä(5»
-≈
-\
-PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaÄ Ä(5
-%33java.lang.Object"__mapSet*
-
-paramsjava.util.Map*
-
-customer*
-
-%32java.lang.String*
-10*û
-34Z
-PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.java^ ^(¿
-Ω
-Z
-PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.java^ ^(%
-%0tfg.licensoft.users.UserService"__id*2*0"
- tfg.licensoft.api.UserController"
-
-userServ¬ø
-Z
-PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.java^ ^(0
-%1tfg.licensoft.users.User"Xtfg.licensoft.users.UserService#findByName(Ljava/lang/String;)Ltfg/licensoft/users/User;*'
-%
-%0tfg.licensoft.users.UserService*
-
-userNamejava.lang.String2findByName(Ljava/lang/String;)©
-¶
-Z
-PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.java^ ^(1 
-usertfg.licensoft.users.User"__id* 
-
-%1tfg.licensoft.users.User*
-32
-33*‚
-12\
-PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaÄ Ä(	˜Ù
-\
-PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaÄ Ä(4
-%32java.lang.String"@tfg.licensoft.users.User#getCustomerStripeId()Ljava/lang/String;*"
- 
-usertfg.licensoft.users.User2getCustomerStripeId()*
-11*¸
-13Z
-PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.java (	ì
-ê
-Z
-PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.java (
-%31void"
-__mapClear*
-
-paramsjava.util.Map*
-12*ä
-14Z
-PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.java} }(«
-ƒ
-Z
-PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.java} }(*
-%29#tfg.licensoft.stripe.StripeServices"__id*4*2"
- tfg.licensoft.api.UserController"
-
-stripeServ◊‘
-Z
-PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.java} }(,#
-%30com.stripe.model.SetupIntent"dtfg.licensoft.stripe.StripeServices#createSetupIntent(Ljava/util/Map;)Lcom/stripe/model/SetupIntent;*,
-*
-%29#tfg.licensoft.stripe.StripeServices*
-
-paramsjava.util.Map2"createSetupIntent(Ljava/util/Map;)*
-13*õ
-15Z
-PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.java{ {(	≤
-Ø
-Z
-PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.java{ {(
-%28java.lang.Object"__mapSet*
-
-paramsjava.util.Map*	
-confirm*
-""*
-14*µ
-16Z
-PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaz z(6Ã
-…
-Z
-PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaz z(6
-%27java.lang.Object"__mapSet*
-
-paramsjava.util.Map*
-payment_method*
-
-%26java.lang.String*
-15*◊
-17Z
-PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaz z(	ÓÎ
-Z
-PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaz  z(5
-%26java.lang.String"8com.stripe.model.PaymentMethod#getId()Ljava/lang/String;*1
-/
-paymentMethodcom.stripe.model.PaymentMethod2getId()*
-16*Ø
-18Z
-PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javay y(5∆
-√
-Z
-PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javay y(5
-%25java.lang.Object"__mapSet*
-
-paramsjava.util.Map*
-
-customer*
-
-%24java.lang.String*
-17*ﬁ
-19Z
-PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javay y(	ıÚ
-Z
-PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javay y(4
-%24java.lang.String"@tfg.licensoft.users.User#getCustomerStripeId()Ljava/lang/String;*"
- 
-usertfg.licensoft.users.User2getCustomerStripeId()*
-18*ª
-startingBlockZ
-PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.java]< ](xÃ
-…
-Z
-PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.java]= ](J
-%48"
-__annotate*86
-4org.springframework.web.bind.annotation.PathVariable*
-
-userNamejava.lang.Stringî
-ë
-Z
-PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.java]R ](Z
-userNamejava.lang.String"__annotation*
-
-%48À
-»
-Z
-PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.java][ ](h
-%49"
-__annotate*86
-4org.springframework.web.bind.annotation.PathVariable*
-
-tokenIdjava.lang.Stringì
-ê
-Z
-PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.java]p ](w
-tokenIdjava.lang.String"__annotation*
-
-%49*
-34*Ù
-4\
-PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaÜ Ü(E"ê
-\
-PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaÜ Ü(E0
-.
-%42'org.springframework.http.ResponseEntity*ñ
-5\
-PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaÖ Ö(Gﬁ
-€
-\
-PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaÖ Ö(G;
-response/tfg.licensoft.api.UserController$SimpleResponse"__id*8
-6
-%39/tfg.licensoft.api.UserController$SimpleResponseõ
-ò
-\
-PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaÜ6 Ü(C*
-%41#org.springframework.http.HttpStatus"__id*
-""∫∑
-\
-PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaÜ Ü(,.
-%42'org.springframework.http.ResponseEntity"'org.springframework.http.ResponseEntityÒ
-Ó
-\
-PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaÜ
- Ü(D
-%43"horg.springframework.http.ResponseEntity#<init>(Ljava/lang/Object;Lorg/springframework/http/HttpStatus;)V*0
-.
-%42'org.springframework.http.ResponseEntity*=
-;
-response/tfg.licensoft.api.UserController$SimpleResponse*,
-*
-%41#org.springframework.http.HttpStatus*
-4*‚
-6\
-PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaÖ Ö(F «
-\
-PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaÖ! Ö(/6
-%39/tfg.licensoft.api.UserController$SimpleResponse"/tfg.licensoft.api.UserController$SimpleResponse¨
-©
-\
-PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaÖ Ö(F
-%40"mtfg.licensoft.api.UserController$SimpleResponse#<init>(Ltfg/licensoft/api/UserController;Ljava/lang/String;)V*8
-6
-%39/tfg.licensoft.api.UserController$SimpleResponse*
-
-%38java.lang.String*
-5*Ÿ
-7\
-PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaÖ0 Ö(=Ì
-\
-PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaÖ0 Ö(E
-%38java.lang.String"8com.stripe.model.PaymentMethod#getId()Ljava/lang/String;*1
-/
-paymentMethodcom.stripe.model.PaymentMethod2getId()*
-6*§
-8\
-PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaÉ É(@ª∏
-\
-PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaÉ É(@.
-%37'org.springframework.http.ResponseEntity"átfg.licensoft.api.UserController#setDefaultPaymentMethod(Ljava/lang/String;Ljava/lang/String;)Lorg/springframework/http/ResponseEntity;*$"
- tfg.licensoft.api.UserController*
-
-userNamejava.lang.String*
-
-%36java.lang.String2=setDefaultPaymentMethod(Ljava/lang/String;Ljava/lang/String;)*
-7*Ÿ
-9\
-PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaÉ É(Ì
-\
-PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaÉ* É(?
-%36java.lang.String"8com.stripe.model.PaymentMethod#getId()Ljava/lang/String;*1
-/
-paymentMethodcom.stripe.model.PaymentMethod2getId()*
-8*»
-20Z
-PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javax x(	ﬂ
-‹
-Z
-PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javax x(9
-%23java.lang.Object"__mapSet*
-
-paramsjava.util.Map*
-payment_method_types*&
-$
-paymentMethodTypesjava.util.List*
-19*∆
-21Z
-PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javav v(8©
-¶
-Z
-PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javav v(8$
-paymentMethodTypesjava.util.List"__id*
-
-%20java.util.ArrayList±
-Æ
-Z
-PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javaw w(!
-%22boolean"
-__arrayAdd*&
-$
-paymentMethodTypesjava.util.List*: *
-card*
-20*ü
-22Z
-PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javav& v(7êç
-Z
-PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javav* v(5
-%20java.util.ArrayList"java.util.ArrayList£
-†
-Z
-PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javav& v(7
-%21"java.util.ArrayList#<init>()V*
-
-%20java.util.ArrayList*
-21*æ
-23Z
-PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javar r(Mø
-º
-Z
-PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javar r(M/
-paymentMethodcom.stripe.model.PaymentMethod"__id*'
-%
-%18com.stripe.model.PaymentMethodì
-ê
-Z
-PM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/api/UserController.javat t(
-%19void"
-__mapClear*
-
-paramsjava.util.Map*
-22:
-userNamejava.lang.String:
-tokenIdjava.lang.StringB$"
- tfg.licensoft.api.UserController

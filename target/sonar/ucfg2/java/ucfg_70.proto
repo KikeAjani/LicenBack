@@ -1,52 +1,0 @@
-
-dtfg.licensoft.licenses.LicenseSubscriptionService#findByUsername(Ljava/lang/String;)Ljava/util/List;k
-aM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/licenses/LicenseSubscriptionService.java-" -(0"3*Þ
-2k
-aM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/licenses/LicenseSubscriptionService.java/
- /(õ
-ò
-k
-aM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/licenses/LicenseSubscriptionService.java/
- /(:
-%24tfg.licensoft.licenses.LicenseSubscriptionRepository"__id*A*?3
-1tfg.licensoft.licenses.LicenseSubscriptionService"
-licRepëè
-k
-aM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/licenses/LicenseSubscriptionService.java/
- /(+
-%3java.util.List"dtfg.licensoft.licenses.LicenseSubscriptionRepository#findByOwner(Ljava/lang/String;)Ljava/util/List;*<
-:
-%24tfg.licensoft.licenses.LicenseSubscriptionRepository*
-
-usernamejava.lang.String2findByOwner(Ljava/lang/String;)"…
-k
-aM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/licenses/LicenseSubscriptionService.java/ /(,
-
-%3java.util.List*³
-3k
-aM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/licenses/LicenseSubscriptionService.java. .(
-â
-ß
-k
-aM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/licenses/LicenseSubscriptionService.java. .(%
-%0tfg.licensoft.users.UserService"__id*C*A3
-1tfg.licensoft.licenses.LicenseSubscriptionService"
-
-userServÓÐ
-k
-aM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/licenses/LicenseSubscriptionService.java. .((
-%1tfg.licensoft.users.User"Xtfg.licensoft.users.UserService#findByName(Ljava/lang/String;)Ltfg/licensoft/users/User;*'
-%
-%0tfg.licensoft.users.UserService*
-
-usernamejava.lang.String2findByName(Ljava/lang/String;)*
-2
-1*ç
-1k
-aM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/licenses/LicenseSubscriptionService.java1
- 1("u
-k
-aM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/licenses/LicenseSubscriptionService.java1 1(
-"":
-usernamejava.lang.StringB53
-1tfg.licensoft.licenses.LicenseSubscriptionService

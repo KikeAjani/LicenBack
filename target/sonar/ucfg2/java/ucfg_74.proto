@@ -1,27 +1,0 @@
-
-‹tfg.licensoft.licenses.LicenseSubscriptionService#findByProductAndOwner(Ltfg/licensoft/products/Product;Ljava/lang/String;)Ljava/util/List;k
-aM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/licenses/LicenseSubscriptionService.javaB" B(7"1*Ý
-1k
-aM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/licenses/LicenseSubscriptionService.javaC	 C(õ
-ò
-k
-aM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/licenses/LicenseSubscriptionService.javaC	 C(:
-%04tfg.licensoft.licenses.LicenseSubscriptionRepository"__id*A*?3
-1tfg.licensoft.licenses.LicenseSubscriptionService"
-licRepêç
-k
-aM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/licenses/LicenseSubscriptionService.javaC	 C(:
-%1java.util.List"Žtfg.licensoft.licenses.LicenseSubscriptionRepository#findByProductAndOwner(Ltfg/licensoft/products/Product;Ljava/lang/String;)Ljava/util/List;*<
-:
-%04tfg.licensoft.licenses.LicenseSubscriptionRepository*+
-)
-producttfg.licensoft.products.Product*
-
-ownerjava.lang.String2IfindByProductAndOwner(Ltfg/licensoft/products/Product;Ljava/lang/String;)"…
-k
-aM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/licenses/LicenseSubscriptionService.javaC C(;
-
-%1java.util.List:)
-producttfg.licensoft.products.Product:
-ownerjava.lang.StringB53
-1tfg.licensoft.licenses.LicenseSubscriptionService

@@ -15,14 +15,10 @@ import org.springframework.web.bind.annotation.*;
 import com.stripe.exception.StripeException;
 import com.stripe.model.Customer;
 import com.stripe.model.Invoice;
-import com.stripe.model.InvoiceItem;
 import com.stripe.model.PaymentIntent;
 import com.stripe.model.PaymentMethod;
 import com.stripe.model.PaymentMethodCollection;
-import com.stripe.model.SetupIntent;
 import com.stripe.model.Subscription;
-import com.stripe.param.InvoiceCreateParams;
-import com.stripe.param.InvoiceItemCreateParams;
 import com.stripe.param.SubscriptionCreateParams;
 
 import java.util.ArrayList;
@@ -131,11 +127,11 @@ public class UserController implements IUserController{
 			this.setDefaultPaymentMethod(userName, paymentMethod.getId());
 			
 			SimpleResponse response = new SimpleResponse(paymentMethod.getId());
-			return new ResponseEntity<SimpleResponse>(response,HttpStatus.OK);
+			return new ResponseEntity<>(response,HttpStatus.OK);
 
 		} catch (StripeException e) {
 			e.printStackTrace();
-			return new ResponseEntity<SimpleResponse>(HttpStatus.INTERNAL_SERVER_ERROR);
+			return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
 		}
 	}
 	
@@ -145,7 +141,7 @@ public class UserController implements IUserController{
 			User user = this.userServ.findByName(userName);
 			// We don't know which user wants to affect -> Unauthorized
 			if(user==null) {
-				return new ResponseEntity<Boolean>(false,HttpStatus.UNAUTHORIZED);
+				return new ResponseEntity<>(false,HttpStatus.UNAUTHORIZED);
 			}
 			// User to be affected != User that made the request
 			if(!user.equals(this.getRequestUser())) {
@@ -161,11 +157,11 @@ public class UserController implements IUserController{
 			params2.put("invoice_settings", params);
 			this.stripeServ.updateCustomer(c, params2);
 
-			return new ResponseEntity<Boolean>(true,HttpStatus.OK);
+			return new ResponseEntity<>(true,HttpStatus.OK);
 
 		}catch(StripeException e ) {
 			e.printStackTrace();
-			return new ResponseEntity<Boolean>(false,HttpStatus.INTERNAL_SERVER_ERROR);
+			return new ResponseEntity<>(false,HttpStatus.INTERNAL_SERVER_ERROR);
 		}
 	}
 	
@@ -236,14 +232,14 @@ public class UserController implements IUserController{
 				license.setSubscriptionId(subscription.getId());
 				licenseServ.save(license);
 				this.setTimerAndEndDate(license.getSerial(),license.getProduct(),product.getTrialDays(),0);
-				return new ResponseEntity<License>(license,HttpStatus.OK);
+				return new ResponseEntity<>(license,HttpStatus.OK);
 
 			}catch(StripeException e) {
 				e.printStackTrace();
-				return new ResponseEntity<License>(HttpStatus.INTERNAL_SERVER_ERROR);
+				return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
 			}
 		}else {
-			return new ResponseEntity<License>(HttpStatus.NOT_FOUND);
+			return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 
 		}
 	}
@@ -268,8 +264,8 @@ public class UserController implements IUserController{
 		
 		//Check for MB subs if user has a payment method attached
 		List<PaymentMethod> lPayments = this.getCardsFromUser(userName).getBody();
-		if(typeSubs.equals("MB") && lPayments!=null && lPayments.size()==0) {
-			return new ResponseEntity<License>(HttpStatus.PRECONDITION_REQUIRED); //The precondition is to have an attached payment source
+		if(typeSubs.equals("MB") && lPayments!=null && lPayments.isEmpty()) {
+			return new ResponseEntity<>(HttpStatus.PRECONDITION_REQUIRED); //The precondition is to have an attached payment source
 		}
 		
 		String planId=null;
@@ -298,9 +294,9 @@ public class UserController implements IUserController{
 				} catch (StripeException e) { 
 					e.printStackTrace();
 					if(e.getCode().equals("resource_missing") && e.getMessage().contains("This customer has no attached payment source")) {
-						return new ResponseEntity<License>(HttpStatus.PRECONDITION_REQUIRED); //The precondition is to have an attached payment source
+						return new ResponseEntity<>(HttpStatus.PRECONDITION_REQUIRED); //The precondition is to have an attached payment source
 					}else {
-						return new ResponseEntity<License>(HttpStatus.INTERNAL_SERVER_ERROR);
+						return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
 					}
 				}
 				this.productServ.save(product);	
@@ -315,13 +311,12 @@ public class UserController implements IUserController{
 					licenseServ.save(license);
 					this.setTimerAndEndDate(license.getSerial(),license.getProduct(),0,0);
 					
-					return new ResponseEntity<License>(license,HttpStatus.OK);
+					return new ResponseEntity<>(license,HttpStatus.OK);
 				}else if (status.equals("incomplete")) {
 					try {
 						Invoice s = this.stripeServ.getLatestInvoice(subscription.getLatestInvoice());
 						piReturned = this.stripeServ.retrievePaymentIntent(s.getPaymentIntent());
 					} catch (StripeException e1) {
-						// TODO Auto-generated catch block
 						e1.printStackTrace();
 						return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
 					}
@@ -333,7 +328,6 @@ public class UserController implements IUserController{
 				        try {
 							piReturned2 = this.stripeServ.confirmPaymentIntent(piReturned, params2);
 						} catch (StripeException e) {
-							// TODO Auto-generated catch block
 							e.printStackTrace();
 						}
 				        
@@ -350,15 +344,15 @@ public class UserController implements IUserController{
 						} catch (StripeException e) {
 							e.printStackTrace();
 						}
-						return new ResponseEntity<License>(HttpStatus.INTERNAL_SERVER_ERROR);
+						return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
 					}
 					
 				}else { // Other unknown cases
-					return new ResponseEntity<License>(HttpStatus.INTERNAL_SERVER_ERROR); 
+					return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR); 
 				}
 			
 		}else {
-			return new ResponseEntity<License>(HttpStatus.NOT_FOUND);
+			return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 		}
 	}
 	
@@ -373,7 +367,7 @@ public class UserController implements IUserController{
 				public void run() {
 					LicenseSubscription license = licenseSubsServ.findBySerialAndProduct(licenseSerial, product);
 					if(license==null) {
-						return;
+					
 					}else {
 						if(license.getCancelAtEnd()) {
 							System.out.println("Setting license inactive...");
@@ -509,14 +503,14 @@ public class UserController implements IUserController{
         
 
 		
-        List<Object> payment_method_types = new ArrayList<>();
-        payment_method_types.add("card");
-        params.put("payment_method_types", payment_method_types);
+        List<Object> paymentMethodTypes = new ArrayList<>();
+        paymentMethodTypes.add("card");
+        params.put("payment_method_types", paymentMethodTypes);
         params.put("customer",u.getCustomerStripeId());
         params.put("receipt_email",u.getEmail());
         PaymentIntent paymentIntent = this.stripeServ.createPaymentIntent(params);
         String paymentStr = paymentIntent.toJson();
-        return new ResponseEntity<String>(paymentStr, HttpStatus.OK);
+        return new ResponseEntity<>(paymentStr, HttpStatus.OK);
     }
 
 	

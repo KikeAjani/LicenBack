@@ -1,20 +1,0 @@
-
-vtfg.licensoft.stripe.StripeServices#updateProduct(Lcom/stripe/model/Product;Ljava/util/Map;)Lcom/stripe/model/Product;]
-SM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/stripe/StripeServices.java3 3("1*å
-1]
-SM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/stripe/StripeServices.java4	 4(
-£†
-]
-SM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/stripe/StripeServices.java4	 4(
-%0com.stripe.model.Product"Jcom.stripe.model.Product#update(Ljava/util/Map;)Lcom/stripe/model/Product;*
-
-pcom.stripe.model.Product*
-
-paramsjava.util.Map2update(Ljava/util/Map;)"Å
-]
-SM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/stripe/StripeServices.java4 4( 
-
-%0com.stripe.model.Product:
-pcom.stripe.model.Product:
-paramsjava.util.MapB'%
-#tfg.licensoft.stripe.StripeServices

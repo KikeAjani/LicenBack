@@ -1,28 +1,0 @@
-
-Ttfg.licensoft.configurations.UserRepositoryAuthProvider#supports(Ljava/lang/Class;)Zq
-gM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/configurations/UserRepositoryAuthProvider.java< <("startingBlock*
-startingBlockq
-gM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/configurations/UserRepositoryAuthProvider.java< <(7Ë
-È
-q
-gM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/configurations/UserRepositoryAuthProvider.java; ;(
-
-%0"
-__annotate*
-java.lang.Override*)
-'
-authenticationObjectjava.lang.Classµ
-²
-q
-gM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/configurations/UserRepositoryAuthProvider.java<" <(6'
-authenticationObjectjava.lang.Class"__annotation*
-
-%0*
-1*ó
-1q
-gM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/configurations/UserRepositoryAuthProvider.java=	 =("{
-q
-gM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/configurations/UserRepositoryAuthProvider.java= =(
-"":'
-authenticationObjectjava.lang.ClassB;9
-7tfg.licensoft.configurations.UserRepositoryAuthProvider

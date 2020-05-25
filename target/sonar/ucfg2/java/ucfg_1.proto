@@ -1,60 +1,0 @@
-
-ftfg.licensoft.configurations.PropertiesLoader#loadProperties(Ljava/lang/String;)Ljava/util/Properties;g
-]M:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/configurations/PropertiesLoader.java (+"1*Ô
-1g
-]M:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/configurations/PropertiesLoader.java	# 	(3ž›
-g
-]M:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/configurations/PropertiesLoader.java	' 	(1
-%0java.util.Properties"java.util.Properties°
-­
-g
-]M:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/configurations/PropertiesLoader.java	# 	(3
-%1"java.util.Properties#<init>()V*
-
-%0java.util.Properties·
-´
-g
-]M:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/configurations/PropertiesLoader.java	 	(4%
-configurationjava.util.Properties"__id*
-
-%0java.util.PropertiesÜÙ
-g
-]M:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/configurations/PropertiesLoader.java
-" (
-%2java.lang.ClassLoader"7java.lang.Class#getClassLoader()Ljava/lang/ClassLoader;*
-""2getClassLoader()ËÈ
-g
-]M:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/configurations/PropertiesLoader.java
-" (0
-%3java.io.InputStream"Rjava.lang.ClassLoader#getResourceAsStream(Ljava/lang/String;)Ljava/io/InputStream;*
-
-%2java.lang.ClassLoader*&
-$
-resourceFileNamejava.lang.String2'getResourceAsStream(Ljava/lang/String;)³
-°
-g
-]M:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/configurations/PropertiesLoader.java
- (1"
-inputStreamjava.io.InputStream"__id*
-
-%3java.io.InputStream—”
-g
-]M:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/configurations/PropertiesLoader.java ('
-
-%4void"1java.util.Properties#load(Ljava/io/InputStream;)V*'
-%
-configurationjava.util.Properties*$
-"
-inputStreamjava.io.InputStream2load(Ljava/io/InputStream;)ÅÂ
-g
-]M:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/configurations/PropertiesLoader.java (
-
-%5void"java.io.InputStream#close()V*$
-"
-inputStreamjava.io.InputStream2close()"’
-g
-]M:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/configurations/PropertiesLoader.java ('
-%
-configurationjava.util.Properties:$
-resourceFileNamejava.lang.StringB1"/
--tfg.licensoft.configurations.PropertiesLoader

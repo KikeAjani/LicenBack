@@ -1,24 +1,0 @@
-
-Ytfg.licensoft.users.UserService#findByEmail(Ljava/lang/String;)Ltfg/licensoft/users/User;Y
-OM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/users/UserService.java) )("1*é
-1Y
-OM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/users/UserService.java*	 *(À
-½
-Y
-OM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/users/UserService.java*	 *((
-%0"tfg.licensoft.users.UserRepository"__id*0*.!
-tfg.licensoft.users.UserService"	
-userRepÆÃ
-Y
-OM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/users/UserService.java*	 *(#
-%1tfg.licensoft.users.User"\tfg.licensoft.users.UserRepository#findByEmail(Ljava/lang/String;)Ltfg/licensoft/users/User;**
-(
-%0"tfg.licensoft.users.UserRepository*
-
-emailjava.lang.String2findByEmail(Ljava/lang/String;)"}
-Y
-OM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/users/UserService.java* *($ 
-
-%1tfg.licensoft.users.User:
-emailjava.lang.StringB#!
-tfg.licensoft.users.UserService

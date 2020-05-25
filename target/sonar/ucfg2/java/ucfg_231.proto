@@ -1,18 +1,0 @@
-
-ytfg.licensoft.stripe.StripeServices#getPaymentMethodCollection(Ljava/util/Map;)Lcom/stripe/model/PaymentMethodCollection;]
-SM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/stripe/StripeServices.java_  _(:"1*ª
-1]
-SM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/stripe/StripeServices.java`	 `(±
-®
-]
-SM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/stripe/StripeServices.java`	 `(#.
-%0(com.stripe.model.PaymentMethodCollection"^com.stripe.model.PaymentMethod#list(Ljava/util/Map;)Lcom/stripe/model/PaymentMethodCollection;*"" 
-com.stripe.model.PaymentMethod*
-
-paramsjava.util.Map"‘
-]
-SM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/stripe/StripeServices.java` `($0
-.
-%0(com.stripe.model.PaymentMethodCollection:
-paramsjava.util.MapB'%
-#tfg.licensoft.stripe.StripeServices

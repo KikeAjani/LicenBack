@@ -1,18 +1,0 @@
-
-btfg.licensoft.stripe.StripeServices#getLatestInvoice(Ljava/lang/String;)Lcom/stripe/model/Invoice;]
-SM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/stripe/StripeServices.java ( "1*˙
-1_
-SM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/stripe/StripeServices.javaÄ	 Ä(ç
-ä
-_
-SM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/stripe/StripeServices.javaÄ	 Ä(
-%0com.stripe.model.Invoice"Ocom.stripe.model.Invoice#retrieve(Ljava/lang/String;)Lcom/stripe/model/Invoice;*"
-com.stripe.model.Invoice*
-
-idjava.lang.String"É
-_
-SM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/stripe/StripeServices.javaÄ Ä( 
-
-%0com.stripe.model.Invoice:
-idjava.lang.StringB'%
-#tfg.licensoft.stripe.StripeServices

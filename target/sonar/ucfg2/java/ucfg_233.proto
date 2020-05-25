@@ -1,18 +1,0 @@
-
-ytfg.licensoft.stripe.StripeServices#detachPaymentMethod(Lcom/stripe/model/PaymentMethod;)Lcom/stripe/model/PaymentMethod;]
-SM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/stripe/StripeServices.javag g()"1*ý
-1]
-SM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/stripe/StripeServices.javah
- h(Ž‹
-]
-SM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/stripe/StripeServices.javah
- h( $
-%0com.stripe.model.PaymentMethod"Gcom.stripe.model.PaymentMethod#detach()Lcom/stripe/model/PaymentMethod;*1
-/
-paymentMethodcom.stripe.model.PaymentMethod2detach()"‡
-]
-SM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/stripe/StripeServices.javah h(!&
-$
-%0com.stripe.model.PaymentMethod:/
-paymentMethodcom.stripe.model.PaymentMethodB'%
-#tfg.licensoft.stripe.StripeServices

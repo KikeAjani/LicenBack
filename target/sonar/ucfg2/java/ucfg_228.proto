@@ -1,18 +1,0 @@
-
-ftfg.licensoft.stripe.StripeServices#createSubscription(Ljava/util/Map;)Lcom/stripe/model/Subscription;]
-SM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/stripe/StripeServices.javaS S('"1*‰
-1]
-SM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/stripe/StripeServices.javaT	 T(›
-˜
-]
-SM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/stripe/StripeServices.javaT	 T($#
-%0com.stripe.model.Subscription"Tcom.stripe.model.Subscription#create(Ljava/util/Map;)Lcom/stripe/model/Subscription;*!"
-com.stripe.model.Subscription*
-
-paramsjava.util.Map"†
-]
-SM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/stripe/StripeServices.javaT T(%%
-#
-%0com.stripe.model.Subscription:
-paramsjava.util.MapB'%
-#tfg.licensoft.stripe.StripeServices

@@ -1,26 +1,0 @@
-
-œtfg.licensoft.stripe.StripeServices#createOnSubscriptionItem(Ljava/lang/String;Ljava/util/Map;Lcom/stripe/net/RequestOptions;)Lcom/stripe/model/UsageRecord;]
-SM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/stripe/StripeServices.java{ {(,"1*¡
-1]
-SM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/stripe/StripeServices.java|	 |(´
-±
-]
-SM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/stripe/StripeServices.java|	 |(U"
-%0com.stripe.model.UsageRecord"•com.stripe.model.UsageRecord#createOnSubscriptionItem(Ljava/lang/String;Ljava/util/Map;Lcom/stripe/net/RequestOptions;)Lcom/stripe/model/UsageRecord;* "
-com.stripe.model.UsageRecord* 
-
-
-subsItemIdjava.lang.String*$
-"
-usageRecordParamsjava.util.Map**
-(
-optionscom.stripe.net.RequestOptions"…
-]
-SM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/stripe/StripeServices.java| |(V$
-"
-%0com.stripe.model.UsageRecord:
-
-subsItemIdjava.lang.String:"
-usageRecordParamsjava.util.Map:(
-optionscom.stripe.net.RequestOptionsB'%
-#tfg.licensoft.stripe.StripeServices

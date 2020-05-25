@@ -1,27 +1,0 @@
-
-tfg.licensoft.licenses.LicenseService#findByProductAndOwner(Ltfg/licensoft/products/Product;Ljava/lang/String;)Ljava/util/List;_
-UM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/licenses/LicenseService.javaB B(+"1*ü
-1_
-UM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/licenses/LicenseService.javaC	 C(Ñ
-Î
-_
-UM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/licenses/LicenseService.javaC	 C(.
-%0(tfg.licensoft.licenses.LicenseRepository"__id*5*3'
-%tfg.licensoft.licenses.LicenseService"
-licRepÆÃ
-_
-UM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/licenses/LicenseService.javaC	 C(:
-%1java.util.List"‚tfg.licensoft.licenses.LicenseRepository#findByProductAndOwner(Ltfg/licensoft/products/Product;Ljava/lang/String;)Ljava/util/List;*0
-.
-%0(tfg.licensoft.licenses.LicenseRepository*+
-)
-producttfg.licensoft.products.Product*
-
-ownerjava.lang.String2IfindByProductAndOwner(Ltfg/licensoft/products/Product;Ljava/lang/String;)"y
-_
-UM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/licenses/LicenseService.javaC C(;
-
-%1java.util.List:)
-producttfg.licensoft.products.Product:
-ownerjava.lang.StringB)'
-%tfg.licensoft.licenses.LicenseService

@@ -1,18 +1,0 @@
-
-\tfg.licensoft.stripe.StripeServices#createProduct(Ljava/util/Map;)Lcom/stripe/model/Product;]
-SM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/stripe/StripeServices.java/ /("1*
-1]
-SM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/stripe/StripeServices.java0	 0(á
-Ñ
-]
-SM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/stripe/StripeServices.java0	 0(0
-%0com.stripe.model.Product"Jcom.stripe.model.Product#create(Ljava/util/Map;)Lcom/stripe/model/Product;*"
-com.stripe.model.Product*
-
-paramsjava.util.Map"Å
-]
-SM:/UNIVERSIDAD/TFG/LicenBack/src/main/java/tfg/licensoft/stripe/StripeServices.java0 0(1 
-
-%0com.stripe.model.Product:
-paramsjava.util.MapB'%
-#tfg.licensoft.stripe.StripeServices
