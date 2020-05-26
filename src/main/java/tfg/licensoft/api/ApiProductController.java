@@ -9,6 +9,7 @@ import java.util.Optional;
 
 import javax.servlet.http.HttpServletRequest;
 
+import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -38,6 +39,7 @@ import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
+import tfg.licensoft.dtos.ProductDTO;
 import tfg.licensoft.products.Product;
 import tfg.licensoft.products.ProductService;
 import tfg.licensoft.stripe.StripeServices;
@@ -52,6 +54,9 @@ public class ApiProductController implements IProductController{
 	
 	@Autowired
 	private StripeServices stripeServ;
+	
+
+    private ModelMapper modelMapper = new ModelMapper();
 	
 	
 	@GetMapping()
@@ -78,31 +83,34 @@ public class ApiProductController implements IProductController{
 	
 
 	@PostMapping("/")
-	public ResponseEntity<Product> postProduct(@RequestBody Product product){
-		if (this.productServ.findOne(product.getName())==null) {
+	public ResponseEntity<Product> postProduct(@RequestBody ProductDTO product){
+		Product savedProduct = this.convertToEntity(product);
+		
+		
+		if (this.productServ.findOne(savedProduct.getName())==null) {
 			int count=0;
 			HashMap<String,String> plans = new HashMap<>();
-			product.setPlans(plans);
+			savedProduct.setPlans(plans);
 			String productId="";
 			Map<String, Object> params = new HashMap<String, Object>();
 			com.stripe.model.Product productStripe;
-			for (Map.Entry<String, Double> plan : product.getPlansPrices().entrySet()) {
+			for (Map.Entry<String, Double> plan : savedProduct.getPlansPrices().entrySet()) {
 				if(count==0) {
 					if (plan.getKey().equals("L")) {
-						params.put("name", product.getName());
+						params.put("name", savedProduct.getName());
 						params.put("type", "good");
 						params.put("shippable", false);
-						params.put("url", product.getWebLink());
+						params.put("url", savedProduct.getWebLink());
 					}else {
-						params.put("name", product.getName());
+						params.put("name", savedProduct.getName());
 						params.put("type", "service");
 					}
 					try {
 						productStripe =this.stripeServ.createProduct(params);
 						productId = productStripe.getId();
-						product.setProductStripeId(productId);
-						product.setPhotoAvailable(false);
-						product.setPhotoSrc("");
+						savedProduct.setProductStripeId(productId);
+						savedProduct.setPhotoAvailable(false);
+						savedProduct.setPhotoSrc("");
 						
 					} catch (StripeException e) {
 						e.printStackTrace();
@@ -111,30 +119,31 @@ public class ApiProductController implements IProductController{
 					}
 				}
 			    switch(plan.getKey()) {
-				    case "L":{
-				    	this.createLproduct(product, plan.getValue(),productId);
+				    case "L":
+				    	this.createLproduct(savedProduct, plan.getValue(),productId);
 				    	break;
-				    }
-				    case "M":{ 
-				    	this.createMproduct(product, plan.getValue(),productId);
+				    
+				    case "M":
+				    	this.createMproduct(savedProduct, plan.getValue(),productId);
 				    	break;
-				    }
-				    case "D":{
-				    	this.createDproduct(product, plan.getValue(),productId);
+				    
+				    case "D":
+				    	this.createDproduct(savedProduct, plan.getValue(),productId);
 				    	break;
-				    }
-				    case "A":{
-				    	this.createAproduct(product, plan.getValue(), productId);
+				    
+				    case "A":
+				    	this.createAproduct(savedProduct, plan.getValue(), productId);
 				    	break;
-				    }
-				    case "MB":{
-				    	this.createMBproduct(product, plan.getValue(), productId);
+				    
+				    case "MB":
+				    	this.createMBproduct(savedProduct, plan.getValue(), productId);
 				    	break;
-				    }
+				    default:
+				    	break;
 			    }
 			    count++;
 			}
-			return new ResponseEntity<Product>(product,HttpStatus.OK);
+			return new ResponseEntity<Product>(savedProduct,HttpStatus.OK);
 		}else {
 			return new ResponseEntity<Product>(HttpStatus.CONFLICT);
 		}
@@ -142,27 +151,30 @@ public class ApiProductController implements IProductController{
 	
 	
 	@PutMapping("/")
-	public ResponseEntity<Product> editProduct(@RequestBody Product product){
-		Product p = this.productServ.findOne(product.getName());
+	public ResponseEntity<Product> editProduct(@RequestBody ProductDTO product){
+		Product savedProduct = this.convertToEntity(product);
+		
+		Product p = this.productServ.findOne(savedProduct.getName());
 		if (p==null) {
-			return new ResponseEntity<Product>(HttpStatus.NOT_FOUND);
+			return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 		}else{
-			p.setDescription(product.getDescription());
+			p.setDescription(savedProduct.getDescription());
 			try {
 				com.stripe.model.Product pStripe = this.stripeServ.retrieveProduct(p.getProductStripeId());
 				Map<String, Object> params = new HashMap<>();
-				params.put("description", product.getDescription());
+				params.put("description", savedProduct.getDescription());
+
 				this.stripeServ.updateProduct(pStripe, params);
 			} catch (StripeException e) {
 				e.printStackTrace();
 				return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
 			} 
-			p.setTrialDays(product.getTrialDays());
-			p.setPhotoAvailable(product.isPhotoAvailable());
-			p.setPhotoSrc(product.getPhotoSrc());
-			p.setWebLink(product.getWebLink());
+			p.setTrialDays(savedProduct.getTrialDays());
+			p.setPhotoAvailable(savedProduct.isPhotoAvailable());
+			p.setPhotoSrc(savedProduct.getPhotoSrc());
+			p.setWebLink(savedProduct.getWebLink());
 			Product newP = this.productServ.save(p);
-			return new ResponseEntity<Product>(newP,HttpStatus.OK); 
+			return new ResponseEntity<>(newP,HttpStatus.OK); 
 		}	
 	}
 	
@@ -322,6 +334,10 @@ public class ApiProductController implements IProductController{
 		headers.setContentType(MediaType.IMAGE_JPEG);
 		return new ResponseEntity<byte[]>(bytes, headers, HttpStatus.CREATED);
 
+	}
+	
+	private Product convertToEntity(ProductDTO dto ) {
+		return modelMapper.map(dto, Product.class);
 	}
 	
 
