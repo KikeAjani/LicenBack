@@ -6,6 +6,8 @@ import java.io.IOException;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.UUID;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 import javax.persistence.Entity;
 import javax.persistence.Transient;
@@ -37,6 +39,8 @@ public class LicenseSubscription extends License {
 	private Date endDate;
 	private Integer period;
 	
+    private static final Logger LOGGER = Logger.getLogger("tfg.licensoft.licenses.LicenseSubscription");
+
 	public LicenseSubscription(boolean active, String type,  Product product, String owner,long trialDays) {
 		super(active, product, owner);
 		this.setType(type);
@@ -49,12 +53,22 @@ public class LicenseSubscription extends License {
 		this.setPrice(product.getPlansPrices().get(type));
 		
         String mode = this.getProduct().getMode();
+        
         if(mode!=null && (mode.equals("Offline") || mode.equals("Both"))){
-    		this.setLicenseString(this.generateLicenseFile2("licenseFile-"+this.getProduct().getName()+".txt"));
+        	
+			javax0.license3j.License l = this.generateLicenseFile2("licenseFile-"+this.getProduct().getName()+".txt");
+
+    		this.setLicenseString(this.signLicense(l));
         }
         
         this.period=1;
 
+	}
+	
+	@Override
+	public String signLicense(javax0.license3j.License l) {
+		LOGGER.log(Level.INFO, "Signing LicenseSubscriptionFile");
+		return super.signLicense(l);
 	}
 	
 	
@@ -177,44 +191,14 @@ public class LicenseSubscription extends License {
 		this.endDate = endDate;
 	}
 	
-	protected String generateLicenseFile2(String path) {
-		String privateKeyPath="";
-		try {
-			privateKeyPath= PropertiesLoader.loadProperties("application.properties").getProperty("licencheck.keys.private");
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-		if (privateKeyPath==null) {
-			privateKeyPath = System.getenv("LICENCHECK.KEYS.PRIVATE");
-		}
-		if(privateKeyPath==null) {
-			privateKeyPath = System.getenv("licencheck.keys.private");
-		}
-		if(privateKeyPath==null) {
-			privateKeyPath = System.getenv("licencheck_keys_private");
-		}
-
-		if (privateKeyPath==null) {
-			privateKeyPath = System.getenv("LICENCHECK_KEYS_PRIVATE");
-		}
+	protected javax0.license3j.License generateLicenseFile2(String path) {
 		javax0.license3j.License license = new javax0.license3j.License();
         license.add(Feature.Create.dateFeature("startDate",this.getStartDate()));
         license.add(Feature.Create.dateFeature("endDate",this.getEndDate()));
         license.add(Feature.Create.stringFeature("product",this.getProduct().getName()));
         license.add(Feature.Create.stringFeature("type",this.getType()));
         license.add(Feature.Create.stringFeature("owner",this.getOwner()));
-
-
-        try {
-            KeyPairReader kpr = new KeyPairReader(privateKeyPath);
-            LicenseKeyPair lkp = kpr.readPrivate();
-            license.sign(lkp.getPair().getPrivate(),"SHA-512");
-            kpr.close();
-            return license.toString();
-        } catch (Exception e) {
-            e.printStackTrace();
-            return null;
-        }
+        return license;
 	}
 
 	@Override

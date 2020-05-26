@@ -73,8 +73,9 @@ public class License {
 		}
 		
         String mode = this.product.getMode();
-        if(mode!=null && (mode.equals("Offline") || mode.equals("Both"))){
-    		this.licenseString =  this.generateLicenseFile("licenseFile-"+this.getProduct().getName()+".txt");
+        if( !(this instanceof LicenseSubscription) && mode!=null && (mode.equals("Offline") || mode.equals("Both"))){
+        	javax0.license3j.License l = this.generateLicenseFile("licenseFile-"+this.getProduct().getName()+".txt");
+    		this.licenseString =  this.signLicense(l);
         }
 
 
@@ -165,10 +166,20 @@ public class License {
 		return UUID.randomUUID().toString();
 	}
 	
-	protected String generateLicenseFile(String path) {
-		if(this instanceof LicenseSubscription) {
-			return null;
-		}
+	protected javax0.license3j.License generateLicenseFile(String path) {
+		javax0.license3j.License license = new javax0.license3j.License();
+        license.add(Feature.Create.dateFeature("startDate",this.getStartDate()));
+        license.add(Feature.Create.stringFeature("product",this.getProduct().getName()));
+        license.add(Feature.Create.stringFeature("type",this.getType()));
+        license.add(Feature.Create.stringFeature("owner",this.getOwner()));
+		
+		return license;
+
+        
+        
+	}
+	
+	protected String signLicense(javax0.license3j.License license) {
 		String privateKeyPath="";
 		try {
 			privateKeyPath= PropertiesLoader.loadProperties("application.properties").getProperty("licencheck.keys.private");
@@ -188,23 +199,15 @@ public class License {
 		if (privateKeyPath==null) {
 			privateKeyPath = System.getenv("LICENCHECK_KEYS_PRIVATE");
 		}
-		javax0.license3j.License license = new javax0.license3j.License();
-        license.add(Feature.Create.dateFeature("startDate",this.getStartDate()));
-        license.add(Feature.Create.stringFeature("product",this.getProduct().getName()));
-        license.add(Feature.Create.stringFeature("type",this.getType()));
-        license.add(Feature.Create.stringFeature("owner",this.getOwner()));
-
-        try {
-            KeyPairReader kpr = new KeyPairReader(privateKeyPath);
+		
+		try (KeyPairReader kpr = new KeyPairReader(privateKeyPath)){
             LicenseKeyPair lkp = kpr.readPrivate();
             license.sign(lkp.getPair().getPrivate(),"SHA-512");
-            kpr.close();
             return license.toString();
         } catch (Exception e) {
             e.printStackTrace();
             return null;
         }
-        
 	}
 	
 
