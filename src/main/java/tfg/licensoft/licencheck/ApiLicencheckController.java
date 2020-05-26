@@ -52,7 +52,7 @@ public class ApiLicencheckController {
 	private ProductService productService;
 
 	
-	@RequestMapping("checkLicense/{productName}/{licenseSerial}")
+	@GetMapping("checkLicense/{productName}/{licenseSerial}")
 	public ResponseEntity<License> checkLicense(@PathVariable String licenseSerial, @PathVariable String productName ) {
 		Product product = this.productService.findOne(productName);
 
