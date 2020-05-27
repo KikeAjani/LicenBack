@@ -320,7 +320,7 @@ public class ApiProductController implements IProductController{
 	}
 	
 	@PostMapping(value = "/{productName}/image")
-	public ResponseEntity<byte[]> postImage(@RequestBody MultipartFile file, @PathVariable String productName) throws Exception {
+	public ResponseEntity<byte[]> postImage(@RequestBody MultipartFile file, @PathVariable String productName) throws IOException  {
 		if(file == null) {
 			return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
 		}

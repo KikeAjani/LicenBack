@@ -17,7 +17,6 @@ import io.swagger.annotations.ApiResponses;
 import tfg.licensoft.api.UserController.SimpleResponse;
 import tfg.licensoft.dtos.ProductDTO;
 import tfg.licensoft.licenses.License;
-import tfg.licensoft.products.Product;
 
 public interface IUserController {
 	

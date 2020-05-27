@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 
 import io.swagger.annotations.ApiOperation;
-import io.swagger.annotations.ApiImplicitParam;
 
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
@@ -80,6 +79,6 @@ public interface IProductController {
             @ApiResponse(code = 400, message = "File Not Found")
 
     })
-	ResponseEntity<byte[]> postImage(@RequestBody MultipartFile file, @PathVariable String productName) throws Exception;
+	ResponseEntity<byte[]> postImage(@RequestBody MultipartFile file, @PathVariable String productName) throws IOException;
 
 }
