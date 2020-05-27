@@ -35,10 +35,6 @@ import com.stripe.model.Plan;
 import com.stripe.model.Sku;
 import com.stripe.param.PlanCreateParams;
 
-import io.swagger.annotations.ApiImplicitParam;
-import io.swagger.annotations.ApiOperation;
-import io.swagger.annotations.ApiResponse;
-import io.swagger.annotations.ApiResponses;
 import tfg.licensoft.dtos.ProductDTO;
 import tfg.licensoft.products.Product;
 import tfg.licensoft.products.ProductService;
@@ -57,7 +53,13 @@ public class ApiProductController implements IProductController{
 	
 
     private ModelMapper modelMapper = new ModelMapper();
-	
+    
+    private static final String CURRENCY = "currency";
+    private static final String PRODUCT = "product";
+    private static final String INTERVAL = "interval";
+    private static final String NICKNAME = "nickname";
+    private static final String AMOUNT = "amount";
+
 	
 	@GetMapping()
 	public ResponseEntity<List<Product>> getProducts(HttpServletRequest req,@RequestParam Optional<String> search){
@@ -73,9 +75,9 @@ public class ApiProductController implements IProductController{
 	public ResponseEntity<Product> getProduct(@PathVariable String productName) {
 		Product p = this.productServ.findOne(productName);
 		if (p != null) {
-			return new ResponseEntity<Product>(p,HttpStatus.OK);
+			return new ResponseEntity<>(p,HttpStatus.OK);
 		}else {
-			return new ResponseEntity<Product>(HttpStatus.NOT_FOUND);
+			return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 		}
 	} 
  
@@ -92,7 +94,7 @@ public class ApiProductController implements IProductController{
 			HashMap<String,String> plans = new HashMap<>();
 			savedProduct.setPlans(plans);
 			String productId="";
-			Map<String, Object> params = new HashMap<String, Object>();
+			Map<String, Object> params = new HashMap<>();
 			com.stripe.model.Product productStripe;
 			for (Map.Entry<String, Double> plan : savedProduct.getPlansPrices().entrySet()) {
 				if(count==0) {
@@ -143,9 +145,9 @@ public class ApiProductController implements IProductController{
 			    }
 			    count++;
 			}
-			return new ResponseEntity<Product>(savedProduct,HttpStatus.OK);
+			return new ResponseEntity<>(savedProduct,HttpStatus.OK);
 		}else {
-			return new ResponseEntity<Product>(HttpStatus.CONFLICT);
+			return new ResponseEntity<>(HttpStatus.CONFLICT);
 		}
 	}
 	
@@ -182,7 +184,7 @@ public class ApiProductController implements IProductController{
 	public ResponseEntity<Product> deleteProduct(@PathVariable String productName,HttpServletRequest request){
 		Product p = this.productServ.findOne(productName);
 		if(p==null) {
-			return new ResponseEntity<Product>(HttpStatus.NOT_FOUND);
+			return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 		}else {
 			try {
 				com.stripe.model.Product product = this.stripeServ.retrieveProduct(p.getProductStripeId());
@@ -192,7 +194,7 @@ public class ApiProductController implements IProductController{
 						p.setActive(false);
 						p.setPhotoAvailable(false);
 						this.productServ.save(p);
-						return new ResponseEntity<Product>(p,HttpStatus.OK); 
+						return new ResponseEntity<>(p,HttpStatus.OK); 
 			}catch(StripeException e) {
 				e.printStackTrace();
 				return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
@@ -213,8 +215,8 @@ public class ApiProductController implements IProductController{
 			Map<String, Object> paramsSku = new HashMap<>();
 			paramsSku.put("price",(int)(price*100) );  //Hay que ponerlo en centimos (y en entero)
 			paramsSku.put("inventory", inventory);
-			paramsSku.put("currency", "eur");
-			paramsSku.put("product",productId);
+			paramsSku.put(CURRENCY, "eur");
+			paramsSku.put(PRODUCT,productId);
 	 
 			Sku sku = this.stripeServ.createSku(paramsSku);
 			product.setSku(sku.getId());
@@ -251,12 +253,12 @@ public class ApiProductController implements IProductController{
 	//private methods to create plans
 	private void createMproduct(Product product, double price, String productId) {
 		try {
-			Map<String, Object> params = new HashMap<String, Object>();
-			params.put("currency", "eur");
-			params.put("interval", "month");
-			params.put("product", productId);
-			params.put("nickname", "M");
-			params.put("amount", (int)(price*100));
+			Map<String, Object> params = new HashMap<>();
+			params.put(CURRENCY, "eur");
+			params.put(INTERVAL, "month");
+			params.put(PRODUCT, productId);
+			params.put(NICKNAME, "M");
+			params.put(AMOUNT, (int)(price*100));
 			Plan plan1M = this.stripeServ.createPlan(params);
 			product.getPlans().put("M",plan1M.getId());
 			
@@ -268,12 +270,12 @@ public class ApiProductController implements IProductController{
 	
 	private void createAproduct(Product product, double price, String productId) {
 		try {
-			Map<String, Object> params = new HashMap<String, Object>();
-			params.put("currency", "eur");
-			params.put("interval", "year");
-			params.put("product",productId);
-			params.put("nickname", "A");
-			params.put("amount", (int)(price*100));
+			Map<String, Object> params = new HashMap<>();
+			params.put(CURRENCY, "eur");
+			params.put(INTERVAL, "year");
+			params.put(PRODUCT,productId);
+			params.put(NICKNAME, "A");
+			params.put(AMOUNT, (int)(price*100));
 			Plan plan1M =this.stripeServ.createPlan(params);
 			product.getPlans().put("A",plan1M.getId());
 			
@@ -285,12 +287,12 @@ public class ApiProductController implements IProductController{
 	
 	private void createDproduct(Product product, double price, String productId) {
 		try {
-			Map<String, Object> params = new HashMap<String, Object>();
-			params.put("currency", "eur");
-			params.put("interval", "day");
-			params.put("product", productId);
-			params.put("nickname", "D");
-			params.put("amount", (int)(price*100));
+			Map<String, Object> params = new HashMap<>();
+			params.put(CURRENCY, "eur");
+			params.put(INTERVAL, "day");
+			params.put(PRODUCT, productId);
+			params.put(NICKNAME, "D");
+			params.put(AMOUNT, (int)(price*100));
 			Plan plan1M =this.stripeServ.createPlan(params);
 			product.getPlans().put("D",plan1M.getId());
 			
@@ -311,7 +313,7 @@ public class ApiProductController implements IProductController{
 			byte[] bytes = Files.readAllBytes(productServ.getImage(p));
 			final HttpHeaders headers = new HttpHeaders();
 			headers.setContentType(MediaType.IMAGE_JPEG);
-			return new ResponseEntity<byte[]>(bytes, headers, HttpStatus.OK);
+			return new ResponseEntity<>(bytes, headers, HttpStatus.OK);
 		} else {
 			return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 		}
@@ -332,7 +334,7 @@ public class ApiProductController implements IProductController{
 		byte[] bytes = Files.readAllBytes(productServ.getImage(p));
 		final HttpHeaders headers = new HttpHeaders();
 		headers.setContentType(MediaType.IMAGE_JPEG);
-		return new ResponseEntity<byte[]>(bytes, headers, HttpStatus.CREATED);
+		return new ResponseEntity<>(bytes, headers, HttpStatus.CREATED);
 
 	}
 	
