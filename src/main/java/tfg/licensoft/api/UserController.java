@@ -1,5 +1,6 @@
 package tfg.licensoft.api;
 
+import tfg.licensoft.dtos.ProductDTO;
 import tfg.licensoft.licenses.License;
 import tfg.licensoft.licenses.LicenseService;
 import tfg.licensoft.licenses.LicenseSubscription;
@@ -31,6 +32,7 @@ import java.util.Optional;
 import java.util.Timer;
 import java.util.TimerTask;
 
+import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -71,6 +73,8 @@ public class UserController implements IUserController{
     private static final Logger LOGGER = Logger.getLogger("tfg.licensoft.api.UserController");
 
     Pattern pattern = Pattern.compile("[A-Za-z0-9_]+");
+
+    private ModelMapper modelMapper = new ModelMapper();
 
     
 	class SimpleResponse{
@@ -501,8 +505,9 @@ public class UserController implements IUserController{
 	//LIFETIME BUY METHODS
 	
     @PostMapping("{userName}/paymentIntent/{tokenId}")
-    public ResponseEntity<String> payment(@PathVariable String userName,@RequestBody Product product, @PathVariable String tokenId) throws StripeException {
-    	
+    public ResponseEntity<String> payment(@PathVariable String userName,@RequestBody ProductDTO product, @PathVariable String tokenId) throws StripeException {
+		Product savedProduct = this.convertToEntity(product);
+
 		User u = this.userServ.findByName(userName);
 		
 		// We don't know which user wants to affect -> Unauthorized
@@ -522,12 +527,11 @@ public class UserController implements IUserController{
 
 		PaymentMethod paymentMethod =  this.stripeServ.createPaymentMethod(paramsPM);
 
-		
     	Map<String, Object> params = new HashMap<>();
-        params.put("amount", product.getPlansPrices().get("L").intValue()*100);
+        params.put("amount", savedProduct.getPlansPrices().get("L").intValue()*100);
         params.put("payment_method", paymentMethod.getId());
         params.put("currency", "eur");
-        params.put("description", "Product bought: " + product.getName());
+        params.put("description", "Product bought: " + savedProduct.getName());
         
 
 		
@@ -723,5 +727,9 @@ public class UserController implements IUserController{
 		}
 		
     }
+    
+	private Product convertToEntity(ProductDTO dto ) {
+		return modelMapper.map(dto, Product.class);
+	}
     
 }
