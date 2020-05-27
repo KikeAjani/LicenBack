@@ -720,6 +720,7 @@ public class UserController implements IUserController{
 			Map<String, Object> params = new HashMap<>();
 			params.put(DEFAULT_PAYMENT_METHOD, pmId);
 			Subscription subsReturned= this.stripeServ.updateSubscription(subs, params);
+			LOGGER.log(Level.INFO,"Payment Method posted to used");
 			return new ResponseEntity<>(new SimpleResponse(subsReturned.getDefaultPaymentMethod()),HttpStatus.OK);
 		} catch (StripeException e) {
     		LOGGER.severe(e.getMessage());
