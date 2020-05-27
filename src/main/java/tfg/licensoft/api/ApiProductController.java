@@ -271,12 +271,16 @@ public class ApiProductController implements IProductController{
 	private void createAproduct(Product product, double price, String productId) {
 		try {
 			Map<String, Object> params = new HashMap<>();
+			
 			params.put(CURRENCY, "eur");
 			params.put(INTERVAL, "year");
 			params.put(PRODUCT,productId);
+			
 			params.put(NICKNAME, "A");
 			params.put(AMOUNT, (int)(price*100));
+			
 			Plan plan1M =this.stripeServ.createPlan(params);
+			
 			product.getPlans().put("A",plan1M.getId());
 			
 		}catch(StripeException e) {
@@ -289,10 +293,15 @@ public class ApiProductController implements IProductController{
 		try {
 			Map<String, Object> params = new HashMap<>();
 			params.put(CURRENCY, "eur");
+			
 			params.put(INTERVAL, "day");
+			
 			params.put(PRODUCT, productId);
+			
 			params.put(NICKNAME, "D");
+			
 			params.put(AMOUNT, (int)(price*100));
+			
 			Plan plan1M =this.stripeServ.createPlan(params);
 			product.getPlans().put("D",plan1M.getId());
 			

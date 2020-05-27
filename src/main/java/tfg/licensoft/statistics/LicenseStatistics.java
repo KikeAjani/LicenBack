@@ -7,8 +7,9 @@ import java.util.Date;
 import java.util.GregorianCalendar;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+import java.util.logging.Logger;
 
-import javax.persistence.Column;
 import javax.persistence.ElementCollection;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -19,7 +20,6 @@ import javax.persistence.ManyToOne;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
-import tfg.licensoft.licenses.License;
 import tfg.licensoft.licenses.LicenseSubscription;
 
 @Entity
@@ -42,7 +42,8 @@ public class LicenseStatistics {
 	
 	private Integer period;
 
-	
+    private static final Logger LOGGER = Logger.getLogger("tfg.licensoft.statistics.LicenseStatistics");
+
 	public LicenseStatistics() {}
 	public LicenseStatistics(LicenseSubscription l) {
 		this.nUsage=0;
@@ -60,28 +61,28 @@ public class LicenseStatistics {
 		    calendar.setTime(this.license.getStartDate());
 		     
 		    Calendar endCalendar = new GregorianCalendar();
-		    LicenseSubscription ls = (LicenseSubscription)(this.license);
+		    LicenseSubscription ls = this.license;
 		    endCalendar.setTime(ls.getEndDate());
 		    
 		    int numberAdd;
 		    switch(this.license.getType()) {
 		    	case "MB":
-			    case "M":{
+			    case "M":
 			    	numberAdd = Calendar.DATE;
 			    	break;
-			    }
-			    case "D":{
+			    
+			    case "D":
 			    	numberAdd = Calendar.HOUR_OF_DAY;
 			    	break;
-			    }
-			    case "A":{
+			    
+			    case "A":
 			    	numberAdd = Calendar.MONTH;
 			    	break;
-			    }
-			    default:{
+			    
+			    default:
 			    	numberAdd = Calendar.DATE;
 			    	break;
-			    }
+			    
 		    }
 		    
 		    while (calendar.before(endCalendar)) {
@@ -89,9 +90,8 @@ public class LicenseStatistics {
 		        this.usagePerTime.put(this.getFormattedDate(result),0);
 		        calendar.add(numberAdd, 1);
 		    }
-		    System.out.println(this.usagePerTime);
 		}catch (ClassCastException e) {
-			System.out.println("Error while setting up the usage per time ready");
+			LOGGER.severe("Error while setting up the usage per time ready");
 		}
 
 	 
@@ -101,18 +101,18 @@ public class LicenseStatistics {
 	public String getFormattedDate(Date result) {
 		 switch(this.license.getType()) {
 	    	case "MB":
-		    case "M":{
+		    case "M":
 		        return new SimpleDateFormat("MM/dd/yyyy").format(result);
-		    }
-		    case "D":{
+		    
+		    case "D":
 		        return new SimpleDateFormat("MM/dd HH").format(result) + "h";
-		    }
-		    case "A":{
+		    
+		    case "A":
 		    	return new SimpleDateFormat("yyyy/MM").format(result);
-		    }
-		    default:{
+		   
+		    default:
 		    	return new SimpleDateFormat("MM/dd/yyyy").format(result);
-		    }
+		    
 	    }
 	}
 	
@@ -142,7 +142,7 @@ public class LicenseStatistics {
 
 
 
-	public HashMap<String, Integer> getUsagePerTime() {
+	public Map<String, Integer> getUsagePerTime() {
 		return usagePerTime;
 	}
 

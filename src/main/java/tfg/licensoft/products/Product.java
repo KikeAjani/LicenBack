@@ -5,6 +5,8 @@ import io.swagger.annotations.ApiModelProperty;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+
 import javax.persistence.ElementCollection;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
@@ -185,7 +187,7 @@ public class Product {
 	}
 
 
-	public HashMap<String, String> getPlans() {
+	public Map<String,String> getPlans() {
 		return plans;
 	}
 
@@ -210,7 +212,7 @@ public class Product {
 	}
 
 	
-	public HashMap<String, Double> getPlansPrices() {
+	public Map<String, Double> getPlansPrices() {
 		return plansPrices;
 	}
 
@@ -238,7 +240,8 @@ public class Product {
 		if (name == null) {
 			if (other.name != null)
 				return false;
-		} else if (!name.equals(other.name))
+		} 
+		else if (!name.equals(other.name))
 			return false;
 		return true;
 	}
