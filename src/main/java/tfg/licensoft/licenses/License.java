@@ -18,14 +18,11 @@ import tfg.licensoft.products.Product;
 import tfg.licensoft.statistics.LicenseStatistics;
 
 import javax.persistence.OneToMany;
-import javax.persistence.Transient;
 
-import org.springframework.beans.factory.annotation.Value;
 
 import javax0.license3j.Feature;
 import javax0.license3j.crypto.LicenseKeyPair;
 import javax0.license3j.io.KeyPairReader;
-import net.bytebuddy.asm.Advice.This;
 
 import org.springframework.context.annotation.PropertySource;
 @PropertySource("classpath:/application.properties")
@@ -74,7 +71,7 @@ public class License {
 		
         String mode = this.product.getMode();
         if( !(this instanceof LicenseSubscription) && mode!=null && (mode.equals("Offline") || mode.equals("Both"))){
-        	javax0.license3j.License l = this.generateLicenseFile("licenseFile-"+this.getProduct().getName()+".txt");
+        	javax0.license3j.License l = this.generateLicenseFile();
     		this.licenseString =  this.signLicense(l);
         }
 
@@ -123,7 +120,6 @@ public class License {
 		return active;
 	}
 	public void setActive(boolean active) {
-		System.out.println("SETTING ACTIVE: " + active);
 		this.active = active;
 	}
 
@@ -166,7 +162,7 @@ public class License {
 		return UUID.randomUUID().toString();
 	}
 	
-	protected javax0.license3j.License generateLicenseFile(String path) {
+	protected javax0.license3j.License generateLicenseFile() {
 		javax0.license3j.License license = new javax0.license3j.License();
         license.add(Feature.Create.dateFeature("startDate",this.getStartDate()));
         license.add(Feature.Create.stringFeature("product",this.getProduct().getName()));
@@ -243,39 +239,46 @@ public class License {
 		if (id == null) {
 			if (other.id != null)
 				return false;
-		} else if (!id.equals(other.id))
+		}
+		else if (!id.equals(other.id))
 			return false;
 		if (licenseStats == null) {
 			if (other.licenseStats != null)
 				return false;
-		} else if (!licenseStats.equals(other.licenseStats))
+		}
+		else if (!licenseStats.equals(other.licenseStats))
 			return false;
 		if (owner == null) {
 			if (other.owner != null)
 				return false;
-		} else if (!owner.equals(other.owner))
+		}
+		else if (!owner.equals(other.owner))
 			return false;
 		if (Double.doubleToLongBits(price) != Double.doubleToLongBits(other.price))
 			return false;
 		if (product == null) {
 			if (other.product != null)
 				return false;
-		} else if (!product.equals(other.product))
+		}
+		else if (!product.equals(other.product))
 			return false;
 		if (serial == null) {
 			if (other.serial != null)
 				return false;
-		} else if (!serial.equals(other.serial))
+		}
+		else if (!serial.equals(other.serial))
 			return false;
 		if (startDate == null) {
 			if (other.startDate != null)
 				return false;
-		} else if (!startDate.equals(other.startDate))
+		}
+		else if (!startDate.equals(other.startDate))
 			return false;
 		if (type == null) {
 			if (other.type != null)
 				return false;
-		} else if (!type.equals(other.type))
+		}
+		else if (!type.equals(other.type))
 			return false;
 		return true;
 	}

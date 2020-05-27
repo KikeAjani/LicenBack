@@ -1,30 +1,16 @@
 package tfg.licensoft.licenses;
 
 
-import java.io.File;
-import java.io.IOException;
 import java.util.Calendar;
 import java.util.Date;
-import java.util.UUID;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
 import javax.persistence.Entity;
-import javax.persistence.Transient;
 
 import io.swagger.annotations.ApiModel;
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-
 import javax0.license3j.Feature;
-import javax0.license3j.crypto.LicenseKeyPair;
-import javax0.license3j.io.IOFormat;
-import javax0.license3j.io.KeyPairReader;
-import javax0.license3j.io.LicenseWriter;
-import tfg.licensoft.api.GeneralController;
-import tfg.licensoft.configurations.PropertiesLoader;
 import tfg.licensoft.products.Product;
 
 @Entity
@@ -56,7 +42,7 @@ public class LicenseSubscription extends License {
         
         if(mode!=null && (mode.equals("Offline") || mode.equals("Both"))){
         	
-			javax0.license3j.License l = this.generateLicenseFile2("licenseFile-"+this.getProduct().getName()+".txt");
+			javax0.license3j.License l = this.generateLicenseFile2();
 
     		this.setLicenseString(this.signLicense(l));
         }
@@ -88,19 +74,19 @@ public class LicenseSubscription extends License {
 
 			switch(this.getType()) {
 				case "MB":
-				case "M": {
+				case "M": 
 					ahoraCal.add(Calendar.MONTH, 1);
 					break;
-				}
-				case "A":{
+				
+				case "A":
 					ahoraCal.add(Calendar.YEAR, 1);
 					break;	
-				} 
-				case "D":{
+				 
+				case "D":
 					ahoraCal.add(Calendar.HOUR, 24);
 					break;	
-				}
-				default: this.endDate=null;
+				
+				default: this.endDate=null; break;
 			}
 		}else {
 			ahoraCal.add(Calendar.HOUR, (int)(24*trialDays));
@@ -191,7 +177,7 @@ public class LicenseSubscription extends License {
 		this.endDate = endDate;
 	}
 	
-	protected javax0.license3j.License generateLicenseFile2(String path) {
+	protected javax0.license3j.License generateLicenseFile2() {
 		javax0.license3j.License license = new javax0.license3j.License();
         license.add(Feature.Create.dateFeature("startDate",this.getStartDate()));
         license.add(Feature.Create.dateFeature("endDate",this.getEndDate()));
@@ -228,23 +214,25 @@ public class LicenseSubscription extends License {
 		if (endDate == null) {
 			if (other.endDate != null)
 				return false;
-		} else if (!endDate.equals(other.endDate))
+		} 
+		else if (!endDate.equals(other.endDate))
 			return false;
 		if (nUsage != other.nUsage)
 			return false;
 		if (subscriptionId == null) {
 			if (other.subscriptionId != null)
 				return false;
-		} else if (!subscriptionId.equals(other.subscriptionId))
+		} 
+		else if (!subscriptionId.equals(other.subscriptionId))
 			return false;
 		if (subscriptionItemId == null) {
 			if (other.subscriptionItemId != null)
 				return false;
-		} else if (!subscriptionItemId.equals(other.subscriptionItemId))
+		} 
+		else if (!subscriptionItemId.equals(other.subscriptionItemId))
 			return false;
-		if (trial != other.trial)
-			return false;
-		return true;
+		
+		return (trial == other.trial);
 	}
 	
 	
