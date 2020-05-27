@@ -250,15 +250,22 @@ public class ApiProductController implements IProductController{
 		this.productServ.save(product);
 	}	
 	
+	private Map<String, Object> createParams(String productId, double price, String type) {
+		
+		Map<String, Object> params = new HashMap<>();
+		params.put(CURRENCY, "eur");
+		params.put(PRODUCT, productId);
+		params.put(AMOUNT, (int)(price*100));
+		params.put(NICKNAME, type);
+
+		return params;
+	}
+	
 	//private methods to create plans
 	private void createMproduct(Product product, double price, String productId) {
 		try {
-			Map<String, Object> params = new HashMap<>();
-			params.put(CURRENCY, "eur");
+			Map<String, Object> params = this.createParams(productId, price, "M");
 			params.put(INTERVAL, "month");
-			params.put(PRODUCT, productId);
-			params.put(NICKNAME, "M");
-			params.put(AMOUNT, (int)(price*100));
 			Plan plan1M = this.stripeServ.createPlan(params);
 			product.getPlans().put("M",plan1M.getId());
 			
@@ -270,18 +277,10 @@ public class ApiProductController implements IProductController{
 	
 	private void createAproduct(Product product, double price, String productId) {
 		try {
-			Map<String, Object> params = new HashMap<>();
-			
-			params.put(CURRENCY, "eur");
-			params.put(INTERVAL, "year");
-			params.put(PRODUCT,productId);
-			
-			params.put(NICKNAME, "A");
-			params.put(AMOUNT, (int)(price*100));
-			
-			Plan plan1M =this.stripeServ.createPlan(params);
-			
-			product.getPlans().put("A",plan1M.getId());
+			Map<String, Object> params = this.createParams(productId, price, "A");
+			params.put(INTERVAL, "year");		
+			Plan plan1A =this.stripeServ.createPlan(params);
+			product.getPlans().put("A",plan1A.getId());
 			
 		}catch(StripeException e) {
 			e.printStackTrace();
@@ -291,19 +290,12 @@ public class ApiProductController implements IProductController{
 	
 	private void createDproduct(Product product, double price, String productId) {
 		try {
-			Map<String, Object> params = new HashMap<>();
-			params.put(CURRENCY, "eur");
+			Map<String, Object> params = this.createParams(productId, price, "D");
 			
 			params.put(INTERVAL, "day");
 			
-			params.put(PRODUCT, productId);
-			
-			params.put(NICKNAME, "D");
-			
-			params.put(AMOUNT, (int)(price*100));
-			
-			Plan plan1M =this.stripeServ.createPlan(params);
-			product.getPlans().put("D",plan1M.getId());
+			Plan plan1D =this.stripeServ.createPlan(params);
+			product.getPlans().put("D",plan1D.getId());
 			
 		}catch(StripeException e) {
 			e.printStackTrace();
