@@ -207,7 +207,11 @@ public class UserController implements IUserController{
 	//Will be subscribed to a M subscription with x free trial days
 	@PutMapping("/{userName}/products/{productName}/{type}/addTrial/cards/{token}")
 	public ResponseEntity<License> addTrial(@PathVariable String productName, @PathVariable String userName,  @PathVariable String token, @PathVariable String type){
-		String safeType = type;
+		
+		String safeType = "";
+		if(pattern.matcher(type).matches()) {
+			safeType = type;
+		}
 		
 		User user = this.userServ.findByName(userName);
 		Product product = this.productServ.findOne(productName);
