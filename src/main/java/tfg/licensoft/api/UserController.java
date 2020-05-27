@@ -39,6 +39,7 @@ import org.springframework.security.core.context.SecurityContextHolder;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import java.util.regex.Pattern;
 
 @CrossOrigin
 @RestController
@@ -69,7 +70,9 @@ public class UserController implements IUserController{
 
     private static final Logger LOGGER = Logger.getLogger("tfg.licensoft.api.UserController");
 
-	
+    Pattern pattern = Pattern.compile("[A-Za-z0-9_]+");
+
+    
 	class SimpleResponse{
 		private String response;
 		
@@ -258,10 +261,13 @@ public class UserController implements IUserController{
 	
 	@PutMapping("{userName}/products/{productName}/{typeSubs}/addSubscription/renewal/{automaticRenewal}/paymentMethods/{pmId}")
 	public ResponseEntity<License> addSubscription(@PathVariable String productName, @PathVariable String typeSubs, @PathVariable String userName, @PathVariable boolean automaticRenewal, @PathVariable String pmId){
-
+    	String cleanedUserName="";
+		if(pattern.matcher(userName).matches()) {
+    		cleanedUserName=userName;
+    	}
 		
 		Product product = this.productServ.findOne(productName);
-		User user = this.userServ.findByName(userName);
+		User user = this.userServ.findByName(cleanedUserName);
 		
 		// We don't know which user wants to affect -> Unauthorized
 		if(user==null) {
@@ -273,7 +279,7 @@ public class UserController implements IUserController{
 		}
 		
 		//Check for MB subs if user has a payment method attached
-		List<PaymentMethod> lPayments = this.getCardsFromUser(userName).getBody();
+		List<PaymentMethod> lPayments = this.getCardsFromUser(cleanedUserName).getBody();
 		if(typeSubs.equals("MB") && lPayments!=null && lPayments.isEmpty()) {
 			return new ResponseEntity<>(HttpStatus.PRECONDITION_REQUIRED); //The precondition is to have an attached payment source
 		}
@@ -347,7 +353,7 @@ public class UserController implements IUserController{
 				        }
 				        
 				        
-						LicenseSubscription fakeLicense = new LicenseSubscription(true,typeSubs,product,userName,0);
+						LicenseSubscription fakeLicense = new LicenseSubscription(true,typeSubs,product,cleanedUserName,0);
 						fakeLicense.setType("RequiresAction");
 						fakeLicense.setSerial(piReturned2.getNextAction().getRedirectToUrl().getUrl());
 						fakeLicense.setOwner(piReturned2.getId());
@@ -534,9 +540,12 @@ public class UserController implements IUserController{
     
     @PostMapping("{userName}/confirm/{id}/products/{productName}")
     public ResponseEntity<License> confirm(@PathVariable String id, @PathVariable String userName, @PathVariable String productName) throws StripeException {
-   
+    	String cleanedUserName="";
+    	if(pattern.matcher(userName).matches()) {
+    		cleanedUserName=userName;
+    	}
     	Product p = this.productServ.findOne(productName);
-		User user = this.userServ.findByName(userName);
+		User user = this.userServ.findByName(cleanedUserName);
 
     	ResponseEntity<License> check = this.checkProductAndUser(p, user);
     	if(check.getStatusCode()!=HttpStatus.OK) {
@@ -550,7 +559,7 @@ public class UserController implements IUserController{
         params.put("return_url", this.generalController.appDomain+"/products/"+productName);
         PaymentIntent piReturned = this.stripeServ.confirmPaymentIntent(paymentIntent, params);
         String status = piReturned.getStatus();
-		License license = new License(true, p, userName);
+		License license = new License(true, p, cleanedUserName);
 
         if(status.equals("succeeded")) {
 			licenseServ.save(license);
@@ -574,8 +583,13 @@ public class UserController implements IUserController{
     @PostMapping("/{username}/paymentIntents/{paymentIntentId}/products/{product}")
     public ResponseEntity<License> confirm3dsPaymentResponse(@PathVariable String paymentIntentId, @PathVariable String username, @PathVariable String product,  @RequestParam Optional<String> type, 
     		@RequestParam Optional<String> subscriptionId,  @RequestParam Optional<String> automaticRenewal){
+    	String cleanedUserName="";
+    	if(pattern.matcher(username).matches()) {
+    		cleanedUserName=username;
+    	}
+    	
     	Product p = this.productServ.findOne(product);
-		User user = this.userServ.findByName(username);
+		User user = this.userServ.findByName(cleanedUserName);
 
     	ResponseEntity<License> check = this.checkProductAndUser(p, user);
     	if(check.getStatusCode()!=HttpStatus.OK) {
@@ -591,7 +605,7 @@ public class UserController implements IUserController{
 	    	
 	    	if(pi.getStatus().equals("succeeded")) {
 		    	if(!type.isPresent()) {
-		    		License license = new License(true, p, username);
+		    		License license = new License(true, p, cleanedUserName);
 		    		this.licenseServ.save(license);
 					return new ResponseEntity<>(license,HttpStatus.OK);
 	    		}else {
